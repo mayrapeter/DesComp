@@ -30,7 +30,7 @@ architecture arch_name of ProcessadorMIPS is
 	
 	signal estendido_shift: std_logic_vector(25 downto 0);
 	signal sinal_concatenado, dado_lido: std_logic_vector(31 downto 0);
-	signal palavraControle : std_logic_vector(1 downto 0);
+	signal palavraControle : std_logic_vector(8 downto 0);
 	signal imediato_estendido, imediato_estendido2, mux_rt_saida, somador2, saida_mux_ULA_mem, saida_mux_beq, estendido_soma_constante, saida_mux_j, mux_pc_saida : std_logic_vector(31 downto 0);
 	signal flag_z, selMux_pc, selMux_rt_imediato, sel_ULA_mem, beq, sel_beq_jmp, sel_rt_rd: std_logic;
 
