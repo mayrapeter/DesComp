@@ -1,0 +1,141 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ULA_saida[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_saida[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_saida[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_saida[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_saida[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_saida[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_saida[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_saida[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_saida[8]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_saida[9]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_saida[10]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_saida[11]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_saida[12]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_saida[13]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_saida[14]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_saida[15]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_saida[16]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_saida[17]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_saida[18]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_saida[19]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_saida[20]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_saida[21]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_saida[22]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_saida[23]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_saida[24]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_saida[25]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_saida[26]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_saida[27]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_saida[28]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_saida[29]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_saida[30]",
+					"strict" : false
+				},
+				{
+					"name" : "ULA_saida[31]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

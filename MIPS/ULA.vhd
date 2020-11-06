@@ -11,7 +11,8 @@ entity ULA is
     (
       entradaA, entradaB:  in STD_LOGIC_VECTOR((larguraDados-1) downto 0);
       seletor:  in STD_LOGIC;
-      saida:    out STD_LOGIC_VECTOR((larguraDados-1) downto 0)
+      saida:    out STD_LOGIC_VECTOR((larguraDados-1) downto 0);
+		flag_z:	 out std_logic
     );
 end entity;
 
@@ -27,5 +28,7 @@ begin
 	saida <= soma when (seletor = '0') else
 		 subtracao when (seletor = '1') else
 		 entradaA;      -- outra opcao: saida = entradaA
+		 
+	flag_z <= 1;	 
 			 
 end architecture;

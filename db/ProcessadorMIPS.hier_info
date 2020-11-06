@@ -3,6 +3,38 @@ clk => registradorgenerico:PC_entity.CLK
 clk => rommips:ROM.clk
 clk => bancoregistradoresarqregreg:bancoRegs.clk
 clk => unidadecontrole:UC.clk
+ULA_saida[0] << ula:ULA.saida[0]
+ULA_saida[1] << ula:ULA.saida[1]
+ULA_saida[2] << ula:ULA.saida[2]
+ULA_saida[3] << ula:ULA.saida[3]
+ULA_saida[4] << ula:ULA.saida[4]
+ULA_saida[5] << ula:ULA.saida[5]
+ULA_saida[6] << ula:ULA.saida[6]
+ULA_saida[7] << ula:ULA.saida[7]
+ULA_saida[8] << ula:ULA.saida[8]
+ULA_saida[9] << ula:ULA.saida[9]
+ULA_saida[10] << ula:ULA.saida[10]
+ULA_saida[11] << ula:ULA.saida[11]
+ULA_saida[12] << ula:ULA.saida[12]
+ULA_saida[13] << ula:ULA.saida[13]
+ULA_saida[14] << ula:ULA.saida[14]
+ULA_saida[15] << ula:ULA.saida[15]
+ULA_saida[16] << ula:ULA.saida[16]
+ULA_saida[17] << ula:ULA.saida[17]
+ULA_saida[18] << ula:ULA.saida[18]
+ULA_saida[19] << ula:ULA.saida[19]
+ULA_saida[20] << ula:ULA.saida[20]
+ULA_saida[21] << ula:ULA.saida[21]
+ULA_saida[22] << ula:ULA.saida[22]
+ULA_saida[23] << ula:ULA.saida[23]
+ULA_saida[24] << ula:ULA.saida[24]
+ULA_saida[25] << ula:ULA.saida[25]
+ULA_saida[26] << ula:ULA.saida[26]
+ULA_saida[27] << ula:ULA.saida[27]
+ULA_saida[28] << ula:ULA.saida[28]
+ULA_saida[29] << ula:ULA.saida[29]
+ULA_saida[30] << ula:ULA.saida[30]
+ULA_saida[31] << ula:ULA.saida[31]
 
 
 |ProcessadorMIPS|somaConstante:PC_Soma_Constante
