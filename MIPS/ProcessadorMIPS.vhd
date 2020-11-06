@@ -28,7 +28,7 @@ architecture arch_name of ProcessadorMIPS is
 	signal saida_mux_rt_rd: std_logic_vector(4 downto 0);
 	signal we, re: std_logic;
 	
-	signal estendido_shift: std_logic_vector(31 downto 0);
+	signal estendido_shift: std_logic_vector(25 downto 0);
 	signal sinal_concatenado, dado_lido: std_logic_vector(31 downto 0);
 	signal palavraControle : std_logic_vector(1 downto 0);
 	signal imediato_estendido, imediato_estendido2, mux_rt_saida, somador2, saida_mux_ULA_mem, saida_mux_beq, estendido_soma_constante, saida_mux_j, mux_pc_saida : std_logic_vector(31 downto 0);
@@ -92,7 +92,7 @@ begin
                  seletor_MUX => sel_beq_jmp,
                  saida_MUX => saida_mux_j);
 					  
-	mux_rt_rd: entity work.muxGenerico2x1  generic map (larguraDados => DATA_WIDTH)
+	mux_rt_rd: entity work.muxGenerico2x1  generic map (larguraDados => 5)
         port map( entradaA_MUX => EndRt,
                  entradaB_MUX =>  EndRd,
                  seletor_MUX => sel_rt_rd,
@@ -130,7 +130,8 @@ begin
 			 sinal_concatenado => sinal_concatenado
 			 );
 			 
-	estendido_shift<= shift_left(signed(imediato_estendido2), 2);
+	estendido_shift<= imediato_estendido2(23 downto 0) & "00";
+	
 					  
 	ULA_saida <= saidaULA;
 	

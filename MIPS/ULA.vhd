@@ -29,6 +29,6 @@ begin
 		 subtracao when (seletor = '1') else
 		 entradaA;      -- outra opcao: saida = entradaA
 		 
-	flag_z <= 1;	 
+	flag_z <= '1';	 
 			 
 end architecture;
