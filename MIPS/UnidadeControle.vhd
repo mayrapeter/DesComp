@@ -37,7 +37,11 @@ architecture arch_name of UnidadeControle is
 	 
 	 selULA <= soma when Opcode = "000000" AND Funct = 6x"20" else
 					 sub when Opcode = "000000" AND Funct = 6x"22" else
+					 soma when Opcode = 6x"23" else
+					 soma when Opcode = 6x"2b" else
+					 sub when Opcode = 6x"4" else
 					 '0';
+					 
 	 sel_mux1 <= '1' when Opcode ="0000001" else '0';
 	 
 	 sel_mux2 <= '0' when Opcode ="000000" else '1';
