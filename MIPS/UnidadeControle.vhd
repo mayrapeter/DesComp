@@ -42,15 +42,15 @@ architecture arch_name of UnidadeControle is
 					 sub when Opcode = 6x"4" else
 					 '0';
 					 
-	 sel_mux1 <= '1' when Opcode ="0000001" else '0';
+	 sel_mux1 <= '1' when Opcode ="000010" else '0';
 	 
-	 sel_mux2 <= '0' when Opcode ="000000" else '1';
+	 sel_mux2 <= '1' when Opcode ="000000" else '0';
 	 
-	 habilitaescrita_reg <= '1' when Opcode = "000000" AND Opcode = "100011" else '0';
+	 habilitaescrita_reg <= '1' when Opcode = "000000" or Opcode = "100011" else '0';
 	 
-	 sel_mux3 <= '1' when Opcode ="101011" and Opcode ="001011" and Opcode = "010011" and Opcode="001000" and Opcode= "001100" else '0';
+	 sel_mux3 <= '1' when Opcode ="101011" or Opcode ="001011" or Opcode = "010011" or Opcode="001000" or Opcode= "001100" else '0';
 	 
-	 sel_mux4<= '0';
+	 sel_mux4<= '0' when Opcode ="000000" or Opcode = "100011" or Opcode = "101011" or Opcode = "000100" else '1';
 	 
 	 BEQ <= '1' when Opcode="000100" else '0';
 	 

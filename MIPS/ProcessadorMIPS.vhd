@@ -13,7 +13,8 @@ entity ProcessadorMIPS is
   port   (
     -- Input ports
     clk     : in  std_logic;
-	 ULA_saida: out std_logic_vector(DATA_WIDTH-1 downto 0)
+	 ULA_saida: out std_logic_vector(DATA_WIDTH-1 downto 0);
+	 PC_saida: out std_logic_vector(ADDR_WIDTH-1 downto 0)
   );
 end entity;
 
@@ -26,13 +27,12 @@ architecture arch_name of ProcessadorMIPS is
 	signal Instrucao, SaidaRegA, SaidaRegB, saidaULA: std_logic_vector(DATA_WIDTH-1 downto 0);
 	
 	signal saida_mux_rt_rd: std_logic_vector(4 downto 0);
-	signal we, re: std_logic;
 	
 	signal estendido_shift: std_logic_vector(25 downto 0);
 	signal sinal_concatenado, dado_lido: std_logic_vector(31 downto 0);
 	signal palavraControle : std_logic_vector(8 downto 0);
-	signal imediato_estendido, imediato_estendido2, mux_rt_saida, somador2, saida_mux_ULA_mem, saida_mux_beq, estendido_soma_constante, saida_mux_j, mux_pc_saida : std_logic_vector(31 downto 0);
-	signal flag_z, selMux_pc, selMux_rt_imediato, sel_ULA_mem, beq, sel_beq_jmp, sel_rt_rd: std_logic;
+	signal imediato_estendido, imediato_estendido2, mux_rt_saida, somador2, saida_mux_ULA_mem, saida_mux_beq, estendido_soma_constante, mux_pc_saida : std_logic_vector(31 downto 0);
+	signal flag_z, sel_beq_jmp: std_logic;
 
 	alias selULA : std_logic is palavraControle(1);
 	alias HabilitaEscrita : std_logic is palavraControle(0);
@@ -47,6 +47,14 @@ architecture arch_name of ProcessadorMIPS is
 	alias EndRd: std_logic_vector(4 DOWNTO 0) is Instrucao(15 downto 11);
 	alias Shamt: std_logic_vector(4 DOWNTO 0) is Instrucao(10 downto 6);
 	alias Funct: std_logic_vector(5 DOWNTO 0) is Instrucao(5 downto 0);
+	
+	alias selMux_pc : std_logic is palavraControle(2);
+	alias sel_rt_rd : std_logic is palavraControle(3);
+	alias selMux_rt_imediato : std_logic is palavraControle(4);
+	alias sel_ULA_mem : std_logic is palavraControle(5);
+	alias re : std_logic is palavraControle(6);
+	alias we : std_logic is palavraControle(7);
+	alias beq : std_logic is palavraControle(8);
 
 begin
 	PC_Soma_Constante:  entity work.somaConstante  generic map (larguraDados => ADDR_WIDTH, constante => INC_PC)
@@ -89,8 +97,8 @@ begin
 	mux_beq: entity work.muxGenerico2x1  generic map (larguraDados => DATA_WIDTH)
         port map( entradaA_MUX => PC_Incr_Const,
                  entradaB_MUX =>  somador2,
-                 seletor_MUX => sel_beq_jmp,
-                 saida_MUX => saida_mux_j);
+                 seletor_MUX => beq and flag_z,
+                 saida_MUX => saida_mux_beq);
 					  
 	mux_rt_rd: entity work.muxGenerico2x1  generic map (larguraDados => 5)
         port map( entradaA_MUX => EndRt,
@@ -130,9 +138,9 @@ begin
 			 sinal_concatenado => sinal_concatenado
 			 );
 			 
-	estendido_shift<= imediato_estendido2(23 downto 0) & "00";
 	
 					  
 	ULA_saida <= saidaULA;
+	PC_saida <= PC;
 	
 end architecture;

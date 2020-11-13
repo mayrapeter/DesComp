@@ -1,5 +1,5 @@
 Archive Project report for ProcessadorMIPS
-Fri Oct 30 15:04:43 2020
+Thu Nov 12 14:40:02 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Fri Oct 30 15:04:43 2020 ;
+; Archive Project Status ; Successful - Thu Nov 12 14:40:02 2020 ;
 ; Revision Name          ; ProcessadorMIPS                       ;
 ; Top-level Entity Name  ; ProcessadorMIPS                       ;
 ; Family                 ; Cyclone V                             ;
@@ -54,16 +54,16 @@ Info: Archive will store files relative to the closest common parent directory
 Info (13213): Using common directory C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
-Info: Generated archive 'C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/ProcessadorMIPS_QSE.qar'
+Info: Generated archive 'C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/ProcessadorMIPS.qar'
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
 Info: Generated report 'ProcessadorMIPS.archive.rpt'
 Info (23030): Evaluation of Tcl script c:/intelfpga_lite/20.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4819 megabytes
-    Info: Processing ended: Fri Oct 30 15:04:43 2020
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Processing ended: Thu Nov 12 14:40:02 2020
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
 
 
 +--------------------------------------+
@@ -72,6 +72,8 @@ Info: Quartus Prime Shell was successful. 0 errors, 1 warning
 ; File Name                            ;
 +--------------------------------------+
 ; assignment_defaults.qdf              ;
+; concatena.vhd                        ;
+; estendeSinalGenerico.vhd             ;
 ; MIPS/bancoRegistradoresArqRegReg.vhd ;
 ; MIPS/ProcessadorMIPS.vhd             ;
 ; MIPS/registradorGenerico.vhd         ;
@@ -79,9 +81,15 @@ Info: Quartus Prime Shell was successful. 0 errors, 1 warning
 ; MIPS/somaConstante.vhd               ;
 ; MIPS/ULA.vhd                         ;
 ; MIPS/UnidadeControle.vhd             ;
+; muxGenerico2x1.vhd                   ;
 ; ProcessadorMIPS.qpf                  ;
 ; ProcessadorMIPS.qsf                  ;
+; RAMMIPS.vhd                          ;
+; somador.vhd                          ;
+; UC_ULA.vhd                           ;
 ; Waveform1.vwf                        ;
+; Waveform2.vwf                        ;
+; Waveform3.vwf                        ;
 +--------------------------------------+
 
 

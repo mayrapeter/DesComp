@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ProcessadorMIPS -c ProcessadorMIPS --vector_source="C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Waveform2.vwf" --testbench_file="C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/simulation/qsim/Waveform2.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ProcessadorMIPS -c ProcessadorMIPS --vector_source="C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Waveform4.vwf" --testbench_file="C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/simulation/qsim/Waveform4.vwf.vht"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -26,11 +26,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Fri Nov 06 21:17:45 2020
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ProcessadorMIPS -c ProcessadorMIPS --vector_source=C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Waveform2.vwf --testbench_file=C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/simulation/qsim/Waveform2.vwf.vht
+    Info: Processing started: Thu Nov 12 15:23:56 2020
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ProcessadorMIPS -c ProcessadorMIPS --vector_source=C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Waveform4.vwf --testbench_file=C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/simulation/qsim/Waveform4.vwf.vht
 Info (119006): Selected device 5CEBA4F23C7 for design "ProcessadorMIPS"
+Warning (18550): Found RAM instances implemented as ROM because the write logic is disabled. One instance is listed below as an example.
+    Info (119043): Atom "RAMMIPS:RAM|altsyncram:memRAM_rtl_0|altsyncram_abp1:auto_generated|ram_block1a0" is instantiated as RAM, but it is actually implemented as ROM function because the write logic is always disabled
 
-): Ignoring output pin "ULA_saida[9]" in vector source file when writing test bench files
+bench files
 
 Completed successfully. 
 
@@ -55,13 +57,15 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Fri Nov 06 21:17:48 2020
+    Info: Processing started: Thu Nov 12 15:23:59 2020
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/simulation/qsim/ ProcessadorMIPS -c ProcessadorMIPS
 Info (119006): Selected device 5CEBA4F23C7 for design "ProcessadorMIPS"
+Warning (18550): Found RAM instances implemented as ROM because the write logic is disabled. One instance is listed below as an example.
+    Info (119043): Atom "RAMMIPS:RAM|altsyncram:memRAM_rtl_0|altsyncram_abp1:auto_generated|ram_block1a0" is instantiated as RAM, but it is actually implemented as ROM function because the write logic is always disabled
 Info (204019): Generated file ProcessadorMIPS.vho in folder "C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/simulation/qsim//" for EDA simulation tool
-Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4716 megabytes
-    Info: Processing ended: Fri Nov 06 21:17:50 2020
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4718 megabytes
+    Info: Processing ended: Thu Nov 12 15:24:01 2020
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
@@ -88,71 +92,88 @@ Reading pref.tcl
 # ** Warning: (vlib-34) Library already exists at "work".
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:17:54 on Nov 06,2020
+# Start time: 15:24:04 on Nov 12,2020
 # vcom -work work ProcessadorMIPS.vho 
 
 # -- Loading package STANDARD
-
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package altera_lnsim_components
-
 # -- Loading package VITAL_Timing
 # -- Loading package VITAL_Primitives
+
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Loading package altera_lnsim_components
 # -- Loading package cyclonev_atom_pack
 # -- Loading package cyclonev_components
 # -- Compiling entity ProcessadorMIPS
-
 # -- Compiling architecture structure of ProcessadorMIPS
 
-# End time: 21:17:56 on Nov 06,2020, Elapsed time: 0:00:02
+# End time: 15:24:06 on Nov 12,2020, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:17:56 on Nov 06,2020
-# vcom -work work Waveform2.vwf.vht 
-
+# Start time: 15:24:06 on Nov 12,2020
+# vcom -work work Waveform4.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
+
 # -- Loading package std_logic_1164
 # -- Compiling entity ProcessadorMIPS_vhd_vec_tst
-
 # -- Compiling architecture ProcessadorMIPS_arch of ProcessadorMIPS_vhd_vec_tst
-
-# End time: 21:17:56 on Nov 06,2020, Elapsed time: 0:00:00
+# End time: 15:24:07 on Nov 12,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.ProcessadorMIPS_vhd_vec_tst 
-# Start time: 21:17:56 on Nov 06,2020
+# Start time: 15:24:07 on Nov 12,2020
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading work.processadormips_vhd_vec_tst(processadormips_arch)
-# Loading altera_lnsim.altera_lnsim_components
 # Loading ieee.vital_timing(body)
 # Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading altera_lnsim.altera_lnsim_components
 # Loading cyclonev.cyclonev_atom_pack(body)
 # Loading cyclonev.cyclonev_components
 # Loading work.processadormips(structure)
 # Loading ieee.std_logic_arith(body)
 # Loading cyclonev.cyclonev_io_obuf(arch)
 # Loading cyclonev.cyclonev_io_ibuf(arch)
-# after#32
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
+# Loading altera.dffeas(vital_dffeas)
+# Loading cyclonev.cyclonev_ram_block(block_arch)
+# Loading sv_std.std
+# Loading altera_lnsim.generic_m10k
+# Loading altera_lnsim.altera_lnsim_functions
+# Loading altera_lnsim.common_28nm_ram_block
+# Loading altera_lnsim.common_28nm_ram_register
+# Loading altera_lnsim.common_28nm_ram_pulse_generator
+# ** Warning: Design size of 165857 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# after#34
 
-# End time: 21:17:58 on Nov 06,2020, Elapsed time: 0:00:02
-# Errors: 0, Warnings: 0
+# Simulation time: 70000 ps
+
+# Simulation time: 70000 ps
+
+# Simulation time: 70000 ps
+
+# End time: 15:24:17 on Nov 12,2020, Elapsed time: 0:00:10
+# Errors: 0, Warnings: 1
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Waveform2.vwf...
+Reading C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Waveform4.vwf...
 
 Reading C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/simulation/qsim/ProcessadorMIPS.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/simulation/qsim/ProcessadorMIPS_20201106211758.sim.vwf
+Writing the resulting VWF to C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/simulation/qsim/ProcessadorMIPS_20201112152417.sim.vwf
 
 Finished VCD to VWF conversion.
 

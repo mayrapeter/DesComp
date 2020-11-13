@@ -1,6 +1,30 @@
+Quartus Prime Archive log --	C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/ProcessadorMIPS.qarlog
 
+Archive:	C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/ProcessadorMIPS.qar
+Date:		Thu Nov 12 14:40:02 2020
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
-******* Archived project restoration attempt on Tue Oct 27 13:01:17 2020
-Source archive file:	C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/ProcessadorMIPS.qar
-Archive was extracted into	C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/
-		 - successfully.
+	=========== Files Selected: ===========
+C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ProcessadorMIPS.vhd
+C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ROMMIPS.vhd
+C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ULA.vhd
+C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/UnidadeControle.vhd
+C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/bancoRegistradoresArqRegReg.vhd
+C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/registradorGenerico.vhd
+C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/somaConstante.vhd
+C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/ProcessadorMIPS.qpf
+C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/ProcessadorMIPS.qsf
+C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/RAMMIPS.vhd
+C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/UC_ULA.vhd
+C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Waveform1.vwf
+C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Waveform2.vwf
+C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Waveform3.vwf
+C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/assignment_defaults.qdf
+C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/concatena.vhd
+C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/estendeSinalGenerico.vhd
+C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/muxGenerico2x1.vhd
+C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/somador.vhd
+	======= Total: 19 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
