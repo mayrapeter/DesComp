@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ProcessadorMIPS
-Thu Nov 12 15:21:18 2020
+Fri Nov 13 12:06:23 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -64,7 +64,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Nov 12 15:21:18 2020       ;
+; Analysis & Synthesis Status     ; Successful - Fri Nov 13 12:06:22 2020       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; ProcessadorMIPS                             ;
 ; Top-level Entity Name           ; ProcessadorMIPS                             ;
@@ -186,40 +186,40 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processor 3            ;   0.0%      ;
-;     Processor 4            ;   0.0%      ;
+;     Processor 2            ;   0.2%      ;
+;     Processor 3            ;   0.2%      ;
+;     Processor 4            ;   0.2%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                         ;
-+--------------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path     ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                 ; Library ;
-+--------------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------+---------+
-; MIPS/ProcessadorMIPS.vhd             ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ProcessadorMIPS.vhd             ;         ;
-; MIPS/ROMMIPS.vhd                     ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ROMMIPS.vhd                     ;         ;
-; MIPS/somaConstante.vhd               ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/somaConstante.vhd               ;         ;
-; MIPS/registradorGenerico.vhd         ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/registradorGenerico.vhd         ;         ;
-; MIPS/bancoRegistradoresArqRegReg.vhd ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/bancoRegistradoresArqRegReg.vhd ;         ;
-; MIPS/ULA.vhd                         ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ULA.vhd                         ;         ;
-; MIPS/UnidadeControle.vhd             ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/UnidadeControle.vhd             ;         ;
-; muxGenerico2x1.vhd                   ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/muxGenerico2x1.vhd                   ;         ;
-; somador.vhd                          ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/somador.vhd                          ;         ;
-; RAMMIPS.vhd                          ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/RAMMIPS.vhd                          ;         ;
-; estendeSinalGenerico.vhd             ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/estendeSinalGenerico.vhd             ;         ;
-; concatena.vhd                        ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/concatena.vhd                        ;         ;
-; altsyncram.tdf                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                                        ;         ;
-; stratix_ram_block.inc                ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                 ;         ;
-; lpm_mux.inc                          ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                           ;         ;
-; lpm_decode.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc                                        ;         ;
-; aglobal201.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                        ;         ;
-; a_rdenreg.inc                        ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                                         ;         ;
-; altrom.inc                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                                            ;         ;
-; altram.inc                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                                            ;         ;
-; altdpram.inc                         ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                                          ;         ;
-; db/altsyncram_abp1.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/db/altsyncram_abp1.tdf               ;         ;
-+--------------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                          ;
++--------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path     ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                  ; Library ;
++--------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------+---------+
+; MIPS/ProcessadorMIPS.vhd             ; yes             ; User VHDL File               ; C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/ProcessadorMIPS.vhd             ;         ;
+; MIPS/ROMMIPS.vhd                     ; yes             ; User VHDL File               ; C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/ROMMIPS.vhd                     ;         ;
+; MIPS/somaConstante.vhd               ; yes             ; User VHDL File               ; C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/somaConstante.vhd               ;         ;
+; MIPS/registradorGenerico.vhd         ; yes             ; User VHDL File               ; C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/registradorGenerico.vhd         ;         ;
+; MIPS/bancoRegistradoresArqRegReg.vhd ; yes             ; User VHDL File               ; C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/bancoRegistradoresArqRegReg.vhd ;         ;
+; MIPS/ULA.vhd                         ; yes             ; User VHDL File               ; C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/ULA.vhd                         ;         ;
+; MIPS/UnidadeControle.vhd             ; yes             ; User VHDL File               ; C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/UnidadeControle.vhd             ;         ;
+; muxGenerico2x1.vhd                   ; yes             ; User VHDL File               ; C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/muxGenerico2x1.vhd                   ;         ;
+; somador.vhd                          ; yes             ; User VHDL File               ; C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/somador.vhd                          ;         ;
+; RAMMIPS.vhd                          ; yes             ; User VHDL File               ; C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/RAMMIPS.vhd                          ;         ;
+; estendeSinalGenerico.vhd             ; yes             ; User VHDL File               ; C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/estendeSinalGenerico.vhd             ;         ;
+; concatena.vhd                        ; yes             ; User VHDL File               ; C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/concatena.vhd                        ;         ;
+; altsyncram.tdf                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                         ;         ;
+; stratix_ram_block.inc                ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                  ;         ;
+; lpm_mux.inc                          ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                            ;         ;
+; lpm_decode.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc                         ;         ;
+; aglobal201.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                         ;         ;
+; a_rdenreg.inc                        ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                          ;         ;
+; altrom.inc                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                             ;         ;
+; altram.inc                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                             ;         ;
+; altdpram.inc                         ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                           ;         ;
+; db/altsyncram_abp1.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/db/altsyncram_abp1.tdf               ;         ;
++--------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -1113,7 +1113,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:20     ;
 +----------------+--------------+
 
 
@@ -1123,63 +1123,63 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Nov 12 15:20:56 2020
+    Info: Processing started: Fri Nov 13 12:04:38 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ProcessadorMIPS -c ProcessadorMIPS
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file mips/processadormips.vhd
-    Info (12022): Found design unit 1: ProcessadorMIPS-arch_name File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ProcessadorMIPS.vhd Line: 22
-    Info (12023): Found entity 1: ProcessadorMIPS File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ProcessadorMIPS.vhd Line: 5
+    Info (12022): Found design unit 1: ProcessadorMIPS-arch_name File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/ProcessadorMIPS.vhd Line: 22
+    Info (12023): Found entity 1: ProcessadorMIPS File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/ProcessadorMIPS.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file mips/rommips.vhd
-    Info (12022): Found design unit 1: ROMMIPS-assincrona File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ROMMIPS.vhd Line: 16
-    Info (12023): Found entity 1: ROMMIPS File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ROMMIPS.vhd Line: 6
+    Info (12022): Found design unit 1: ROMMIPS-assincrona File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/ROMMIPS.vhd Line: 16
+    Info (12023): Found entity 1: ROMMIPS File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/ROMMIPS.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file mips/somaconstante.vhd
-    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/somaConstante.vhd Line: 18
-    Info (12023): Found entity 1: somaConstante File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/somaConstante.vhd Line: 5
+    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/somaConstante.vhd Line: 18
+    Info (12023): Found entity 1: somaConstante File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/somaConstante.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file mips/registradorgenerico.vhd
-    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/registradorGenerico.vhd Line: 15
-    Info (12023): Found entity 1: registradorGenerico File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/registradorGenerico.vhd Line: 4
+    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/registradorGenerico.vhd Line: 15
+    Info (12023): Found entity 1: registradorGenerico File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/registradorGenerico.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file mips/bancoregistradoresarqregreg.vhd
-    Info (12022): Found design unit 1: bancoRegistradoresArqRegReg-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/bancoRegistradoresArqRegReg.vhd Line: 26
-    Info (12023): Found entity 1: bancoRegistradoresArqRegReg File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/bancoRegistradoresArqRegReg.vhd Line: 5
+    Info (12022): Found design unit 1: bancoRegistradoresArqRegReg-comportamento File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/bancoRegistradoresArqRegReg.vhd Line: 26
+    Info (12023): Found entity 1: bancoRegistradoresArqRegReg File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/bancoRegistradoresArqRegReg.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file mips/ula.vhd
-    Info (12022): Found design unit 1: ULA-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ULA.vhd Line: 19
-    Info (12023): Found entity 1: ULA File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ULA.vhd Line: 5
+    Info (12022): Found design unit 1: ULA-comportamento File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/ULA.vhd Line: 19
+    Info (12023): Found entity 1: ULA File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/ULA.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file mips/unidadecontrole.vhd
-    Info (12022): Found design unit 1: UnidadeControle-arch_name File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/UnidadeControle.vhd Line: 17
-    Info (12023): Found entity 1: UnidadeControle File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/UnidadeControle.vhd Line: 5
+    Info (12022): Found design unit 1: UnidadeControle-arch_name File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/UnidadeControle.vhd Line: 17
+    Info (12023): Found entity 1: UnidadeControle File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/UnidadeControle.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1.vhd
-    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/muxGenerico2x1.vhd Line: 14
-    Info (12023): Found entity 1: muxGenerico2x1 File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/muxGenerico2x1.vhd Line: 4
+    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/muxGenerico2x1.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico2x1 File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/muxGenerico2x1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file somador.vhd
-    Info (12022): Found design unit 1: somador-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/somador.vhd Line: 18
-    Info (12023): Found entity 1: somador File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/somador.vhd Line: 5
+    Info (12022): Found design unit 1: somador-comportamento File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/somador.vhd Line: 18
+    Info (12023): Found entity 1: somador File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/somador.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file rammips.vhd
-    Info (12022): Found design unit 1: RAMMIPS-assincrona File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/RAMMIPS.vhd Line: 19
-    Info (12023): Found entity 1: RAMMIPS File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/RAMMIPS.vhd Line: 5
+    Info (12022): Found design unit 1: RAMMIPS-assincrona File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/RAMMIPS.vhd Line: 19
+    Info (12023): Found entity 1: RAMMIPS File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/RAMMIPS.vhd Line: 5
 Info (12021): Found 0 design units, including 0 entities, in source file uc_ula.vhd
 Info (12021): Found 2 design units, including 1 entities, in source file estendesinalgenerico.vhd
-    Info (12022): Found design unit 1: estendeSinalGenerico-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/estendeSinalGenerico.vhd Line: 19
-    Info (12023): Found entity 1: estendeSinalGenerico File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/estendeSinalGenerico.vhd Line: 4
+    Info (12022): Found design unit 1: estendeSinalGenerico-comportamento File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/estendeSinalGenerico.vhd Line: 19
+    Info (12023): Found entity 1: estendeSinalGenerico File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/estendeSinalGenerico.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file concatena.vhd
-    Info (12022): Found design unit 1: concatena-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/concatena.vhd Line: 15
-    Info (12023): Found entity 1: concatena File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/concatena.vhd Line: 4
+    Info (12022): Found design unit 1: concatena-comportamento File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/concatena.vhd Line: 15
+    Info (12023): Found entity 1: concatena File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/concatena.vhd Line: 4
 Info (12127): Elaborating entity "ProcessadorMIPS" for the top level hierarchy
-Info (12128): Elaborating entity "somaConstante" for hierarchy "somaConstante:PC_Soma_Constante" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ProcessadorMIPS.vhd Line: 60
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:PC_entity" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ProcessadorMIPS.vhd Line: 63
-Info (12128): Elaborating entity "ROMMIPS" for hierarchy "ROMMIPS:ROM" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ProcessadorMIPS.vhd Line: 67
-Warning (10541): VHDL Signal Declaration warning at ROMMIPS.vhd(19): used implicit default value for signal "memROM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ROMMIPS.vhd Line: 19
-Info (12128): Elaborating entity "bancoRegistradoresArqRegReg" for hierarchy "bancoRegistradoresArqRegReg:bancoRegs" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ProcessadorMIPS.vhd Line: 70
-Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULA" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ProcessadorMIPS.vhd Line: 80
-Info (12128): Elaborating entity "UnidadeControle" for hierarchy "UnidadeControle:UC" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ProcessadorMIPS.vhd Line: 83
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:mux_rt_imediato" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ProcessadorMIPS.vhd Line: 85
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:mux_rt_rd" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ProcessadorMIPS.vhd Line: 103
-Info (12128): Elaborating entity "somador" for hierarchy "somador:PC_Soma_imediato" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ProcessadorMIPS.vhd Line: 115
-Info (12128): Elaborating entity "RAMMIPS" for hierarchy "RAMMIPS:RAM" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ProcessadorMIPS.vhd Line: 119
-Info (12128): Elaborating entity "estendeSinalGenerico" for hierarchy "estendeSinalGenerico:estende_sinal" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ProcessadorMIPS.vhd Line: 128
-Info (12128): Elaborating entity "concatena" for hierarchy "concatena:concatena" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ProcessadorMIPS.vhd Line: 134
+Info (12128): Elaborating entity "somaConstante" for hierarchy "somaConstante:PC_Soma_Constante" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/ProcessadorMIPS.vhd Line: 60
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:PC_entity" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/ProcessadorMIPS.vhd Line: 63
+Info (12128): Elaborating entity "ROMMIPS" for hierarchy "ROMMIPS:ROM" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/ProcessadorMIPS.vhd Line: 67
+Warning (10541): VHDL Signal Declaration warning at ROMMIPS.vhd(19): used implicit default value for signal "memROM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/ROMMIPS.vhd Line: 19
+Info (12128): Elaborating entity "bancoRegistradoresArqRegReg" for hierarchy "bancoRegistradoresArqRegReg:bancoRegs" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/ProcessadorMIPS.vhd Line: 70
+Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULA" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/ProcessadorMIPS.vhd Line: 80
+Info (12128): Elaborating entity "UnidadeControle" for hierarchy "UnidadeControle:UC" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/ProcessadorMIPS.vhd Line: 83
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:mux_rt_imediato" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/ProcessadorMIPS.vhd Line: 85
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:mux_rt_rd" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/ProcessadorMIPS.vhd Line: 103
+Info (12128): Elaborating entity "somador" for hierarchy "somador:PC_Soma_imediato" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/ProcessadorMIPS.vhd Line: 115
+Info (12128): Elaborating entity "RAMMIPS" for hierarchy "RAMMIPS:RAM" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/ProcessadorMIPS.vhd Line: 119
+Info (12128): Elaborating entity "estendeSinalGenerico" for hierarchy "estendeSinalGenerico:estende_sinal" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/ProcessadorMIPS.vhd Line: 128
+Info (12128): Elaborating entity "concatena" for hierarchy "concatena:concatena" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/ProcessadorMIPS.vhd Line: 134
 Info (276014): Found 2 instances of uninferred RAM logic
-    Info (276007): RAM logic "bancoRegistradoresArqRegReg:bancoRegs|registrador" is uninferred due to asynchronous read logic File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/bancoRegistradoresArqRegReg.vhd Line: 32
-    Info (276004): RAM logic "ROMMIPS:ROM|memROM" is uninferred due to inappropriate RAM size File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ROMMIPS.vhd Line: 19
+    Info (276007): RAM logic "bancoRegistradoresArqRegReg:bancoRegs|registrador" is uninferred due to asynchronous read logic File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/bancoRegistradoresArqRegReg.vhd Line: 32
+    Info (276004): RAM logic "ROMMIPS:ROM|memROM" is uninferred due to inappropriate RAM size File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/ROMMIPS.vhd Line: 19
 Info (19000): Inferred 1 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "RAMMIPS:RAM|memRAM_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
@@ -1217,10 +1217,10 @@ Info (12133): Instantiated megafunction "RAMMIPS:RAM|altsyncram:memRAM_rtl_0" wi
     Info (12134): Parameter "READ_DURING_WRITE_MODE_MIXED_PORTS" = "OLD_DATA"
     Info (12134): Parameter "RDCONTROL_REG_B" = "CLOCK0"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_abp1.tdf
-    Info (12023): Found entity 1: altsyncram_abp1 File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/db/altsyncram_abp1.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_abp1 File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/db/altsyncram_abp1.tdf Line: 28
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "PC_saida[0]" is stuck at GND File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ProcessadorMIPS.vhd Line: 17
-    Warning (13410): Pin "PC_saida[1]" is stuck at GND File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ProcessadorMIPS.vhd Line: 17
+    Warning (13410): Pin "PC_saida[0]" is stuck at GND File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/ProcessadorMIPS.vhd Line: 17
+    Warning (13410): Pin "PC_saida[1]" is stuck at GND File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/MIPS/ProcessadorMIPS.vhd Line: 17
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 512 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -1231,9 +1231,9 @@ Info (21057): Implemented 943 device resources after synthesis - the final resou
     Info (21061): Implemented 846 logic cells
     Info (21064): Implemented 32 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4857 megabytes
-    Info: Processing ended: Thu Nov 12 15:21:18 2020
-    Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:51
+    Info: Peak virtual memory: 4878 megabytes
+    Info: Processing ended: Fri Nov 13 12:06:23 2020
+    Info: Elapsed time: 00:01:45
+    Info: Total CPU time (on all processors): 00:01:08
 
 
