@@ -9,7 +9,7 @@ entity UnidadeControle is
 	 Opcode  :  in  std_logic_vector(5 downto 0);
 	 Funct   :  in  std_logic_vector(5 downto 0);
     -- Output ports
-    palavraControle  :  out std_logic_vector(8 downto 0)
+    palavraControle  :  out std_logic_vector(9 downto 0)
   );
 end entity;
 
@@ -17,7 +17,7 @@ end entity;
 architecture arch_name of UnidadeControle is
 
 -- aliases para saida
-  alias selULA : std_logic is palavraControle(1);
+  alias selULA : std_logic_vector is palavraControle(9 downto 8);
   alias HabilitaEscrita_reg : std_logic is palavraControle(0);
   alias sel_mux1 : std_logic is palavraControle(2);
   alias sel_mux2 : std_logic is palavraControle(3);
@@ -25,7 +25,7 @@ architecture arch_name of UnidadeControle is
   alias sel_mux4 : std_logic is palavraControle(5);
   alias Habilitaleituramem : std_logic is palavraControle(6);
   alias HabilitaEscritamem : std_logic is palavraControle(7);
-  alias BEQ : std_logic is palavraControle(8);
+  alias BEQ : std_logic is palavraControle(1);
   
  
   constant soma : std_logic := '0';
@@ -34,13 +34,19 @@ architecture arch_name of UnidadeControle is
 
   begin		 
 	
+	-- ULAop
+	-- "00" --> soma sem funct
+	-- "01" --> sub sem funct
+	-- "10" --> analisar funct (soma, sub, or, and, slt)
+	
+	-- lw  opcode x23  --> 100011
+	-- sw  opcode = x2b -->101011
+	-- beq  opcode = x 4--> 000100
+	
 	 
-	 selULA <= soma when Opcode = "000000" AND Funct = 6x"20" else
-					 sub when Opcode = "000000" AND Funct = 6x"22" else
-					 soma when Opcode = 6x"23" else
-					 soma when Opcode = 6x"2b" else
-					 sub when Opcode = 6x"4" else
-					 '0';
+	 selULA <= "00" when Opcode = "100011" OR  Opcode = "101011" else
+				  "01" when Opcode = "000100"  else
+				  "10";
 					 
 	 sel_mux1 <= '1' when Opcode ="000010" else '0';
 	 

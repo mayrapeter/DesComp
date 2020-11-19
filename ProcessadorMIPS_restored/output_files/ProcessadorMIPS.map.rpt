@@ -1,0 +1,1672 @@
+Analysis & Synthesis report for ProcessadorMIPS
+Thu Nov 19 14:42:34 2020
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: Top-level Entity: |ProcessadorMIPS
+ 12. Parameter Settings for User Entity Instance: somaConstante:PC_Soma_Constante
+ 13. Parameter Settings for User Entity Instance: registradorGenerico:PC_entity
+ 14. Parameter Settings for User Entity Instance: ROMMIPS:ROM
+ 15. Parameter Settings for User Entity Instance: bancoRegistradoresArqRegReg:bancoRegs
+ 16. Parameter Settings for User Entity Instance: ULA:ULA
+ 17. Parameter Settings for User Entity Instance: muxGenerico2x1:mux_rt_imediato
+ 18. Parameter Settings for User Entity Instance: muxGenerico2x1:mux_PC
+ 19. Parameter Settings for User Entity Instance: muxGenerico2x1:mux_beq
+ 20. Parameter Settings for User Entity Instance: muxGenerico2x1:mux_rt_rd
+ 21. Parameter Settings for User Entity Instance: muxGenerico2x1:mux_ULA_mem
+ 22. Parameter Settings for User Entity Instance: somador:PC_Soma_imediato
+ 23. Parameter Settings for User Entity Instance: RAMMIPS:RAM
+ 24. Parameter Settings for User Entity Instance: estendeSinalGenerico:estende_sinal
+ 25. Port Connectivity Checks: "muxGenerico2x1:mux_beq"
+ 26. Port Connectivity Checks: "UnidadeControle:UC"
+ 27. Port Connectivity Checks: "ULA:ULA"
+ 28. Port Connectivity Checks: "registradorGenerico:PC_entity"
+ 29. Post-Synthesis Netlist Statistics for Top Partition
+ 30. Elapsed Time Per Partition
+ 31. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Thu Nov 19 14:42:34 2020       ;
+; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                   ; ProcessadorMIPS                             ;
+; Top-level Entity Name           ; ProcessadorMIPS                             ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 65                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CEBA4F23C7        ;                    ;
+; Top-level entity name                                                           ; ProcessadorMIPS    ; ProcessadorMIPS    ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Maximum processors allowed for parallel compilation                             ; All                ;                    ;
+; VHDL Show LMF Mapping Messages                                                  ; Off                ;                    ;
+; VHDL Version                                                                    ; VHDL_2008          ; VHDL_1993          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                   ;
++--------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path     ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                                        ; Library ;
++--------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
+; MIPS/ProcessadorMIPS.vhd             ; yes             ; User VHDL File  ; C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd             ;         ;
+; MIPS/ROMMIPS.vhd                     ; yes             ; User VHDL File  ; C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ROMMIPS.vhd                     ;         ;
+; MIPS/somaConstante.vhd               ; yes             ; User VHDL File  ; C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/somaConstante.vhd               ;         ;
+; MIPS/registradorGenerico.vhd         ; yes             ; User VHDL File  ; C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/registradorGenerico.vhd         ;         ;
+; MIPS/bancoRegistradoresArqRegReg.vhd ; yes             ; User VHDL File  ; C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/bancoRegistradoresArqRegReg.vhd ;         ;
+; MIPS/ULA.vhd                         ; yes             ; User VHDL File  ; C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ULA.vhd                         ;         ;
+; MIPS/UnidadeControle.vhd             ; yes             ; User VHDL File  ; C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/UnidadeControle.vhd             ;         ;
+; muxGenerico2x1.vhd                   ; yes             ; User VHDL File  ; C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/muxGenerico2x1.vhd                   ;         ;
+; somador.vhd                          ; yes             ; User VHDL File  ; C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/somador.vhd                          ;         ;
+; RAMMIPS.vhd                          ; yes             ; User VHDL File  ; C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/RAMMIPS.vhd                          ;         ;
+; estendeSinalGenerico.vhd             ; yes             ; User VHDL File  ; C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/estendeSinalGenerico.vhd             ;         ;
+; concatena.vhd                        ; yes             ; User VHDL File  ; C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/concatena.vhd                        ;         ;
++--------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
+
+
++-------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                       ;
++---------------------------------------------+---------------------+
+; Resource                                    ; Usage               ;
++---------------------------------------------+---------------------+
+; Estimate of Logic utilization (ALMs needed) ; 0                   ;
+;                                             ;                     ;
+; Combinational ALUT usage for logic          ; 0                   ;
+;     -- 7 input functions                    ; 0                   ;
+;     -- 6 input functions                    ; 0                   ;
+;     -- 5 input functions                    ; 0                   ;
+;     -- 4 input functions                    ; 0                   ;
+;     -- <=3 input functions                  ; 0                   ;
+;                                             ;                     ;
+; Dedicated logic registers                   ; 0                   ;
+;                                             ;                     ;
+; I/O pins                                    ; 65                  ;
+;                                             ;                     ;
+; Total DSP Blocks                            ; 0                   ;
+;                                             ;                     ;
+; Maximum fan-out node                        ; ULA_saida[0]~output ;
+; Maximum fan-out                             ; 1                   ;
+; Total fan-out                               ; 65                  ;
+; Average fan-out                             ; 0.50                ;
++---------------------------------------------+---------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                        ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-----------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name     ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-----------------+--------------+
+; |ProcessadorMIPS           ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 65   ; 0            ; |ProcessadorMIPS    ; ProcessadorMIPS ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                              ;
++--------------------------------------------------------+----------------------------------------+
+; Register name                                          ; Reason for Removal                     ;
++--------------------------------------------------------+----------------------------------------+
+; RAMMIPS:RAM|Dado_out[0..31]                            ; Lost fanout                            ;
+; registradorGenerico:PC_entity|DOUT[0..31]              ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~70   ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~71   ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~72   ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~73   ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~74   ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~75   ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~76   ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~77   ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~78   ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~79   ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~80   ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~81   ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~82   ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~83   ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~84   ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~85   ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~86   ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~87   ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~88   ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~89   ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~90   ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~91   ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~92   ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~93   ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~94   ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~95   ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~96   ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~97   ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~98   ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~99   ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~100  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~101  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~102  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~103  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~104  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~105  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~106  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~107  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~108  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~109  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~110  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~111  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~112  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~113  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~114  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~115  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~116  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~117  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~118  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~119  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~120  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~121  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~122  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~123  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~124  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~125  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~126  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~127  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~128  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~129  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~130  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~131  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~132  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~133  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~134  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~135  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~140  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~141  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~142  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~143  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~144  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~146  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~147  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~166  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~167  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~168  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~169  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~170  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~171  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~172  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~173  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~174  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~175  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~176  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~177  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~178  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~179  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~180  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~181  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~182  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~183  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~184  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~185  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~186  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~187  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~188  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~189  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~190  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~191  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~192  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~193  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~194  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~195  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~196  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~197  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~198  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~199  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~200  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~201  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~202  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~203  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~204  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~205  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~206  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~207  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~208  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~209  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~210  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~211  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~212  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~213  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~214  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~215  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~216  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~217  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~218  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~219  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~220  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~221  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~222  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~223  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~224  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~225  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~226  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~227  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~228  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~229  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~230  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~231  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~232  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~233  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~234  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~235  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~236  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~237  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~238  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~239  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~240  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~241  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~242  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~243  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~244  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~245  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~246  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~247  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~248  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~249  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~250  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~251  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~252  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~253  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~254  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~255  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~256  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~257  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~258  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~259  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~260  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~261  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~262  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~263  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~264  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~265  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~266  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~267  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~268  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~269  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~270  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~271  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~272  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~273  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~274  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~275  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~276  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~277  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~278  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~279  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~280  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~281  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~282  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~283  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~284  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~285  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~286  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~287  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~288  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~289  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~290  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~291  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~292  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~293  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~294  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~295  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~296  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~297  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~298  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~299  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~300  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~301  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~302  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~303  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~304  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~305  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~306  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~307  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~308  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~309  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~310  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~311  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~312  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~313  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~314  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~315  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~316  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~317  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~318  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~319  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~320  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~321  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~322  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~323  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~324  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~325  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~326  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~327  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~328  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~329  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~330  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~331  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~332  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~333  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~334  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~335  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~336  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~337  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~338  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~339  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~340  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~341  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~342  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~343  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~344  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~345  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~346  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~347  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~348  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~349  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~350  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~351  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~352  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~353  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~354  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~355  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~356  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~357  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~358  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~359  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~360  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~361  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~362  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~363  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~364  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~365  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~366  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~367  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~368  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~369  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~370  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~371  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~372  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~373  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~374  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~375  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~376  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~377  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~378  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~379  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~380  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~381  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~382  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~383  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~384  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~385  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~386  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~387  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~388  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~389  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~390  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~391  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~392  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~393  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~394  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~395  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~396  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~397  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~398  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~399  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~400  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~401  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~402  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~403  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~404  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~405  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~406  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~407  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~408  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~409  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~410  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~411  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~412  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~413  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~414  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~415  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~416  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~417  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~418  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~419  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~420  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~421  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~422  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~423  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~424  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~425  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~426  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~427  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~428  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~429  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~430  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~431  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~432  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~433  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~434  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~435  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~436  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~437  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~438  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~439  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~440  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~441  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~442  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~443  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~444  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~445  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~446  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~447  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~448  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~449  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~450  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~451  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~452  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~453  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~454  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~455  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~456  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~457  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~458  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~459  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~460  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~461  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~462  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~463  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~464  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~465  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~466  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~467  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~468  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~469  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~470  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~471  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~472  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~473  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~474  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~475  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~476  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~477  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~478  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~479  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~480  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~481  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~482  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~483  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~484  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~485  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~486  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~487  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~488  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~489  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~490  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~491  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~492  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~493  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~494  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~495  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~496  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~497  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~498  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~499  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~500  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~501  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~502  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~503  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~504  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~505  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~506  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~507  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~508  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~509  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~510  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~511  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~512  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~513  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~514  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~515  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~516  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~517  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~518  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~519  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~520  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~521  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~522  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~523  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~524  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~525  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~526  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~527  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~528  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~529  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~530  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~531  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~532  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~533  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~534  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~535  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~536  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~537  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~538  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~539  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~540  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~541  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~542  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~543  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~544  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~545  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~546  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~547  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~548  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~549  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~550  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~551  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~552  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~553  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~554  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~555  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~556  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~557  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~558  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~559  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~560  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~561  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~562  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~563  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~564  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~565  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~566  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~567  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~568  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~569  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~570  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~571  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~572  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~573  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~574  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~575  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~576  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~577  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~578  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~579  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~580  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~581  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~582  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~583  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~584  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~585  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~586  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~587  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~588  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~589  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~590  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~591  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~592  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~593  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~594  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~595  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~596  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~597  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~598  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~599  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~600  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~601  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~602  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~603  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~604  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~605  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~606  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~607  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~608  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~609  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~610  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~611  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~612  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~613  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~614  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~615  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~616  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~617  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~618  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~619  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~620  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~621  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~622  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~623  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~624  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~625  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~626  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~627  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~628  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~629  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~630  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~631  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~632  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~633  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~634  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~635  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~636  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~637  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~638  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~639  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~640  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~641  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~642  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~643  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~644  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~645  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~646  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~647  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~648  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~649  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~650  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~651  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~652  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~653  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~654  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~655  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~656  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~657  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~658  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~659  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~660  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~661  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~662  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~663  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~664  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~665  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~666  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~667  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~668  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~669  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~670  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~671  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~672  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~673  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~674  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~675  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~676  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~677  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~678  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~679  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~680  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~681  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~682  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~683  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~684  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~685  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~686  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~687  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~688  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~689  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~690  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~691  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~692  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~693  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~694  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~695  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~696  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~697  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~698  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~699  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~700  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~701  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~702  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~703  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~704  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~705  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~706  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~707  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~708  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~709  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~710  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~711  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~712  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~713  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~714  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~715  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~716  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~717  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~718  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~719  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~720  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~721  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~722  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~723  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~724  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~725  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~726  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~727  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~728  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~729  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~730  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~731  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~732  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~733  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~734  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~735  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~736  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~737  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~738  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~739  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~740  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~741  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~742  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~743  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~744  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~745  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~746  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~747  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~748  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~749  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~750  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~751  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~752  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~753  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~754  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~755  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~756  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~757  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~758  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~759  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~760  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~761  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~762  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~763  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~764  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~765  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~766  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~767  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~768  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~769  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~770  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~771  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~772  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~773  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~774  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~775  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~776  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~777  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~778  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~779  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~780  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~781  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~782  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~783  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~784  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~785  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~786  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~787  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~788  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~789  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~790  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~791  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~792  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~793  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~794  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~795  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~796  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~797  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~798  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~799  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~800  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~801  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~802  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~803  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~804  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~805  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~806  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~807  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~808  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~809  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~810  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~811  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~812  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~813  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~814  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~815  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~816  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~817  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~818  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~819  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~820  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~821  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~822  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~823  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~824  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~825  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~826  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~827  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~828  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~829  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~830  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~831  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~832  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~833  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~834  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~835  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~836  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~837  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~838  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~839  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~840  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~841  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~842  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~843  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~844  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~845  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~846  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~847  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~848  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~849  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~850  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~851  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~852  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~853  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~854  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~855  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~856  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~857  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~858  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~859  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~860  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~861  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~862  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~863  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~864  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~865  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~866  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~867  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~868  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~869  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~870  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~871  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~872  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~873  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~874  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~875  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~876  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~877  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~878  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~879  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~880  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~881  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~882  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~883  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~884  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~885  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~886  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~887  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~888  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~889  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~890  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~891  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~892  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~893  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~894  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~895  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~896  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~897  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~898  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~899  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~900  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~901  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~902  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~903  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~904  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~905  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~906  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~907  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~908  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~909  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~910  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~911  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~912  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~913  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~914  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~915  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~916  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~917  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~918  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~919  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~920  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~921  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~922  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~923  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~924  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~925  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~926  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~927  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~928  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~929  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~930  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~931  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~932  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~933  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~934  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~935  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~936  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~937  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~938  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~939  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~940  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~941  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~942  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~943  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~944  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~945  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~946  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~947  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~948  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~949  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~950  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~951  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~952  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~953  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~954  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~955  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~956  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~957  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~958  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~959  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~960  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~961  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~962  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~963  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~964  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~965  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~966  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~967  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~968  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~969  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~970  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~971  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~972  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~973  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~974  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~975  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~976  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~977  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~978  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~979  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~980  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~981  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~982  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~983  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~984  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~985  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~986  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~987  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~988  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~989  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~990  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~991  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~992  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~993  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~994  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~995  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~996  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~997  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~998  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~999  ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1000 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1001 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1002 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1003 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1004 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1005 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1006 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1007 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1008 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1009 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1010 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1011 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1012 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1013 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1014 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1015 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1016 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1017 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1018 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1019 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1020 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1021 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1022 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1023 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1024 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1025 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1026 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1027 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1028 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1029 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1030 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1031 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1032 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1033 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1034 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1035 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1036 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1037 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1038 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1039 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1040 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1041 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1042 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1043 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1044 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1045 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1046 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1047 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1048 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1049 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1050 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1051 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1052 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1053 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1054 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1055 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1056 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1057 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1058 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1059 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1060 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~1061 ; Lost fanout                            ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~38   ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~39   ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~40   ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~136  ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~41   ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~137  ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~42   ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~138  ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~43   ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~139  ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~44   ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~45   ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~46   ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~47   ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~48   ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~49   ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~145  ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~50   ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~51   ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~52   ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~148  ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~53   ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~149  ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~54   ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~150  ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~55   ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~151  ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~56   ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~152  ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~57   ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~153  ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~58   ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~154  ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~59   ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~155  ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~60   ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~156  ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~61   ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~157  ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~62   ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~158  ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~63   ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~159  ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~64   ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~160  ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~65   ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~161  ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~66   ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~162  ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~67   ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~163  ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~68   ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~164  ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~69   ; Stuck at GND due to stuck port data_in ;
+; bancoRegistradoresArqRegReg:bancoRegs|registrador~165  ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 1088               ;                                        ;
++--------------------------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
+; 1:1                ; 18 bits   ; 0 LEs         ; 0 LEs                ; 0 LEs                  ; Yes        ; |ProcessadorMIPS|registradorGenerico:PC_entity|DOUT[17] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |ProcessadorMIPS ;
++-------------------+-------+-----------------------------------------------------+
+; Parameter Name    ; Value ; Type                                                ;
++-------------------+-------+-----------------------------------------------------+
+; DATA_WIDTH        ; 32    ; Signed Integer                                      ;
+; ADDR_WIDTH        ; 32    ; Signed Integer                                      ;
+; MEMORY_ADDR_WIDTH ; 6     ; Signed Integer                                      ;
+; INC_PC            ; 4     ; Signed Integer                                      ;
++-------------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: somaConstante:PC_Soma_Constante ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                      ;
+; constante      ; 4     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registradorGenerico:PC_entity ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ROMMIPS:ROM ;
++-----------------+-------+--------------------------------+
+; Parameter Name  ; Value ; Type                           ;
++-----------------+-------+--------------------------------+
+; datawidth       ; 32    ; Signed Integer                 ;
+; addrwidth       ; 32    ; Signed Integer                 ;
+; memoryaddrwidth ; 6     ; Signed Integer                 ;
++-----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bancoRegistradoresArqRegReg:bancoRegs ;
++---------------------+-------+------------------------------------------------------+
+; Parameter Name      ; Value ; Type                                                 ;
++---------------------+-------+------------------------------------------------------+
+; larguradados        ; 32    ; Signed Integer                                       ;
+; larguraendbancoregs ; 5     ; Signed Integer                                       ;
++---------------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA:ULA ;
++----------------+-------+-----------------------------+
+; Parameter Name ; Value ; Type                        ;
++----------------+-------+-----------------------------+
+; larguradados   ; 32    ; Signed Integer              ;
++----------------+-------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: muxGenerico2x1:mux_rt_imediato ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: muxGenerico2x1:mux_PC ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: muxGenerico2x1:mux_beq ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: muxGenerico2x1:mux_rt_rd ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; larguradados   ; 5     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: muxGenerico2x1:mux_ULA_mem ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: somador:PC_Soma_imediato ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; larguradados   ; 32    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RAMMIPS:RAM ;
++-----------------+-------+--------------------------------+
+; Parameter Name  ; Value ; Type                           ;
++-----------------+-------+--------------------------------+
+; datawidth       ; 32    ; Signed Integer                 ;
+; addrwidth       ; 32    ; Signed Integer                 ;
+; memoryaddrwidth ; 6     ; Signed Integer                 ;
++-----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: estendeSinalGenerico:estende_sinal ;
++--------------------+-------+----------------------------------------------------+
+; Parameter Name     ; Value ; Type                                               ;
++--------------------+-------+----------------------------------------------------+
+; larguradadoentrada ; 16    ; Signed Integer                                     ;
+; larguradadosaida   ; 32    ; Signed Integer                                     ;
++--------------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "muxGenerico2x1:mux_beq"                                                                  ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; saida_mux ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UnidadeControle:UC"                                                                                  ;
++-----------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                  ; Type   ; Severity ; Details                                                                             ;
++-----------------------+--------+----------+-------------------------------------------------------------------------------------+
+; palavracontrole[8..2] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA:ULA"                                                                              ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; flag_z ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "registradorGenerico:PC_entity" ;
++--------+-------+----------+-------------------------------+
+; Port   ; Type  ; Severity ; Details                       ;
++--------+-------+----------+-------------------------------+
+; enable ; Input ; Info     ; Stuck at VCC                  ;
+; rst    ; Input ; Info     ; Stuck at GND                  ;
++--------+-------+----------+-------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_lcell_comb     ; 1                           ;
+;     normal            ; 1                           ;
+;         0 data inputs ; 1                           ;
+; boundary_port         ; 65                          ;
+;                       ;                             ;
+; Max LUT depth         ; 0.00                        ;
+; Average LUT depth     ; 0.00                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Thu Nov 19 14:42:17 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ProcessadorMIPS -c ProcessadorMIPS
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file mips/processadormips.vhd
+    Info (12022): Found design unit 1: ProcessadorMIPS-arch_name File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 22
+    Info (12023): Found entity 1: ProcessadorMIPS File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file mips/rommips.vhd
+    Info (12022): Found design unit 1: ROMMIPS-assincrona File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ROMMIPS.vhd Line: 16
+    Info (12023): Found entity 1: ROMMIPS File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ROMMIPS.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file mips/somaconstante.vhd
+    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/somaConstante.vhd Line: 18
+    Info (12023): Found entity 1: somaConstante File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/somaConstante.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file mips/registradorgenerico.vhd
+    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/registradorGenerico.vhd Line: 15
+    Info (12023): Found entity 1: registradorGenerico File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/registradorGenerico.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file mips/bancoregistradoresarqregreg.vhd
+    Info (12022): Found design unit 1: bancoRegistradoresArqRegReg-comportamento File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/bancoRegistradoresArqRegReg.vhd Line: 26
+    Info (12023): Found entity 1: bancoRegistradoresArqRegReg File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/bancoRegistradoresArqRegReg.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file mips/ula.vhd
+    Info (12022): Found design unit 1: ULA-comportamento File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ULA.vhd Line: 19
+    Info (12023): Found entity 1: ULA File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ULA.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file mips/unidadecontrole.vhd
+    Info (12022): Found design unit 1: UnidadeControle-arch_name File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/UnidadeControle.vhd Line: 17
+    Info (12023): Found entity 1: UnidadeControle File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/UnidadeControle.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1.vhd
+    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/muxGenerico2x1.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico2x1 File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/muxGenerico2x1.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file somador.vhd
+    Info (12022): Found design unit 1: somador-comportamento File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/somador.vhd Line: 18
+    Info (12023): Found entity 1: somador File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/somador.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file rammips.vhd
+    Info (12022): Found design unit 1: RAMMIPS-assincrona File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/RAMMIPS.vhd Line: 19
+    Info (12023): Found entity 1: RAMMIPS File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/RAMMIPS.vhd Line: 5
+Info (12021): Found 0 design units, including 0 entities, in source file uc_ula.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file estendesinalgenerico.vhd
+    Info (12022): Found design unit 1: estendeSinalGenerico-comportamento File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/estendeSinalGenerico.vhd Line: 19
+    Info (12023): Found entity 1: estendeSinalGenerico File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/estendeSinalGenerico.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file concatena.vhd
+    Info (12022): Found design unit 1: concatena-comportamento File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/concatena.vhd Line: 15
+    Info (12023): Found entity 1: concatena File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/concatena.vhd Line: 4
+Info (12127): Elaborating entity "ProcessadorMIPS" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at ProcessadorMIPS.vhd(30): used implicit default value for signal "we" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 30
+Warning (10541): VHDL Signal Declaration warning at ProcessadorMIPS.vhd(30): used implicit default value for signal "re" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 30
+Warning (10036): Verilog HDL or VHDL warning at ProcessadorMIPS.vhd(32): object "estendido_shift" assigned a value but never read File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 32
+Warning (10541): VHDL Signal Declaration warning at ProcessadorMIPS.vhd(35): used implicit default value for signal "saida_mux_beq" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 35
+Warning (10036): Verilog HDL or VHDL warning at ProcessadorMIPS.vhd(35): object "saida_mux_j" assigned a value but never read File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 35
+Warning (10036): Verilog HDL or VHDL warning at ProcessadorMIPS.vhd(36): object "flag_z" assigned a value but never read File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 36
+Warning (10541): VHDL Signal Declaration warning at ProcessadorMIPS.vhd(36): used implicit default value for signal "selMux_pc" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 36
+Warning (10541): VHDL Signal Declaration warning at ProcessadorMIPS.vhd(36): used implicit default value for signal "selMux_rt_imediato" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 36
+Warning (10541): VHDL Signal Declaration warning at ProcessadorMIPS.vhd(36): used implicit default value for signal "sel_ULA_mem" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 36
+Warning (10541): VHDL Signal Declaration warning at ProcessadorMIPS.vhd(36): used implicit default value for signal "sel_beq_jmp" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 36
+Warning (10541): VHDL Signal Declaration warning at ProcessadorMIPS.vhd(36): used implicit default value for signal "sel_rt_rd" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 36
+Info (12128): Elaborating entity "somaConstante" for hierarchy "somaConstante:PC_Soma_Constante" File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 53
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "registradorGenerico:PC_entity" File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 56
+Info (12128): Elaborating entity "ROMMIPS" for hierarchy "ROMMIPS:ROM" File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 60
+Warning (10541): VHDL Signal Declaration warning at ROMMIPS.vhd(19): used implicit default value for signal "memROM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ROMMIPS.vhd Line: 19
+Info (12128): Elaborating entity "bancoRegistradoresArqRegReg" for hierarchy "bancoRegistradoresArqRegReg:bancoRegs" File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 63
+Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULA" File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 73
+Info (12128): Elaborating entity "UnidadeControle" for hierarchy "UnidadeControle:UC" File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 76
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:mux_rt_imediato" File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 78
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "muxGenerico2x1:mux_rt_rd" File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 96
+Info (12128): Elaborating entity "somador" for hierarchy "somador:PC_Soma_imediato" File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 108
+Info (12128): Elaborating entity "RAMMIPS" for hierarchy "RAMMIPS:RAM" File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 112
+Info (12128): Elaborating entity "estendeSinalGenerico" for hierarchy "estendeSinalGenerico:estende_sinal" File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 121
+Info (12128): Elaborating entity "concatena" for hierarchy "concatena:concatena" File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 127
+Info (276014): Found 3 instances of uninferred RAM logic
+    Info (276007): RAM logic "RAMMIPS:RAM|memRAM" is uninferred due to asynchronous read logic File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/RAMMIPS.vhd Line: 22
+    Info (276007): RAM logic "bancoRegistradoresArqRegReg:bancoRegs|registrador" is uninferred due to asynchronous read logic File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/bancoRegistradoresArqRegReg.vhd Line: 32
+    Info (276004): RAM logic "ROMMIPS:ROM|memROM" is uninferred due to inappropriate RAM size File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ROMMIPS.vhd Line: 19
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "ULA_saida[0]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 16
+    Warning (13410): Pin "ULA_saida[1]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 16
+    Warning (13410): Pin "ULA_saida[2]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 16
+    Warning (13410): Pin "ULA_saida[3]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 16
+    Warning (13410): Pin "ULA_saida[4]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 16
+    Warning (13410): Pin "ULA_saida[5]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 16
+    Warning (13410): Pin "ULA_saida[6]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 16
+    Warning (13410): Pin "ULA_saida[7]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 16
+    Warning (13410): Pin "ULA_saida[8]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 16
+    Warning (13410): Pin "ULA_saida[9]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 16
+    Warning (13410): Pin "ULA_saida[10]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 16
+    Warning (13410): Pin "ULA_saida[11]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 16
+    Warning (13410): Pin "ULA_saida[12]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 16
+    Warning (13410): Pin "ULA_saida[13]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 16
+    Warning (13410): Pin "ULA_saida[14]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 16
+    Warning (13410): Pin "ULA_saida[15]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 16
+    Warning (13410): Pin "ULA_saida[16]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 16
+    Warning (13410): Pin "ULA_saida[17]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 16
+    Warning (13410): Pin "ULA_saida[18]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 16
+    Warning (13410): Pin "ULA_saida[19]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 16
+    Warning (13410): Pin "ULA_saida[20]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 16
+    Warning (13410): Pin "ULA_saida[21]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 16
+    Warning (13410): Pin "ULA_saida[22]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 16
+    Warning (13410): Pin "ULA_saida[23]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 16
+    Warning (13410): Pin "ULA_saida[24]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 16
+    Warning (13410): Pin "ULA_saida[25]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 16
+    Warning (13410): Pin "ULA_saida[26]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 16
+    Warning (13410): Pin "ULA_saida[27]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 16
+    Warning (13410): Pin "ULA_saida[28]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 16
+    Warning (13410): Pin "ULA_saida[29]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 16
+    Warning (13410): Pin "ULA_saida[30]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 16
+    Warning (13410): Pin "ULA_saida[31]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 16
+    Warning (13410): Pin "PC_saida[0]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 17
+    Warning (13410): Pin "PC_saida[1]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 17
+    Warning (13410): Pin "PC_saida[2]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 17
+    Warning (13410): Pin "PC_saida[3]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 17
+    Warning (13410): Pin "PC_saida[4]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 17
+    Warning (13410): Pin "PC_saida[5]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 17
+    Warning (13410): Pin "PC_saida[6]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 17
+    Warning (13410): Pin "PC_saida[7]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 17
+    Warning (13410): Pin "PC_saida[8]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 17
+    Warning (13410): Pin "PC_saida[9]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 17
+    Warning (13410): Pin "PC_saida[10]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 17
+    Warning (13410): Pin "PC_saida[11]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 17
+    Warning (13410): Pin "PC_saida[12]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 17
+    Warning (13410): Pin "PC_saida[13]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 17
+    Warning (13410): Pin "PC_saida[14]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 17
+    Warning (13410): Pin "PC_saida[15]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 17
+    Warning (13410): Pin "PC_saida[16]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 17
+    Warning (13410): Pin "PC_saida[17]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 17
+    Warning (13410): Pin "PC_saida[18]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 17
+    Warning (13410): Pin "PC_saida[19]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 17
+    Warning (13410): Pin "PC_saida[20]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 17
+    Warning (13410): Pin "PC_saida[21]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 17
+    Warning (13410): Pin "PC_saida[22]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 17
+    Warning (13410): Pin "PC_saida[23]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 17
+    Warning (13410): Pin "PC_saida[24]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 17
+    Warning (13410): Pin "PC_saida[25]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 17
+    Warning (13410): Pin "PC_saida[26]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 17
+    Warning (13410): Pin "PC_saida[27]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 17
+    Warning (13410): Pin "PC_saida[28]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 17
+    Warning (13410): Pin "PC_saida[29]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 17
+    Warning (13410): Pin "PC_saida[30]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 17
+    Warning (13410): Pin "PC_saida[31]" is stuck at GND File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 17
+Info (17049): 1001 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk" File: C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Entrega/DesComp/ProcessadorMIPS_restored/MIPS/ProcessadorMIPS.vhd Line: 15
+Info (21057): Implemented 65 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 1 input pins
+    Info (21059): Implemented 64 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 79 warnings
+    Info: Peak virtual memory: 4864 megabytes
+    Info: Processing ended: Thu Nov 19 14:42:34 2020
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:38
+
+
