@@ -1,0 +1,1927 @@
+Analysis & Synthesis report for ULA_e_UCULA
+Fri Nov 13 19:19:24 2020
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: Top-level Entity: |ULA_e_UCULA
+ 11. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula0
+ 12. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula0|muxGenerico2x1_1bit:mux_inverteA
+ 13. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula0|muxGenerico2x1_1bit:mux_inverteB
+ 14. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula1
+ 15. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula1|muxGenerico2x1_1bit:mux_inverteA
+ 16. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula1|muxGenerico2x1_1bit:mux_inverteB
+ 17. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula2
+ 18. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula2|muxGenerico2x1_1bit:mux_inverteA
+ 19. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula2|muxGenerico2x1_1bit:mux_inverteB
+ 20. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula3
+ 21. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula3|muxGenerico2x1_1bit:mux_inverteA
+ 22. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula3|muxGenerico2x1_1bit:mux_inverteB
+ 23. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula4
+ 24. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula4|muxGenerico2x1_1bit:mux_inverteA
+ 25. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula4|muxGenerico2x1_1bit:mux_inverteB
+ 26. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula5
+ 27. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula5|muxGenerico2x1_1bit:mux_inverteA
+ 28. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula5|muxGenerico2x1_1bit:mux_inverteB
+ 29. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula6
+ 30. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula6|muxGenerico2x1_1bit:mux_inverteA
+ 31. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula6|muxGenerico2x1_1bit:mux_inverteB
+ 32. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula7
+ 33. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula7|muxGenerico2x1_1bit:mux_inverteA
+ 34. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula7|muxGenerico2x1_1bit:mux_inverteB
+ 35. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula8
+ 36. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula8|muxGenerico2x1_1bit:mux_inverteA
+ 37. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula8|muxGenerico2x1_1bit:mux_inverteB
+ 38. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula9
+ 39. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula9|muxGenerico2x1_1bit:mux_inverteA
+ 40. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula9|muxGenerico2x1_1bit:mux_inverteB
+ 41. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula10
+ 42. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula10|muxGenerico2x1_1bit:mux_inverteA
+ 43. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula10|muxGenerico2x1_1bit:mux_inverteB
+ 44. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula11
+ 45. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula11|muxGenerico2x1_1bit:mux_inverteA
+ 46. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula11|muxGenerico2x1_1bit:mux_inverteB
+ 47. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula12
+ 48. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula12|muxGenerico2x1_1bit:mux_inverteA
+ 49. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula12|muxGenerico2x1_1bit:mux_inverteB
+ 50. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula13
+ 51. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula13|muxGenerico2x1_1bit:mux_inverteA
+ 52. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula13|muxGenerico2x1_1bit:mux_inverteB
+ 53. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula14
+ 54. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula14|muxGenerico2x1_1bit:mux_inverteA
+ 55. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula14|muxGenerico2x1_1bit:mux_inverteB
+ 56. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula15
+ 57. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula15|muxGenerico2x1_1bit:mux_inverteA
+ 58. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula15|muxGenerico2x1_1bit:mux_inverteB
+ 59. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula16
+ 60. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula16|muxGenerico2x1_1bit:mux_inverteA
+ 61. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula16|muxGenerico2x1_1bit:mux_inverteB
+ 62. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula17
+ 63. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula17|muxGenerico2x1_1bit:mux_inverteA
+ 64. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula17|muxGenerico2x1_1bit:mux_inverteB
+ 65. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula18
+ 66. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula18|muxGenerico2x1_1bit:mux_inverteA
+ 67. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula18|muxGenerico2x1_1bit:mux_inverteB
+ 68. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula19
+ 69. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula19|muxGenerico2x1_1bit:mux_inverteA
+ 70. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula19|muxGenerico2x1_1bit:mux_inverteB
+ 71. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula20
+ 72. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula20|muxGenerico2x1_1bit:mux_inverteA
+ 73. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula20|muxGenerico2x1_1bit:mux_inverteB
+ 74. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula21
+ 75. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula21|muxGenerico2x1_1bit:mux_inverteA
+ 76. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula21|muxGenerico2x1_1bit:mux_inverteB
+ 77. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula22
+ 78. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula22|muxGenerico2x1_1bit:mux_inverteA
+ 79. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula22|muxGenerico2x1_1bit:mux_inverteB
+ 80. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula23
+ 81. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula23|muxGenerico2x1_1bit:mux_inverteA
+ 82. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula23|muxGenerico2x1_1bit:mux_inverteB
+ 83. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula24
+ 84. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula24|muxGenerico2x1_1bit:mux_inverteA
+ 85. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula24|muxGenerico2x1_1bit:mux_inverteB
+ 86. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula25
+ 87. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula25|muxGenerico2x1_1bit:mux_inverteA
+ 88. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula25|muxGenerico2x1_1bit:mux_inverteB
+ 89. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula26
+ 90. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula26|muxGenerico2x1_1bit:mux_inverteA
+ 91. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula26|muxGenerico2x1_1bit:mux_inverteB
+ 92. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula27
+ 93. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula27|muxGenerico2x1_1bit:mux_inverteA
+ 94. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula27|muxGenerico2x1_1bit:mux_inverteB
+ 95. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula28
+ 96. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula28|muxGenerico2x1_1bit:mux_inverteA
+ 97. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula28|muxGenerico2x1_1bit:mux_inverteB
+ 98. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula29
+ 99. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula29|muxGenerico2x1_1bit:mux_inverteA
+100. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula29|muxGenerico2x1_1bit:mux_inverteB
+101. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula30
+102. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula30|muxGenerico2x1_1bit:mux_inverteA
+103. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula30|muxGenerico2x1_1bit:mux_inverteB
+104. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula31
+105. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula31|muxGenerico2x1_1bit:mux_inverteA
+106. Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula31|muxGenerico2x1_1bit:mux_inverteB
+107. Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula31"
+108. Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula30"
+109. Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula29"
+110. Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula28"
+111. Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula27"
+112. Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula26"
+113. Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula25"
+114. Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula24"
+115. Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula23"
+116. Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula22"
+117. Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula21"
+118. Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula20"
+119. Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula19"
+120. Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula18"
+121. Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula17"
+122. Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula16"
+123. Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula15"
+124. Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula14"
+125. Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula13"
+126. Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula12"
+127. Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula11"
+128. Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula10"
+129. Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula9"
+130. Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula8"
+131. Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula7"
+132. Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula6"
+133. Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula5"
+134. Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula4"
+135. Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula3"
+136. Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula2"
+137. Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula1"
+138. Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula0"
+139. Post-Synthesis Netlist Statistics for Top Partition
+140. Elapsed Time Per Partition
+141. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Fri Nov 13 19:19:24 2020       ;
+; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                   ; ULA_e_UCULA                                 ;
+; Top-level Entity Name           ; ULA_e_UCULA                                 ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 105                                         ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CEBA4F23C7        ;                    ;
+; Top-level entity name                                                           ; ULA_e_UCULA        ; ULA_e_UCULA        ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                       ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------+---------+
+; UC_ULA.vhd                       ; yes             ; User VHDL File  ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula16_e_17/UC_ULA.vhd              ;         ;
+; ULA32bits.vhd                    ; yes             ; User VHDL File  ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula16_e_17/ULA32bits.vhd           ;         ;
+; ULA1bit.vhd                      ; yes             ; User VHDL File  ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula16_e_17/ULA1bit.vhd             ;         ;
+; overflow.vhd                     ; yes             ; User VHDL File  ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula16_e_17/overflow.vhd            ;         ;
+; muxGenerico2x1_1bit.vhd          ; yes             ; User VHDL File  ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula16_e_17/muxGenerico2x1_1bit.vhd ;         ;
+; muxGenerico4x1.vhd               ; yes             ; User VHDL File  ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula16_e_17/muxGenerico4x1.vhd      ;         ;
+; somadorCompleto.vhd              ; yes             ; User VHDL File  ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula16_e_17/somadorCompleto.vhd     ;         ;
+; ULA_e_UCULA.vhd                  ; yes             ; User VHDL File  ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula16_e_17/ULA_e_UCULA.vhd         ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                               ;
++---------------------------------------------+-----------------------------+
+; Resource                                    ; Usage                       ;
++---------------------------------------------+-----------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 79                          ;
+;                                             ;                             ;
+; Combinational ALUT usage for logic          ; 125                         ;
+;     -- 7 input functions                    ; 0                           ;
+;     -- 6 input functions                    ; 33                          ;
+;     -- 5 input functions                    ; 22                          ;
+;     -- 4 input functions                    ; 6                           ;
+;     -- <=3 input functions                  ; 64                          ;
+;                                             ;                             ;
+; Dedicated logic registers                   ; 0                           ;
+;                                             ;                             ;
+; I/O pins                                    ; 105                         ;
+;                                             ;                             ;
+; Total DSP Blocks                            ; 0                           ;
+;                                             ;                             ;
+; Maximum fan-out node                        ; UC_ULA:UC_ULA|ula_ctrl[2]~1 ;
+; Maximum fan-out                             ; 55                          ;
+; Total fan-out                               ; 638                         ;
+; Average fan-out                             ; 1.90                        ;
++---------------------------------------------+-----------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                   ;
++---------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node                  ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                       ; Entity Name         ; Library Name ;
++---------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------+---------------------+--------------+
+; |ULA_e_UCULA                                ; 125 (0)             ; 0 (0)                     ; 0                 ; 0          ; 105  ; 0            ; |ULA_e_UCULA                                                              ; ULA_e_UCULA         ; work         ;
+;    |UC_ULA:UC_ULA|                          ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|UC_ULA:UC_ULA                                                ; UC_ULA              ; work         ;
+;    |ULA32bits:ULA|                          ; 120 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA                                                ; ULA32bits           ; work         ;
+;       |ULA1bit:ula0|                        ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula0                                   ; ULA1bit             ; work         ;
+;          |muxGenerico4x1:mux_ula|           ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula0|muxGenerico4x1:mux_ula            ; muxGenerico4x1      ; work         ;
+;          |somadorCompleto:soma_sub|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula0|somadorCompleto:soma_sub          ; somadorCompleto     ; work         ;
+;       |ULA1bit:ula10|                       ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula10                                  ; ULA1bit             ; work         ;
+;          |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula10|muxGenerico4x1:mux_ula           ; muxGenerico4x1      ; work         ;
+;          |somadorCompleto:soma_sub|         ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula10|somadorCompleto:soma_sub         ; somadorCompleto     ; work         ;
+;       |ULA1bit:ula11|                       ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula11                                  ; ULA1bit             ; work         ;
+;          |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula11|muxGenerico4x1:mux_ula           ; muxGenerico4x1      ; work         ;
+;          |somadorCompleto:soma_sub|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula11|somadorCompleto:soma_sub         ; somadorCompleto     ; work         ;
+;       |ULA1bit:ula12|                       ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula12                                  ; ULA1bit             ; work         ;
+;          |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula12|muxGenerico2x1_1bit:mux_inverteB ; muxGenerico2x1_1bit ; work         ;
+;          |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula12|muxGenerico4x1:mux_ula           ; muxGenerico4x1      ; work         ;
+;          |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula12|somadorCompleto:soma_sub         ; somadorCompleto     ; work         ;
+;       |ULA1bit:ula13|                       ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula13                                  ; ULA1bit             ; work         ;
+;          |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula13|muxGenerico4x1:mux_ula           ; muxGenerico4x1      ; work         ;
+;          |somadorCompleto:soma_sub|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula13|somadorCompleto:soma_sub         ; somadorCompleto     ; work         ;
+;       |ULA1bit:ula14|                       ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula14                                  ; ULA1bit             ; work         ;
+;          |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula14|muxGenerico4x1:mux_ula           ; muxGenerico4x1      ; work         ;
+;          |somadorCompleto:soma_sub|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula14|somadorCompleto:soma_sub         ; somadorCompleto     ; work         ;
+;       |ULA1bit:ula15|                       ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula15                                  ; ULA1bit             ; work         ;
+;          |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula15|muxGenerico4x1:mux_ula           ; muxGenerico4x1      ; work         ;
+;          |somadorCompleto:soma_sub|         ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula15|somadorCompleto:soma_sub         ; somadorCompleto     ; work         ;
+;       |ULA1bit:ula16|                       ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula16                                  ; ULA1bit             ; work         ;
+;          |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula16|muxGenerico2x1_1bit:mux_inverteB ; muxGenerico2x1_1bit ; work         ;
+;          |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula16|muxGenerico4x1:mux_ula           ; muxGenerico4x1      ; work         ;
+;          |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula16|somadorCompleto:soma_sub         ; somadorCompleto     ; work         ;
+;       |ULA1bit:ula17|                       ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula17                                  ; ULA1bit             ; work         ;
+;          |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula17|muxGenerico2x1_1bit:mux_inverteB ; muxGenerico2x1_1bit ; work         ;
+;          |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula17|muxGenerico4x1:mux_ula           ; muxGenerico4x1      ; work         ;
+;          |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula17|somadorCompleto:soma_sub         ; somadorCompleto     ; work         ;
+;       |ULA1bit:ula18|                       ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula18                                  ; ULA1bit             ; work         ;
+;          |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula18|muxGenerico2x1_1bit:mux_inverteB ; muxGenerico2x1_1bit ; work         ;
+;          |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula18|muxGenerico4x1:mux_ula           ; muxGenerico4x1      ; work         ;
+;          |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula18|somadorCompleto:soma_sub         ; somadorCompleto     ; work         ;
+;       |ULA1bit:ula19|                       ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula19                                  ; ULA1bit             ; work         ;
+;          |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula19|muxGenerico2x1_1bit:mux_inverteB ; muxGenerico2x1_1bit ; work         ;
+;          |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula19|muxGenerico4x1:mux_ula           ; muxGenerico4x1      ; work         ;
+;          |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula19|somadorCompleto:soma_sub         ; somadorCompleto     ; work         ;
+;       |ULA1bit:ula1|                        ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula1                                   ; ULA1bit             ; work         ;
+;          |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula1|muxGenerico2x1_1bit:mux_inverteB  ; muxGenerico2x1_1bit ; work         ;
+;          |muxGenerico4x1:mux_ula|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula1|muxGenerico4x1:mux_ula            ; muxGenerico4x1      ; work         ;
+;          |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula1|somadorCompleto:soma_sub          ; somadorCompleto     ; work         ;
+;       |ULA1bit:ula20|                       ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula20                                  ; ULA1bit             ; work         ;
+;          |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula20|muxGenerico4x1:mux_ula           ; muxGenerico4x1      ; work         ;
+;          |somadorCompleto:soma_sub|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula20|somadorCompleto:soma_sub         ; somadorCompleto     ; work         ;
+;       |ULA1bit:ula21|                       ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula21                                  ; ULA1bit             ; work         ;
+;          |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula21|muxGenerico2x1_1bit:mux_inverteB ; muxGenerico2x1_1bit ; work         ;
+;          |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula21|muxGenerico4x1:mux_ula           ; muxGenerico4x1      ; work         ;
+;          |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula21|somadorCompleto:soma_sub         ; somadorCompleto     ; work         ;
+;       |ULA1bit:ula22|                       ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula22                                  ; ULA1bit             ; work         ;
+;          |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula22|muxGenerico2x1_1bit:mux_inverteB ; muxGenerico2x1_1bit ; work         ;
+;          |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula22|muxGenerico4x1:mux_ula           ; muxGenerico4x1      ; work         ;
+;          |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula22|somadorCompleto:soma_sub         ; somadorCompleto     ; work         ;
+;       |ULA1bit:ula23|                       ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula23                                  ; ULA1bit             ; work         ;
+;          |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula23|muxGenerico2x1_1bit:mux_inverteB ; muxGenerico2x1_1bit ; work         ;
+;          |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula23|muxGenerico4x1:mux_ula           ; muxGenerico4x1      ; work         ;
+;       |ULA1bit:ula24|                       ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula24                                  ; ULA1bit             ; work         ;
+;          |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula24|muxGenerico2x1_1bit:mux_inverteB ; muxGenerico2x1_1bit ; work         ;
+;          |muxGenerico4x1:mux_ula|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula24|muxGenerico4x1:mux_ula           ; muxGenerico4x1      ; work         ;
+;          |somadorCompleto:soma_sub|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula24|somadorCompleto:soma_sub         ; somadorCompleto     ; work         ;
+;       |ULA1bit:ula25|                       ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula25                                  ; ULA1bit             ; work         ;
+;          |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula25|muxGenerico2x1_1bit:mux_inverteB ; muxGenerico2x1_1bit ; work         ;
+;          |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula25|muxGenerico4x1:mux_ula           ; muxGenerico4x1      ; work         ;
+;          |somadorCompleto:soma_sub|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula25|somadorCompleto:soma_sub         ; somadorCompleto     ; work         ;
+;       |ULA1bit:ula26|                       ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula26                                  ; ULA1bit             ; work         ;
+;          |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula26|muxGenerico2x1_1bit:mux_inverteB ; muxGenerico2x1_1bit ; work         ;
+;          |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula26|muxGenerico4x1:mux_ula           ; muxGenerico4x1      ; work         ;
+;          |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula26|somadorCompleto:soma_sub         ; somadorCompleto     ; work         ;
+;       |ULA1bit:ula27|                       ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula27                                  ; ULA1bit             ; work         ;
+;          |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula27|muxGenerico2x1_1bit:mux_inverteB ; muxGenerico2x1_1bit ; work         ;
+;          |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula27|muxGenerico4x1:mux_ula           ; muxGenerico4x1      ; work         ;
+;          |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula27|somadorCompleto:soma_sub         ; somadorCompleto     ; work         ;
+;       |ULA1bit:ula28|                       ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula28                                  ; ULA1bit             ; work         ;
+;          |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula28|muxGenerico2x1_1bit:mux_inverteB ; muxGenerico2x1_1bit ; work         ;
+;          |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula28|muxGenerico4x1:mux_ula           ; muxGenerico4x1      ; work         ;
+;       |ULA1bit:ula29|                       ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula29                                  ; ULA1bit             ; work         ;
+;          |muxGenerico4x1:mux_ula|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula29|muxGenerico4x1:mux_ula           ; muxGenerico4x1      ; work         ;
+;          |somadorCompleto:soma_sub|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula29|somadorCompleto:soma_sub         ; somadorCompleto     ; work         ;
+;       |ULA1bit:ula2|                        ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula2                                   ; ULA1bit             ; work         ;
+;          |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula2|muxGenerico2x1_1bit:mux_inverteB  ; muxGenerico2x1_1bit ; work         ;
+;          |muxGenerico4x1:mux_ula|           ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula2|muxGenerico4x1:mux_ula            ; muxGenerico4x1      ; work         ;
+;          |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula2|somadorCompleto:soma_sub          ; somadorCompleto     ; work         ;
+;       |ULA1bit:ula30|                       ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula30                                  ; ULA1bit             ; work         ;
+;          |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula30|muxGenerico2x1_1bit:mux_inverteB ; muxGenerico2x1_1bit ; work         ;
+;          |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula30|muxGenerico4x1:mux_ula           ; muxGenerico4x1      ; work         ;
+;       |ULA1bit:ula31|                       ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula31                                  ; ULA1bit             ; work         ;
+;          |muxGenerico4x1:mux_ula|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula31|muxGenerico4x1:mux_ula           ; muxGenerico4x1      ; work         ;
+;          |overflow:Overflow_exists|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula31|overflow:Overflow_exists         ; overflow            ; work         ;
+;          |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula31|somadorCompleto:soma_sub         ; somadorCompleto     ; work         ;
+;       |ULA1bit:ula3|                        ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula3                                   ; ULA1bit             ; work         ;
+;          |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula3|muxGenerico4x1:mux_ula            ; muxGenerico4x1      ; work         ;
+;          |somadorCompleto:soma_sub|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula3|somadorCompleto:soma_sub          ; somadorCompleto     ; work         ;
+;       |ULA1bit:ula4|                        ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula4                                   ; ULA1bit             ; work         ;
+;          |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula4|muxGenerico4x1:mux_ula            ; muxGenerico4x1      ; work         ;
+;          |somadorCompleto:soma_sub|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula4|somadorCompleto:soma_sub          ; somadorCompleto     ; work         ;
+;       |ULA1bit:ula5|                        ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula5                                   ; ULA1bit             ; work         ;
+;          |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula5|muxGenerico4x1:mux_ula            ; muxGenerico4x1      ; work         ;
+;          |somadorCompleto:soma_sub|         ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula5|somadorCompleto:soma_sub          ; somadorCompleto     ; work         ;
+;       |ULA1bit:ula6|                        ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula6                                   ; ULA1bit             ; work         ;
+;          |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula6|muxGenerico4x1:mux_ula            ; muxGenerico4x1      ; work         ;
+;          |somadorCompleto:soma_sub|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula6|somadorCompleto:soma_sub          ; somadorCompleto     ; work         ;
+;       |ULA1bit:ula7|                        ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula7                                   ; ULA1bit             ; work         ;
+;          |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula7|muxGenerico2x1_1bit:mux_inverteB  ; muxGenerico2x1_1bit ; work         ;
+;          |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula7|muxGenerico4x1:mux_ula            ; muxGenerico4x1      ; work         ;
+;          |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula7|somadorCompleto:soma_sub          ; somadorCompleto     ; work         ;
+;       |ULA1bit:ula8|                        ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula8                                   ; ULA1bit             ; work         ;
+;          |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula8|muxGenerico4x1:mux_ula            ; muxGenerico4x1      ; work         ;
+;          |somadorCompleto:soma_sub|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula8|somadorCompleto:soma_sub          ; somadorCompleto     ; work         ;
+;       |ULA1bit:ula9|                        ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula9                                   ; ULA1bit             ; work         ;
+;          |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula9|muxGenerico4x1:mux_ula            ; muxGenerico4x1      ; work         ;
+;          |somadorCompleto:soma_sub|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula9|somadorCompleto:soma_sub          ; somadorCompleto     ; work         ;
++---------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------+
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |ULA_e_UCULA|UC_ULA:UC_ULA|ula_ctrl[1]                                   ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |ULA_e_UCULA|ULA32bits:ULA|ULA1bit:ula2|muxGenerico4x1:mux_ula|saida_MUX ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |ULA_e_UCULA ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; DATA_WIDTH     ; 32    ; Signed Integer                                     ;
+; ADDR_WIDTH     ; 32    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula0 ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                 ;
+; addr_width     ; 8     ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula0|muxGenerico2x1_1bit:mux_inverteA ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula0|muxGenerico2x1_1bit:mux_inverteB ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula1 ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                 ;
+; addr_width     ; 8     ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula1|muxGenerico2x1_1bit:mux_inverteA ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula1|muxGenerico2x1_1bit:mux_inverteB ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula2 ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                 ;
+; addr_width     ; 8     ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula2|muxGenerico2x1_1bit:mux_inverteA ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula2|muxGenerico2x1_1bit:mux_inverteB ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula3 ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                 ;
+; addr_width     ; 8     ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula3|muxGenerico2x1_1bit:mux_inverteA ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula3|muxGenerico2x1_1bit:mux_inverteB ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula4 ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                 ;
+; addr_width     ; 8     ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula4|muxGenerico2x1_1bit:mux_inverteA ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula4|muxGenerico2x1_1bit:mux_inverteB ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula5 ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                 ;
+; addr_width     ; 8     ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula5|muxGenerico2x1_1bit:mux_inverteA ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula5|muxGenerico2x1_1bit:mux_inverteB ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula6 ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                 ;
+; addr_width     ; 8     ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula6|muxGenerico2x1_1bit:mux_inverteA ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula6|muxGenerico2x1_1bit:mux_inverteB ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula7 ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                 ;
+; addr_width     ; 8     ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula7|muxGenerico2x1_1bit:mux_inverteA ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula7|muxGenerico2x1_1bit:mux_inverteB ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula8 ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                 ;
+; addr_width     ; 8     ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula8|muxGenerico2x1_1bit:mux_inverteA ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula8|muxGenerico2x1_1bit:mux_inverteB ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula9 ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                 ;
+; addr_width     ; 8     ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula9|muxGenerico2x1_1bit:mux_inverteA ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula9|muxGenerico2x1_1bit:mux_inverteB ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula10 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                  ;
+; addr_width     ; 8     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula10|muxGenerico2x1_1bit:mux_inverteA ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula10|muxGenerico2x1_1bit:mux_inverteB ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula11 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                  ;
+; addr_width     ; 8     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula11|muxGenerico2x1_1bit:mux_inverteA ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula11|muxGenerico2x1_1bit:mux_inverteB ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula12 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                  ;
+; addr_width     ; 8     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula12|muxGenerico2x1_1bit:mux_inverteA ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula12|muxGenerico2x1_1bit:mux_inverteB ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula13 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                  ;
+; addr_width     ; 8     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula13|muxGenerico2x1_1bit:mux_inverteA ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula13|muxGenerico2x1_1bit:mux_inverteB ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula14 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                  ;
+; addr_width     ; 8     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula14|muxGenerico2x1_1bit:mux_inverteA ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula14|muxGenerico2x1_1bit:mux_inverteB ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula15 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                  ;
+; addr_width     ; 8     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula15|muxGenerico2x1_1bit:mux_inverteA ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula15|muxGenerico2x1_1bit:mux_inverteB ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula16 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                  ;
+; addr_width     ; 8     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula16|muxGenerico2x1_1bit:mux_inverteA ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula16|muxGenerico2x1_1bit:mux_inverteB ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula17 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                  ;
+; addr_width     ; 8     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula17|muxGenerico2x1_1bit:mux_inverteA ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula17|muxGenerico2x1_1bit:mux_inverteB ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula18 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                  ;
+; addr_width     ; 8     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula18|muxGenerico2x1_1bit:mux_inverteA ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula18|muxGenerico2x1_1bit:mux_inverteB ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula19 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                  ;
+; addr_width     ; 8     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula19|muxGenerico2x1_1bit:mux_inverteA ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula19|muxGenerico2x1_1bit:mux_inverteB ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula20 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                  ;
+; addr_width     ; 8     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula20|muxGenerico2x1_1bit:mux_inverteA ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula20|muxGenerico2x1_1bit:mux_inverteB ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula21 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                  ;
+; addr_width     ; 8     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula21|muxGenerico2x1_1bit:mux_inverteA ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula21|muxGenerico2x1_1bit:mux_inverteB ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula22 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                  ;
+; addr_width     ; 8     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula22|muxGenerico2x1_1bit:mux_inverteA ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula22|muxGenerico2x1_1bit:mux_inverteB ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula23 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                  ;
+; addr_width     ; 8     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula23|muxGenerico2x1_1bit:mux_inverteA ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula23|muxGenerico2x1_1bit:mux_inverteB ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula24 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                  ;
+; addr_width     ; 8     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula24|muxGenerico2x1_1bit:mux_inverteA ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula24|muxGenerico2x1_1bit:mux_inverteB ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula25 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                  ;
+; addr_width     ; 8     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula25|muxGenerico2x1_1bit:mux_inverteA ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula25|muxGenerico2x1_1bit:mux_inverteB ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula26 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                  ;
+; addr_width     ; 8     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula26|muxGenerico2x1_1bit:mux_inverteA ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula26|muxGenerico2x1_1bit:mux_inverteB ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula27 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                  ;
+; addr_width     ; 8     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula27|muxGenerico2x1_1bit:mux_inverteA ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula27|muxGenerico2x1_1bit:mux_inverteB ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula28 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                  ;
+; addr_width     ; 8     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula28|muxGenerico2x1_1bit:mux_inverteA ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula28|muxGenerico2x1_1bit:mux_inverteB ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula29 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                  ;
+; addr_width     ; 8     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula29|muxGenerico2x1_1bit:mux_inverteA ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula29|muxGenerico2x1_1bit:mux_inverteB ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula30 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                  ;
+; addr_width     ; 8     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula30|muxGenerico2x1_1bit:mux_inverteA ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula30|muxGenerico2x1_1bit:mux_inverteB ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula31 ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; data_width     ; 8     ; Signed Integer                                  ;
+; addr_width     ; 8     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula31|muxGenerico2x1_1bit:mux_inverteA ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ULA32bits:ULA|ULA1bit:ula31|muxGenerico2x1_1bit:mux_inverteB ;
++----------------+-------+----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                             ;
++----------------+-------+----------------------------------------------------------------------------------+
+; larguradados   ; 8     ; Signed Integer                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula31"                                                               ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; entrada_slt ; Input  ; Info     ; Stuck at GND                                                                        ;
+; carry_out   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula30"                                                               ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; entrada_slt ; Input  ; Info     ; Stuck at GND                                                                        ;
+; saida_slt   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula29"                                                               ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; entrada_slt ; Input  ; Info     ; Stuck at GND                                                                        ;
+; saida_slt   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula28"                                                               ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; entrada_slt ; Input  ; Info     ; Stuck at GND                                                                        ;
+; saida_slt   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula27"                                                               ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; entrada_slt ; Input  ; Info     ; Stuck at GND                                                                        ;
+; saida_slt   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula26"                                                               ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; entrada_slt ; Input  ; Info     ; Stuck at GND                                                                        ;
+; saida_slt   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula25"                                                               ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; entrada_slt ; Input  ; Info     ; Stuck at GND                                                                        ;
+; saida_slt   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula24"                                                               ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; entrada_slt ; Input  ; Info     ; Stuck at GND                                                                        ;
+; saida_slt   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula23"                                                               ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; entrada_slt ; Input  ; Info     ; Stuck at GND                                                                        ;
+; saida_slt   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula22"                                                               ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; entrada_slt ; Input  ; Info     ; Stuck at GND                                                                        ;
+; saida_slt   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula21"                                                               ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; entrada_slt ; Input  ; Info     ; Stuck at GND                                                                        ;
+; saida_slt   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula20"                                                               ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; entrada_slt ; Input  ; Info     ; Stuck at GND                                                                        ;
+; saida_slt   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula19"                                                               ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; entrada_slt ; Input  ; Info     ; Stuck at GND                                                                        ;
+; saida_slt   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula18"                                                               ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; entrada_slt ; Input  ; Info     ; Stuck at GND                                                                        ;
+; saida_slt   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula17"                                                               ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; entrada_slt ; Input  ; Info     ; Stuck at GND                                                                        ;
+; saida_slt   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula16"                                                               ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; entrada_slt ; Input  ; Info     ; Stuck at GND                                                                        ;
+; saida_slt   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula15"                                                               ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; entrada_slt ; Input  ; Info     ; Stuck at GND                                                                        ;
+; saida_slt   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula14"                                                               ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; entrada_slt ; Input  ; Info     ; Stuck at GND                                                                        ;
+; saida_slt   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula13"                                                               ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; entrada_slt ; Input  ; Info     ; Stuck at GND                                                                        ;
+; saida_slt   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula12"                                                               ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; entrada_slt ; Input  ; Info     ; Stuck at GND                                                                        ;
+; saida_slt   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula11"                                                               ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; entrada_slt ; Input  ; Info     ; Stuck at GND                                                                        ;
+; saida_slt   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula10"                                                               ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; entrada_slt ; Input  ; Info     ; Stuck at GND                                                                        ;
+; saida_slt   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula9"                                                                ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; entrada_slt ; Input  ; Info     ; Stuck at GND                                                                        ;
+; saida_slt   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula8"                                                                ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; entrada_slt ; Input  ; Info     ; Stuck at GND                                                                        ;
+; saida_slt   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula7"                                                                ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; entrada_slt ; Input  ; Info     ; Stuck at GND                                                                        ;
+; saida_slt   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula6"                                                                ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; entrada_slt ; Input  ; Info     ; Stuck at GND                                                                        ;
+; saida_slt   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula5"                                                                ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; entrada_slt ; Input  ; Info     ; Stuck at GND                                                                        ;
+; saida_slt   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula4"                                                                ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; entrada_slt ; Input  ; Info     ; Stuck at GND                                                                        ;
+; saida_slt   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula3"                                                                ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; entrada_slt ; Input  ; Info     ; Stuck at GND                                                                        ;
+; saida_slt   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula2"                                                                ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; entrada_slt ; Input  ; Info     ; Stuck at GND                                                                        ;
+; saida_slt   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula1"                                                                ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; entrada_slt ; Input  ; Info     ; Stuck at GND                                                                        ;
+; saida_slt   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ULA32bits:ULA|ULA1bit:ula0"                                                              ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; saida_slt ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_lcell_comb     ; 126                         ;
+;     normal            ; 126                         ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 24                          ;
+;         3 data inputs ; 40                          ;
+;         4 data inputs ; 6                           ;
+;         5 data inputs ; 22                          ;
+;         6 data inputs ; 33                          ;
+; boundary_port         ; 105                         ;
+;                       ;                             ;
+; Max LUT depth         ; 17.00                       ;
+; Average LUT depth     ; 11.10                       ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Fri Nov 13 19:19:08 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ULA_e_UCULA -c ULA_e_UCULA
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file uc_ula.vhd
+    Info (12022): Found design unit 1: UC_ULA-arch_name File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula16_e_17/UC_ULA.vhd Line: 17
+    Info (12023): Found entity 1: UC_ULA File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula16_e_17/UC_ULA.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file ula32bits.vhd
+    Info (12022): Found design unit 1: ULA32bits-arch_name File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula16_e_17/ULA32bits.vhd Line: 18
+    Info (12023): Found entity 1: ULA32bits File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula16_e_17/ULA32bits.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file ula1bit.vhd
+    Info (12022): Found design unit 1: ULA1bit-arch_name File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula16_e_17/ULA1bit.vhd Line: 22
+    Info (12023): Found entity 1: ULA1bit File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula16_e_17/ULA1bit.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file overflow.vhd
+    Info (12022): Found design unit 1: overflow-arch_name File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula16_e_17/overflow.vhd Line: 16
+    Info (12023): Found entity 1: overflow File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula16_e_17/overflow.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1_1bit.vhd
+    Info (12022): Found design unit 1: muxGenerico2x1_1bit-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula16_e_17/muxGenerico2x1_1bit.vhd Line: 13
+    Info (12023): Found entity 1: muxGenerico2x1_1bit File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula16_e_17/muxGenerico2x1_1bit.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico4x1.vhd
+    Info (12022): Found design unit 1: muxGenerico4x1-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula16_e_17/muxGenerico4x1.vhd Line: 13
+    Info (12023): Found entity 1: muxGenerico4x1 File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula16_e_17/muxGenerico4x1.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file somadorcompleto.vhd
+    Info (12022): Found design unit 1: somadorCompleto-arch_name File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula16_e_17/somadorCompleto.vhd Line: 19
+    Info (12023): Found entity 1: somadorCompleto File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula16_e_17/somadorCompleto.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file ula_e_ucula.vhd
+    Info (12022): Found design unit 1: ULA_e_UCULA-arch_name File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula16_e_17/ULA_e_UCULA.vhd Line: 22
+    Info (12023): Found entity 1: ULA_e_UCULA File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula16_e_17/ULA_e_UCULA.vhd Line: 5
+Info (12127): Elaborating entity "ULA_e_UCULA" for the top level hierarchy
+Info (12128): Elaborating entity "ULA32bits" for hierarchy "ULA32bits:ULA" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula16_e_17/ULA_e_UCULA.vhd Line: 31
+Info (12128): Elaborating entity "ULA1bit" for hierarchy "ULA32bits:ULA|ULA1bit:ula0" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula16_e_17/ULA32bits.vhd Line: 31
+Info (12128): Elaborating entity "muxGenerico2x1_1bit" for hierarchy "ULA32bits:ULA|ULA1bit:ula0|muxGenerico2x1_1bit:mux_inverteA" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula16_e_17/ULA1bit.vhd Line: 29
+Info (12128): Elaborating entity "somadorCompleto" for hierarchy "ULA32bits:ULA|ULA1bit:ula0|somadorCompleto:soma_sub" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula16_e_17/ULA1bit.vhd Line: 45
+Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "ULA32bits:ULA|ULA1bit:ula0|muxGenerico4x1:mux_ula" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula16_e_17/ULA1bit.vhd Line: 52
+Info (12128): Elaborating entity "overflow" for hierarchy "ULA32bits:ULA|ULA1bit:ula0|overflow:Overflow_exists" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula16_e_17/ULA1bit.vhd Line: 60
+Info (12128): Elaborating entity "UC_ULA" for hierarchy "UC_ULA:UC_ULA" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula16_e_17/ULA_e_UCULA.vhd Line: 39
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 230 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 72 input pins
+    Info (21059): Implemented 33 output pins
+    Info (21061): Implemented 125 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4846 megabytes
+    Info: Processing ended: Fri Nov 13 19:19:24 2020
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:37
+
+
