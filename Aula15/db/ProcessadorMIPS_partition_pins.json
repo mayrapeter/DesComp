@@ -256,10 +256,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "monitora_flag_z",
-					"strict" : false
-				},
-				{
 					"name" : "clk",
 					"strict" : false
 				}

@@ -31,10 +31,10 @@ architecture arch_name of ProcessadorMIPS is
 	
 	signal estendido_shift: std_logic_vector(25 downto 0);
 	signal sinal_concatenado, dado_lido, imediato_estendido2_shiftado: std_logic_vector(31 downto 0);
-	signal palavraControle : std_logic_vector(9 downto 0);
+	signal palavraControle : std_logic_vector(10 downto 0);
 	signal imediato_estendido, imediato_estendido2, mux_rt_saida, somador2, saida_mux_ULA_mem, saida_mux_beq, estendido_soma_constante, mux_pc_saida : std_logic_vector(31 downto 0);
 	signal flag_z, sel_beq_jmp: std_logic;
-	signal ULA_ctrl: std_logic_vector(3 downto 0);
+	signal ULA_ctrl: std_logic_vector(4 downto 0);
 	signal selULA : std_logic_vector(3 downto 0);
 	
 	
@@ -61,7 +61,7 @@ architecture arch_name of ProcessadorMIPS is
 	alias re : std_logic is palavraControle(6);
 	alias we : std_logic is palavraControle(7);
 	alias beq : std_logic is palavraControle(1);
-	alias ULA_op : std_logic_vector(1 downto 0) is palavraControle(9 downto 8);
+	alias ULA_op : std_logic_vector(2 downto 0) is palavraControle(10 downto 8);
 
 begin
 	PC_Soma_Constante:  entity work.somaConstante  generic map (larguraDados => ADDR_WIDTH, constante => INC_PC)
@@ -90,7 +90,7 @@ begin
 			 entradaB =>  mux_rt_saida, 
 			 overflow_final => overflow,
 			 operacao => ULA_ctrl, 
-			 resultado => saidaULA, 
+			 resultado_final => saidaULA, 
 			 flag_zero => flag_z);
 			 
 	UC_ULA : entity work.UC_ULA

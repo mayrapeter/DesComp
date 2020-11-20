@@ -11,7 +11,7 @@ entity ULA1bit is
   port   (
     -- Input ports
     entradaA, entradaB, inverteA, inverteB, carry_in, entrada_slt  :  in  std_logic;
-    selecao  : in  std_logic_vector(1 downto 0);
+    selecao  : in  std_logic_vector(2 downto 0);
 
     -- Output ports
     carry_out, resultado, saida_slt, overflow, flag_Z :  out  std_logic
@@ -22,7 +22,7 @@ end entity;
 architecture arch_name of ULA1bit is
 
   -- Declarations (-optional):
-   signal saida_mux_inverteA, saida_mux_inverteB, saida_and, saida_or, saida_soma_sub, resultado_saida : std_logic;
+   signal saida_mux_inverteA, saida_mux_inverteB, saida_and, saida_or, saida_lui, saida_soma_sub, resultado_saida : std_logic;
 
 begin
 
@@ -42,6 +42,8 @@ begin
 	
 	saida_or <= saida_mux_inverteA or saida_mux_inverteB;
 	
+	saida_lui <= saida_mux_inverteB;
+	
 	soma_sub : entity work.SomadorCompleto
     port map( entradaA          => saida_mux_inverteA,
 	           entradaB          => saida_mux_inverteB,
@@ -54,6 +56,7 @@ begin
 				  entradaB_MUX => saida_or, 
 				  entradaC_MUX => saida_soma_sub,
 				  entradaD_MUX => entrada_slt,
+				  entradaE_MUX => saida_lui,
 				  seletor_MUX => selecao, 
 				  saida_MUX => resultado_saida);
 				  

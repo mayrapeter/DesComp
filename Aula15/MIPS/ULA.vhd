@@ -7,10 +7,10 @@ entity ULA is
   port   (
 	-- Input ports
 	entradaA, entradaB     : in std_logic_vector(31 downto 0);
-	operacao	    : in std_logic_vector(3 downto 0);
+	operacao	    : in std_logic_vector(4 downto 0);
 	-- Output ports
 	overflow_final, flag_zero : out std_logic;
-	resultado	 : out std_logic_vector(31 downto 0)
+	resultado_final	 : out std_logic_vector(31 downto 0)
 	 
     );
 end entity;
@@ -18,11 +18,11 @@ end entity;
 architecture arch_name of ULA is
 
   signal  carry_in1 : std_logic; 
-  signal  carry_out, slt, overflow_vetor, set_final, flag_Z, overflow : std_logic_vector(31 downto 0);
+  signal  carry_out, resultado_lui, resultado, slt, overflow_vetor, set_final, flag_Z, overflow : std_logic_vector(31 downto 0);
   
-  alias  inverteA : std_logic is operacao(3); 
-  alias  inverteB : std_logic is operacao(2); 
-  alias  ula_ctrl : std_logic_vector(1 downto 0) is operacao(1 downto 0);
+  alias  inverteA : std_logic is operacao(4); 
+  alias  inverteB : std_logic is operacao(3); 
+  alias  ula_ctrl : std_logic_vector(2 downto 0) is operacao(2 downto 0);
 
 begin
   
@@ -585,6 +585,11 @@ begin
 			  saida_slt				=> slt(31),
 			  flag_Z          	=> flag_Z(31)
 	);
+	
+	resultado_lui <= resultado (15 downto 0) & "0000000000000000";
+	
+	resultado_final <= resultado_lui when ula_ctrl = "100" else
+							 resultado;
 
 	flag_zero <= flag_Z(0) and flag_Z(1) and flag_Z(2) and flag_Z(3) and flag_Z(4) and flag_Z(5) and flag_Z(6) and flag_Z(7) and
 					flag_Z(8) and flag_Z(9) and flag_Z(10) and flag_Z(11) and flag_Z(12) and flag_Z(13) and flag_Z(14) and flag_Z(15) and

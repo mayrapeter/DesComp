@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "11/20/2020 10:25:59"
+-- Generated on "11/20/2020 11:59:44"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          ProcessadorMIPS
 -- 
