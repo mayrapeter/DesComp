@@ -132,14 +132,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "PC_saida[0]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_saida[1]",
-					"strict" : false
-				},
-				{
 					"name" : "PC_saida[2]",
 					"strict" : false
 				},
@@ -261,6 +253,10 @@
 				},
 				{
 					"name" : "overflow",
+					"strict" : false
+				},
+				{
+					"name" : "monitora_flag_z",
 					"strict" : false
 				},
 				{

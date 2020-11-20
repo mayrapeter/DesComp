@@ -15,7 +15,7 @@ entity ProcessadorMIPS is
     clk     : in  std_logic;
 	 ULA_saida: out std_logic_vector(DATA_WIDTH-1 downto 0);
 	 PC_saida: out std_logic_vector(ADDR_WIDTH-1 downto 0);
-	 overflow  :  out std_logic
+	 overflow, monitora_flag_z  :  out std_logic
   );
 end entity;
 
@@ -30,7 +30,7 @@ architecture arch_name of ProcessadorMIPS is
 	signal saida_mux_rt_rd: std_logic_vector(4 downto 0);
 	
 	signal estendido_shift: std_logic_vector(25 downto 0);
-	signal sinal_concatenado, dado_lido: std_logic_vector(31 downto 0);
+	signal sinal_concatenado, dado_lido, imediato_estendido2_shiftado: std_logic_vector(31 downto 0);
 	signal palavraControle : std_logic_vector(9 downto 0);
 	signal imediato_estendido, imediato_estendido2, mux_rt_saida, somador2, saida_mux_ULA_mem, saida_mux_beq, estendido_soma_constante, mux_pc_saida : std_logic_vector(31 downto 0);
 	signal flag_z, sel_beq_jmp: std_logic;
@@ -131,11 +131,12 @@ begin
         port map( entradaA_MUX => saidaULA,
                  entradaB_MUX =>  dado_lido,
                  seletor_MUX => sel_ULA_mem,
-                 saida_MUX => saida_mux_ULA_mem);					  
+                 saida_MUX => saida_mux_ULA_mem);		
+		
+	imediato_estendido2_shiftado <= imediato_estendido2(29 downto 0) & "00";
 					  
 	PC_Soma_imediato:  entity work.somador 
-        port map( entradaA => PC_Incr_Const, entradaB => imediato_estendido2, saida => somador2);				  
-	
+        port map( entradaA => PC_Incr_Const, entradaB => imediato_estendido2_shiftado, saida => somador2);				  
 	
 	RAM: entity work.RAMMIPS
         port map( clk => clk,
@@ -159,7 +160,7 @@ begin
 			 sinal_concatenado => sinal_concatenado
 			 );
 			 
-	
+	monitora_flag_z <= beq and flag_z;
 					  
 	ULA_saida <= saidaULA;
 	PC_saida <= PC;

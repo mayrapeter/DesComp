@@ -1,5 +1,5 @@
 Archive Project report for ProcessadorMIPS
-Fri Nov 13 18:55:20 2020
+Fri Nov 20 10:32:27 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -33,14 +33,14 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+----------------------------------------------------------------+
-; Archive Project Summary                                        ;
-+------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Fri Nov 13 18:55:20 2020 ;
-; Revision Name          ; ProcessadorMIPS                       ;
-; Top-level Entity Name  ; ProcessadorMIPS                       ;
-; Family                 ; Cyclone V                             ;
-+------------------------+---------------------------------------+
++------------------------------------------------------------+
+; Archive Project Summary                                    ;
++------------------------+-----------------------------------+
+; Archive Project Status ; Failed - Fri Nov 20 10:32:27 2020 ;
+; Revision Name          ; ProcessadorMIPS                   ;
+; Top-level Entity Name  ; ProcessadorMIPS                   ;
+; Family                 ; Cyclone V                         ;
++------------------------+-----------------------------------+
 
 
 +--------------------------+
@@ -51,19 +51,17 @@ Info: File Set 'Source control' contains:
     Info: Automatically detected source files
 Warning: Hierarchical Platform Designer systems and custom IP components(_hw.tcl and associated files) are not archived by the Quartus Archiver
 Info: Archive will store files relative to the closest common parent directory
-Info (13213): Using common directory C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/
-Info: ----------------------------------------------------------
-Info: ----------------------------------------------------------
-Info: Generated archive 'C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/ProcessadorMIPS.qar'
-Info: ----------------------------------------------------------
-Info: ----------------------------------------------------------
+Error (225006): Can't create Quartus Prime Archive File C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/Aula15/ProcessadorMIPSEntrega20/11.qar
+Error: ERROR: Archiver failed either because some files could not be processed (refer to: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/Aula15/ProcessadorMIPSEntrega20/11.qarlog) or because C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/Aula15/ProcessadorMIPSEntrega20/11.qar is read-only
+
+Error: Failed to generate 'C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/DesComp/Aula15/ProcessadorMIPSEntrega20/11.qar'
 Info: Generated report 'ProcessadorMIPS.archive.rpt'
-Info (23030): Evaluation of Tcl script c:/intelfpga_lite/20.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
-Info: Quartus Prime Shell was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4820 megabytes
-    Info: Processing ended: Fri Nov 13 18:55:20 2020
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:02
+Error (23031): Evaluation of Tcl script c:/intelfpga_lite/20.1/quartus/common/tcl/apps/qpm/qar.tcl unsuccessful
+Error: Quartus Prime Shell was unsuccessful. 4 errors, 1 warning
+    Error: Peak virtual memory: 4829 megabytes
+    Error: Processing ended: Fri Nov 20 10:32:27 2020
+    Error: Elapsed time: 00:00:10
+    Error: Total CPU time (on all processors): 00:00:04
 
 
 +--------------------------------------+
@@ -99,6 +97,10 @@ Info: Quartus Prime Shell was successful. 0 errors, 1 warning
 ; Waveform2.vwf                        ;
 ; Waveform3.vwf                        ;
 ; Waveform4.vwf                        ;
+; Waveform5.vwf                        ;
+; Waveform6.vwf                        ;
+; Waveform7.vwf                        ;
+; Waveform8.vwf                        ;
 +--------------------------------------+
 
 

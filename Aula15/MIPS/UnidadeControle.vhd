@@ -27,9 +27,7 @@ architecture arch_name of UnidadeControle is
   alias HabilitaEscritamem : std_logic is palavraControle(7);
   alias BEQ : std_logic is palavraControle(1);
   
- 
-  constant soma : std_logic := '0';
-  constant sub : std_logic := '1';
+
    
 
   begin		 
@@ -54,9 +52,9 @@ architecture arch_name of UnidadeControle is
 	 
 	 habilitaescrita_reg <= '1' when Opcode = "000000" or Opcode = "100011" else '0';
 	 
-	 sel_mux3 <= '1' when Opcode ="101011" or Opcode ="001011" or Opcode = "010011" or Opcode="001000" or Opcode= "001100" else '0';
+	 sel_mux3 <= '1' when Opcode ="101011" or Opcode="100011" or Opcode ="001011" or Opcode = "010011" or Opcode="001000" or Opcode= "001100" else '0';
 	 
-	 sel_mux4<= '0' when Opcode ="000000" or Opcode = "100011" or Opcode = "101011" or Opcode = "000100" else '1';
+	 sel_mux4<= '0' when Opcode ="000000" or Opcode = "101011" or Opcode = "000100" else '1';
 	 
 	 BEQ <= '1' when Opcode="000100" else '0';
 	 
