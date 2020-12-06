@@ -1,0 +1,22 @@
+Quartus Prime Archive log --	C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/ProcessadorMIPS_QSE.qarlog
+
+Archive:	C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/ProcessadorMIPS_QSE.qar
+Date:		Fri Oct 30 15:04:43 2020
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ProcessadorMIPS.vhd
+C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ROMMIPS.vhd
+C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ULA.vhd
+C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/UnidadeControle.vhd
+C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/bancoRegistradoresArqRegReg.vhd
+C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/registradorGenerico.vhd
+C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/somaConstante.vhd
+C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/ProcessadorMIPS.qpf
+C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/ProcessadorMIPS.qsf
+C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Waveform1.vwf
+C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/assignment_defaults.qdf
+	======= Total: 11 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
