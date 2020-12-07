@@ -14,7 +14,7 @@ entity Fluxo_Dados is
     -- Input ports
     clk     : in  std_logic;
 	 palavraControle : in std_logic_vector(14 downto 0);
-	 ULA_saida: out std_logic_vector(DATA_WIDTH-1 downto 0);
+	 ULA_saida, mux_imed_saida: out std_logic_vector(DATA_WIDTH-1 downto 0);
 	 PC_saida: out std_logic_vector(ADDR_WIDTH-1 downto 0);
 	 overflow, monitora_flag_z  :  out std_logic;
 	 jr_out : out std_logic;
@@ -177,5 +177,6 @@ begin
 	PC_saida <= PC;
 	jr_out <= jr; 
 	Opcode_out <= Opcode;
+	mux_imed_saida <= mux_rt_saida;
 	
 end architecture;

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ProcessadorMIPS
-Sun Dec 06 19:29:14 2020
+Mon Dec 07 15:41:38 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -132,44 +132,50 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 124. Parameter Settings for User Entity Instance: Fluxo_Dados:fluxo_dados|estendeSinalGenerico:estende_sinal
 125. Parameter Settings for Inferred Entity Instance: Fluxo_Dados:fluxo_dados|RAMMIPS:RAM|altsyncram:memRAM_rtl_0
 126. altsyncram Parameter Settings by Entity Instance
-127. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|somador:PC_Soma_imediato"
-128. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|muxGenerico3x1:mux_rt_rd"
-129. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula31"
-130. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula30"
-131. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula29"
-132. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula28"
-133. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula27"
-134. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula26"
-135. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula25"
-136. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula24"
-137. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula23"
-138. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula22"
-139. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula21"
-140. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula20"
-141. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula19"
-142. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula18"
-143. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula17"
-144. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula16"
-145. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula15"
-146. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula14"
-147. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula13"
-148. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula12"
-149. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula11"
-150. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula10"
-151. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula9"
-152. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula8"
-153. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula7"
-154. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula6"
-155. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula5"
-156. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula4"
-157. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula3"
-158. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula2"
-159. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula1"
-160. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula0"
-161. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|registradorGenerico:PC_entity"
-162. Post-Synthesis Netlist Statistics for Top Partition
-163. Elapsed Time Per Partition
-164. Analysis & Synthesis Messages
+127. Port Connectivity Checks: "conversorHex7Seg:display5"
+128. Port Connectivity Checks: "conversorHex7Seg:display4"
+129. Port Connectivity Checks: "conversorHex7Seg:display3"
+130. Port Connectivity Checks: "conversorHex7Seg:display2"
+131. Port Connectivity Checks: "conversorHex7Seg:display1"
+132. Port Connectivity Checks: "conversorHex7Seg:display0"
+133. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|somador:PC_Soma_imediato"
+134. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|muxGenerico3x1:mux_rt_rd"
+135. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula31"
+136. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula30"
+137. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula29"
+138. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula28"
+139. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula27"
+140. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula26"
+141. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula25"
+142. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula24"
+143. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula23"
+144. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula22"
+145. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula21"
+146. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula20"
+147. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula19"
+148. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula18"
+149. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula17"
+150. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula16"
+151. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula15"
+152. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula14"
+153. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula13"
+154. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula12"
+155. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula11"
+156. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula10"
+157. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula9"
+158. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula8"
+159. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula7"
+160. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula6"
+161. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula5"
+162. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula4"
+163. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula3"
+164. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula2"
+165. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula1"
+166. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula0"
+167. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|registradorGenerico:PC_entity"
+168. Post-Synthesis Netlist Statistics for Top Partition
+169. Elapsed Time Per Partition
+170. Analysis & Synthesis Messages
 
 
 
@@ -196,14 +202,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Dec 06 19:29:14 2020       ;
+; Analysis & Synthesis Status     ; Successful - Mon Dec 07 15:41:38 2020       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; ProcessadorMIPS                             ;
 ; Top-level Entity Name           ; ProcessadorMIPS                             ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 736                                         ;
-; Total pins                      ; 68                                          ;
+; Total registers                 ; 737                                         ;
+; Total pins                      ; 146                                         ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 2,048                                       ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -324,71 +330,73 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                       ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                   ; Library ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------+---------+
-; UnidadeControle.vhd              ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/UnidadeControle.vhd             ;         ;
-; ULA.vhd                          ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/ULA.vhd                         ;         ;
-; somaConstante.vhd                ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/somaConstante.vhd               ;         ;
-; ROMMIPS.vhd                      ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/ROMMIPS.vhd                     ;         ;
-; registradorGenerico.vhd          ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/registradorGenerico.vhd         ;         ;
-; ProcessadorMIPS.vhd              ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/ProcessadorMIPS.vhd             ;         ;
-; bancoRegistradoresArqRegReg.vhd  ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/bancoRegistradoresArqRegReg.vhd ;         ;
-; ULA1bit.vhd                      ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/ULA1bit.vhd                     ;         ;
-; somadorCompleto.vhd              ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/somadorCompleto.vhd             ;         ;
-; muxGenerico4x1.vhd               ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/muxGenerico4x1.vhd              ;         ;
-; muxGenerico2x1_1bit.vhd          ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/muxGenerico2x1_1bit.vhd         ;         ;
-; muxGenerico2x1.vhd               ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/muxGenerico2x1.vhd              ;         ;
-; somador.vhd                      ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/somador.vhd                     ;         ;
-; RAMMIPS.vhd                      ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/RAMMIPS.vhd                     ;         ;
-; UC_ULA.vhd                       ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/UC_ULA.vhd                      ;         ;
-; estendeSinalGenerico.vhd         ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/estendeSinalGenerico.vhd        ;         ;
-; concatena.vhd                    ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/concatena.vhd                   ;         ;
-; overflow.vhd                     ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/overflow.vhd                    ;         ;
-; muxGenerico3x1.vhd               ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/muxGenerico3x1.vhd              ;         ;
-; Fluxo_Dados.vhd                  ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/Fluxo_Dados.vhd                 ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                                          ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                   ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                             ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc                                          ;         ;
-; aglobal201.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                          ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                                           ;         ;
-; altrom.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                                              ;         ;
-; altram.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                                              ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                                            ;         ;
-; db/altsyncram_60q1.tdf           ; yes             ; Auto-Generated Megafunction  ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/db/altsyncram_60q1.tdf          ;         ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                     ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                 ; Library ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------+---------+
+; UnidadeControle.vhd              ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/UnidadeControle.vhd             ;         ;
+; ULA.vhd                          ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ULA.vhd                         ;         ;
+; somaConstante.vhd                ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/somaConstante.vhd               ;         ;
+; ROMMIPS.vhd                      ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ROMMIPS.vhd                     ;         ;
+; registradorGenerico.vhd          ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/registradorGenerico.vhd         ;         ;
+; ProcessadorMIPS.vhd              ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ProcessadorMIPS.vhd             ;         ;
+; bancoRegistradoresArqRegReg.vhd  ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/bancoRegistradoresArqRegReg.vhd ;         ;
+; ULA1bit.vhd                      ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ULA1bit.vhd                     ;         ;
+; somadorCompleto.vhd              ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/somadorCompleto.vhd             ;         ;
+; muxGenerico4x1.vhd               ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/muxGenerico4x1.vhd              ;         ;
+; muxGenerico2x1_1bit.vhd          ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/muxGenerico2x1_1bit.vhd         ;         ;
+; muxGenerico2x1.vhd               ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/muxGenerico2x1.vhd              ;         ;
+; somador.vhd                      ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/somador.vhd                     ;         ;
+; RAMMIPS.vhd                      ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/RAMMIPS.vhd                     ;         ;
+; UC_ULA.vhd                       ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/UC_ULA.vhd                      ;         ;
+; estendeSinalGenerico.vhd         ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/estendeSinalGenerico.vhd        ;         ;
+; concatena.vhd                    ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/concatena.vhd                   ;         ;
+; overflow.vhd                     ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/overflow.vhd                    ;         ;
+; muxGenerico3x1.vhd               ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/muxGenerico3x1.vhd              ;         ;
+; Fluxo_Dados.vhd                  ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd                 ;         ;
+; conversorHex7Seg.vhd             ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/conversorHex7Seg.vhd            ;         ;
+; edgeDetector.vhd                 ; yes             ; User VHDL File               ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/edgeDetector.vhd                ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                                        ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                 ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                           ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc                                        ;         ;
+; aglobal201.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                        ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                                         ;         ;
+; altrom.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                                            ;         ;
+; altram.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                                            ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                                          ;         ;
+; db/altsyncram_60q1.tdf           ; yes             ; Auto-Generated Megafunction  ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/db/altsyncram_60q1.tdf          ;         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 723       ;
-;                                             ;           ;
-; Combinational ALUT usage for logic          ; 900       ;
-;     -- 7 input functions                    ; 136       ;
-;     -- 6 input functions                    ; 218       ;
-;     -- 5 input functions                    ; 153       ;
-;     -- 4 input functions                    ; 217       ;
-;     -- <=3 input functions                  ; 176       ;
-;                                             ;           ;
-; Dedicated logic registers                   ; 736       ;
-;                                             ;           ;
-; I/O pins                                    ; 68        ;
-; Total MLAB memory bits                      ; 0         ;
-; Total block memory bits                     ; 2048      ;
-;                                             ;           ;
-; Total DSP Blocks                            ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 768       ;
-; Total fan-out                               ; 6927      ;
-; Average fan-out                             ; 3.84      ;
-+---------------------------------------------+-----------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                   ;
++---------------------------------------------+---------------------------------+
+; Resource                                    ; Usage                           ;
++---------------------------------------------+---------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 788                             ;
+;                                             ;                                 ;
+; Combinational ALUT usage for logic          ; 1049                            ;
+;     -- 7 input functions                    ; 134                             ;
+;     -- 6 input functions                    ; 254                             ;
+;     -- 5 input functions                    ; 157                             ;
+;     -- 4 input functions                    ; 247                             ;
+;     -- <=3 input functions                  ; 257                             ;
+;                                             ;                                 ;
+; Dedicated logic registers                   ; 737                             ;
+;                                             ;                                 ;
+; I/O pins                                    ; 146                             ;
+; Total MLAB memory bits                      ; 0                               ;
+; Total block memory bits                     ; 2048                            ;
+;                                             ;                                 ;
+; Total DSP Blocks                            ; 0                               ;
+;                                             ;                                 ;
+; Maximum fan-out node                        ; edgeDetector:detectorSub0|saida ;
+; Maximum fan-out                             ; 768                             ;
+; Total fan-out                               ; 7632                            ;
+; Average fan-out                             ; 3.62                            ;
++---------------------------------------------+---------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -396,21 +404,20 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------+-----------------------------+--------------+
 ; Compilation Hierarchy Node                     ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                         ; Entity Name                 ; Library Name ;
 +------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------+-----------------------------+--------------+
-; |ProcessadorMIPS                               ; 900 (0)             ; 736 (0)                   ; 2048              ; 0          ; 68   ; 0            ; |ProcessadorMIPS                                                                                            ; ProcessadorMIPS             ; work         ;
-;    |Fluxo_Dados:fluxo_dados|                   ; 890 (2)             ; 736 (0)                   ; 2048              ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados                                                                    ; Fluxo_Dados                 ; work         ;
+; |ProcessadorMIPS                               ; 1049 (78)           ; 737 (0)                   ; 2048              ; 0          ; 146  ; 0            ; |ProcessadorMIPS                                                                                            ; ProcessadorMIPS             ; work         ;
+;    |Fluxo_Dados:fluxo_dados|                   ; 917 (2)             ; 736 (0)                   ; 2048              ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados                                                                    ; Fluxo_Dados                 ; work         ;
 ;       |RAMMIPS:RAM|                            ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|RAMMIPS:RAM                                                        ; RAMMIPS                     ; work         ;
 ;          |altsyncram:memRAM_rtl_0|             ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|RAMMIPS:RAM|altsyncram:memRAM_rtl_0                                ; altsyncram                  ; work         ;
 ;             |altsyncram_60q1:auto_generated|   ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|RAMMIPS:RAM|altsyncram:memRAM_rtl_0|altsyncram_60q1:auto_generated ; altsyncram_60q1             ; work         ;
 ;       |ROMMIPS:ROM|                            ; 28 (28)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ROMMIPS:ROM                                                        ; ROMMIPS                     ; work         ;
 ;       |UC_ULA:UC_ULA|                          ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|UC_ULA:UC_ULA                                                      ; UC_ULA                      ; work         ;
-;       |ULA:ULA|                                ; 196 (47)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA                                                            ; ULA                         ; work         ;
-;          |ULA1bit:ula0|                        ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula0                                               ; ULA1bit                     ; work         ;
-;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula0|muxGenerico2x1_1bit:mux_inverteB              ; muxGenerico2x1_1bit         ; work         ;
+;       |ULA:ULA|                                ; 206 (47)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA                                                            ; ULA                         ; work         ;
+;          |ULA1bit:ula0|                        ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula0                                               ; ULA1bit                     ; work         ;
 ;             |muxGenerico4x1:mux_ula|           ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula0|muxGenerico4x1:mux_ula                        ; muxGenerico4x1              ; work         ;
 ;             |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula0|somadorCompleto:soma_sub                      ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula10|                       ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula10                                              ; ULA1bit                     ; work         ;
+;          |ULA1bit:ula10|                       ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula10                                              ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula10|muxGenerico2x1_1bit:mux_inverteB             ; muxGenerico2x1_1bit         ; work         ;
-;             |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula10|muxGenerico4x1:mux_ula                       ; muxGenerico4x1              ; work         ;
+;             |muxGenerico4x1:mux_ula|           ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula10|muxGenerico4x1:mux_ula                       ; muxGenerico4x1              ; work         ;
 ;             |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula10|somadorCompleto:soma_sub                     ; somadorCompleto             ; work         ;
 ;          |ULA1bit:ula11|                       ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula11                                              ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula11|muxGenerico2x1_1bit:mux_inverteB             ; muxGenerico2x1_1bit         ; work         ;
@@ -424,37 +431,37 @@ https://fpgasoftware.intel.com/eula.
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula13|muxGenerico2x1_1bit:mux_inverteB             ; muxGenerico2x1_1bit         ; work         ;
 ;             |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula13|muxGenerico4x1:mux_ula                       ; muxGenerico4x1              ; work         ;
 ;             |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula13|somadorCompleto:soma_sub                     ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula14|                       ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula14                                              ; ULA1bit                     ; work         ;
+;          |ULA1bit:ula14|                       ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula14                                              ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula14|muxGenerico2x1_1bit:mux_inverteB             ; muxGenerico2x1_1bit         ; work         ;
 ;             |muxGenerico4x1:mux_ula|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula14|muxGenerico4x1:mux_ula                       ; muxGenerico4x1              ; work         ;
-;             |somadorCompleto:soma_sub|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula14|somadorCompleto:soma_sub                     ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula15|                       ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula15                                              ; ULA1bit                     ; work         ;
+;             |somadorCompleto:soma_sub|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula14|somadorCompleto:soma_sub                     ; somadorCompleto             ; work         ;
+;          |ULA1bit:ula15|                       ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula15                                              ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula15|muxGenerico2x1_1bit:mux_inverteB             ; muxGenerico2x1_1bit         ; work         ;
-;             |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula15|muxGenerico4x1:mux_ula                       ; muxGenerico4x1              ; work         ;
+;             |muxGenerico4x1:mux_ula|           ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula15|muxGenerico4x1:mux_ula                       ; muxGenerico4x1              ; work         ;
 ;             |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula15|somadorCompleto:soma_sub                     ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula16|                       ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula16                                              ; ULA1bit                     ; work         ;
+;          |ULA1bit:ula16|                       ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula16                                              ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula16|muxGenerico2x1_1bit:mux_inverteB             ; muxGenerico2x1_1bit         ; work         ;
-;             |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula16|muxGenerico4x1:mux_ula                       ; muxGenerico4x1              ; work         ;
+;             |muxGenerico4x1:mux_ula|           ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula16|muxGenerico4x1:mux_ula                       ; muxGenerico4x1              ; work         ;
 ;             |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula16|somadorCompleto:soma_sub                     ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula17|                       ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula17                                              ; ULA1bit                     ; work         ;
+;          |ULA1bit:ula17|                       ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula17                                              ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula17|muxGenerico2x1_1bit:mux_inverteB             ; muxGenerico2x1_1bit         ; work         ;
 ;             |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula17|muxGenerico4x1:mux_ula                       ; muxGenerico4x1              ; work         ;
-;             |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula17|somadorCompleto:soma_sub                     ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula18|                       ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula18                                              ; ULA1bit                     ; work         ;
+;          |ULA1bit:ula18|                       ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula18                                              ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula18|muxGenerico2x1_1bit:mux_inverteB             ; muxGenerico2x1_1bit         ; work         ;
-;             |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula18|muxGenerico4x1:mux_ula                       ; muxGenerico4x1              ; work         ;
-;             |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula18|somadorCompleto:soma_sub                     ; somadorCompleto             ; work         ;
+;             |muxGenerico4x1:mux_ula|           ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula18|muxGenerico4x1:mux_ula                       ; muxGenerico4x1              ; work         ;
+;             |somadorCompleto:soma_sub|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula18|somadorCompleto:soma_sub                     ; somadorCompleto             ; work         ;
 ;          |ULA1bit:ula19|                       ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula19                                              ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula19|muxGenerico2x1_1bit:mux_inverteB             ; muxGenerico2x1_1bit         ; work         ;
 ;             |muxGenerico4x1:mux_ula|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula19|muxGenerico4x1:mux_ula                       ; muxGenerico4x1              ; work         ;
 ;             |somadorCompleto:soma_sub|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula19|somadorCompleto:soma_sub                     ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula1|                        ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula1                                               ; ULA1bit                     ; work         ;
+;          |ULA1bit:ula1|                        ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula1                                               ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula1|muxGenerico2x1_1bit:mux_inverteB              ; muxGenerico2x1_1bit         ; work         ;
-;             |muxGenerico4x1:mux_ula|           ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula1|muxGenerico4x1:mux_ula                        ; muxGenerico4x1              ; work         ;
+;             |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula1|muxGenerico4x1:mux_ula                        ; muxGenerico4x1              ; work         ;
 ;             |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula1|somadorCompleto:soma_sub                      ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula20|                       ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula20                                              ; ULA1bit                     ; work         ;
+;          |ULA1bit:ula20|                       ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula20                                              ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula20|muxGenerico2x1_1bit:mux_inverteB             ; muxGenerico2x1_1bit         ; work         ;
-;             |muxGenerico4x1:mux_ula|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula20|muxGenerico4x1:mux_ula                       ; muxGenerico4x1              ; work         ;
+;             |muxGenerico4x1:mux_ula|           ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula20|muxGenerico4x1:mux_ula                       ; muxGenerico4x1              ; work         ;
+;             |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula20|somadorCompleto:soma_sub                     ; somadorCompleto             ; work         ;
 ;          |ULA1bit:ula21|                       ; 9 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula21                                              ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula21|muxGenerico2x1_1bit:mux_inverteB             ; muxGenerico2x1_1bit         ; work         ;
 ;             |muxGenerico4x1:mux_ula|           ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula21|muxGenerico4x1:mux_ula                       ; muxGenerico4x1              ; work         ;
@@ -487,8 +494,7 @@ https://fpgasoftware.intel.com/eula.
 ;             |muxGenerico4x1:mux_ula|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula28|muxGenerico4x1:mux_ula                       ; muxGenerico4x1              ; work         ;
 ;             |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula28|somadorCompleto:soma_sub                     ; somadorCompleto             ; work         ;
 ;          |ULA1bit:ula29|                       ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula29                                              ; ULA1bit                     ; work         ;
-;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula29|muxGenerico2x1_1bit:mux_inverteB             ; muxGenerico2x1_1bit         ; work         ;
-;             |muxGenerico4x1:mux_ula|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula29|muxGenerico4x1:mux_ula                       ; muxGenerico4x1              ; work         ;
+;             |muxGenerico4x1:mux_ula|           ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula29|muxGenerico4x1:mux_ula                       ; muxGenerico4x1              ; work         ;
 ;             |somadorCompleto:soma_sub|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula29|somadorCompleto:soma_sub                     ; somadorCompleto             ; work         ;
 ;          |ULA1bit:ula2|                        ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula2                                               ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula2|muxGenerico2x1_1bit:mux_inverteB              ; muxGenerico2x1_1bit         ; work         ;
@@ -497,46 +503,52 @@ https://fpgasoftware.intel.com/eula.
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula30|muxGenerico2x1_1bit:mux_inverteB             ; muxGenerico2x1_1bit         ; work         ;
 ;             |muxGenerico4x1:mux_ula|           ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula30|muxGenerico4x1:mux_ula                       ; muxGenerico4x1              ; work         ;
 ;             |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula30|somadorCompleto:soma_sub                     ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula31|                       ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula31                                              ; ULA1bit                     ; work         ;
-;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula31|muxGenerico2x1_1bit:mux_inverteB             ; muxGenerico2x1_1bit         ; work         ;
+;          |ULA1bit:ula31|                       ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula31                                              ; ULA1bit                     ; work         ;
 ;             |muxGenerico4x1:mux_ula|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula31|muxGenerico4x1:mux_ula                       ; muxGenerico4x1              ; work         ;
 ;             |overflow:Overflow_exists|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula31|overflow:Overflow_exists                     ; overflow                    ; work         ;
 ;             |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula31|somadorCompleto:soma_sub                     ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula3|                        ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula3                                               ; ULA1bit                     ; work         ;
+;          |ULA1bit:ula3|                        ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula3                                               ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula3|muxGenerico2x1_1bit:mux_inverteB              ; muxGenerico2x1_1bit         ; work         ;
-;             |muxGenerico4x1:mux_ula|           ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula3|muxGenerico4x1:mux_ula                        ; muxGenerico4x1              ; work         ;
+;             |muxGenerico4x1:mux_ula|           ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula3|muxGenerico4x1:mux_ula                        ; muxGenerico4x1              ; work         ;
+;             |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula3|somadorCompleto:soma_sub                      ; somadorCompleto             ; work         ;
 ;          |ULA1bit:ula4|                        ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula4                                               ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula4|muxGenerico2x1_1bit:mux_inverteB              ; muxGenerico2x1_1bit         ; work         ;
 ;             |muxGenerico4x1:mux_ula|           ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula4|muxGenerico4x1:mux_ula                        ; muxGenerico4x1              ; work         ;
 ;             |somadorCompleto:soma_sub|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula4|somadorCompleto:soma_sub                      ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula5|                        ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula5                                               ; ULA1bit                     ; work         ;
+;          |ULA1bit:ula5|                        ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula5                                               ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula5|muxGenerico2x1_1bit:mux_inverteB              ; muxGenerico2x1_1bit         ; work         ;
-;             |muxGenerico4x1:mux_ula|           ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula5|muxGenerico4x1:mux_ula                        ; muxGenerico4x1              ; work         ;
+;             |muxGenerico4x1:mux_ula|           ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula5|muxGenerico4x1:mux_ula                        ; muxGenerico4x1              ; work         ;
 ;          |ULA1bit:ula6|                        ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula6                                               ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula6|muxGenerico2x1_1bit:mux_inverteB              ; muxGenerico2x1_1bit         ; work         ;
 ;             |muxGenerico4x1:mux_ula|           ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula6|muxGenerico4x1:mux_ula                        ; muxGenerico4x1              ; work         ;
 ;             |somadorCompleto:soma_sub|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula6|somadorCompleto:soma_sub                      ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula7|                        ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula7                                               ; ULA1bit                     ; work         ;
+;          |ULA1bit:ula7|                        ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula7                                               ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula7|muxGenerico2x1_1bit:mux_inverteB              ; muxGenerico2x1_1bit         ; work         ;
 ;             |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula7|muxGenerico4x1:mux_ula                        ; muxGenerico4x1              ; work         ;
-;             |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula7|somadorCompleto:soma_sub                      ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula8|                        ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula8                                               ; ULA1bit                     ; work         ;
+;          |ULA1bit:ula8|                        ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula8                                               ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula8|muxGenerico2x1_1bit:mux_inverteB              ; muxGenerico2x1_1bit         ; work         ;
-;             |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula8|muxGenerico4x1:mux_ula                        ; muxGenerico4x1              ; work         ;
-;             |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula8|somadorCompleto:soma_sub                      ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula9|                        ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula9                                               ; ULA1bit                     ; work         ;
+;             |muxGenerico4x1:mux_ula|           ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula8|muxGenerico4x1:mux_ula                        ; muxGenerico4x1              ; work         ;
+;             |somadorCompleto:soma_sub|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula8|somadorCompleto:soma_sub                      ; somadorCompleto             ; work         ;
+;          |ULA1bit:ula9|                        ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula9                                               ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula9|muxGenerico2x1_1bit:mux_inverteB              ; muxGenerico2x1_1bit         ; work         ;
 ;             |muxGenerico4x1:mux_ula|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula9|muxGenerico4x1:mux_ula                        ; muxGenerico4x1              ; work         ;
-;             |somadorCompleto:soma_sub|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula9|somadorCompleto:soma_sub                      ; somadorCompleto             ; work         ;
-;       |bancoRegistradoresArqRegReg:bancoRegs|  ; 492 (492)           ; 704 (704)                 ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs                              ; bancoRegistradoresArqRegReg ; work         ;
-;       |muxGenerico2x1:mux_rt_imediato|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|muxGenerico2x1:mux_rt_imediato                                     ; muxGenerico2x1              ; work         ;
-;       |muxGenerico3x1:mux_PC|                  ; 63 (63)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|muxGenerico3x1:mux_PC                                              ; muxGenerico3x1              ; work         ;
+;             |somadorCompleto:soma_sub|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula9|somadorCompleto:soma_sub                      ; somadorCompleto             ; work         ;
+;       |bancoRegistradoresArqRegReg:bancoRegs|  ; 504 (504)           ; 704 (704)                 ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs                              ; bancoRegistradoresArqRegReg ; work         ;
+;       |muxGenerico2x1:mux_rt_imediato|         ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|muxGenerico2x1:mux_rt_imediato                                     ; muxGenerico2x1              ; work         ;
+;       |muxGenerico3x1:mux_PC|                  ; 35 (35)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|muxGenerico3x1:mux_PC                                              ; muxGenerico3x1              ; work         ;
 ;       |muxGenerico3x1:mux_ULA_mem|             ; 35 (35)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|muxGenerico3x1:mux_ULA_mem                                         ; muxGenerico3x1              ; work         ;
 ;       |muxGenerico3x1:mux_rt_rd|               ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|muxGenerico3x1:mux_rt_rd                                           ; muxGenerico3x1              ; work         ;
-;       |registradorGenerico:PC_entity|          ; 0 (0)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|registradorGenerico:PC_entity                                      ; registradorGenerico         ; work         ;
+;       |registradorGenerico:PC_entity|          ; 2 (2)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|registradorGenerico:PC_entity                                      ; registradorGenerico         ; work         ;
 ;       |somaConstante:PC_Soma_Constante|        ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|somaConstante:PC_Soma_Constante                                    ; somaConstante               ; work         ;
 ;       |somador:PC_Soma_imediato|               ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|somador:PC_Soma_imediato                                           ; somador                     ; work         ;
 ;    |UnidadeControle:UC|                        ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|UnidadeControle:UC                                                                         ; UnidadeControle             ; work         ;
+;    |conversorHex7Seg:display0|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|conversorHex7Seg:display0                                                                  ; conversorHex7Seg            ; work         ;
+;    |conversorHex7Seg:display1|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|conversorHex7Seg:display1                                                                  ; conversorHex7Seg            ; work         ;
+;    |conversorHex7Seg:display2|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|conversorHex7Seg:display2                                                                  ; conversorHex7Seg            ; work         ;
+;    |conversorHex7Seg:display3|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|conversorHex7Seg:display3                                                                  ; conversorHex7Seg            ; work         ;
+;    |conversorHex7Seg:display4|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|conversorHex7Seg:display4                                                                  ; conversorHex7Seg            ; work         ;
+;    |conversorHex7Seg:display5|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|conversorHex7Seg:display5                                                                  ; conversorHex7Seg            ; work         ;
+;    |edgeDetector:detectorSub0|                 ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|edgeDetector:detectorSub0                                                                  ; edgeDetector                ; work         ;
 +------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------+-----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -884,8 +896,288 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------+--------------------------------+--------------------------------------------------------------------------------+
 ; Register name                                                                 ; Reason for Removal             ; Registers Removed due to This Register                                         ;
 +-------------------------------------------------------------------------------+--------------------------------+--------------------------------------------------------------------------------+
-; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~450 ; Stuck at GND                   ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~419, ;
-;                                                                               ; due to stuck port clock_enable ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~387, ;
+; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~390 ; Stuck at GND                   ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~391, ;
+;                                                                               ; due to stuck port clock_enable ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~359, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~423, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~519, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~487, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~135, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~103, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~167, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~263, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~231, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~424, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~168, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~392, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~520, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~136, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~264, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~360, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~488, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~104, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~232, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~393, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~361, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~425, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~521, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~489, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~137, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~105, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~169, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~265, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~233, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~426, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~170, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~394, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~522, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~138, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~266, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~362, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~490, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~106, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~234, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~395, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~363, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~427, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~523, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~491, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~139, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~107, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~171, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~267, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~235, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~428, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~172, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~396, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~524, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~140, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~268, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~364, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~492, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~108, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~236, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~397, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~365, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~429, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~525, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~493, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~141, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~109, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~173, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~269, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~237, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~430, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~174, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~398, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~526, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~142, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~270, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~366, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~494, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~110, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~238, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~399, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~367, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~431, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~527, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~495, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~143, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~111, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~175, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~271, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~239, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~432, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~176, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~400, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~528, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~144, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~272, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~368, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~496, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~112, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~240, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~401, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~369, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~433, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~529, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~497, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~145, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~113, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~177, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~273, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~241, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~434, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~178, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~402, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~530, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~146, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~274, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~370, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~498, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~114, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~242, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~403, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~371, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~435, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~531, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~499, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~147, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~115, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~179, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~275, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~243, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~436, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~180, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~404, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~532, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~148, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~276, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~372, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~500, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~116, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~244, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~405, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~373, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~437, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~533, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~501, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~149, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~117, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~181, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~277, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~245, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~438, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~182, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~406, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~534, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~150, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~278, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~374, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~502, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~118, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~246, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~407, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~375, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~439, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~535, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~503, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~151, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~119, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~183, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~279, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~247, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~440, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~184, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~408, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~536, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~152, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~280, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~376, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~504, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~120, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~248, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~409, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~377, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~441, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~537, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~505, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~153, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~121, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~185, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~281, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~249, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~442, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~186, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~410, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~538, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~154, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~282, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~378, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~506, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~122, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~250, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~411, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~379, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~443, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~539, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~507, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~155, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~123, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~187, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~283, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~251, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~444, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~188, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~412, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~540, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~156, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~284, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~380, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~508, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~124, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~252, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~413, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~381, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~445, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~541, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~509, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~157, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~125, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~189, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~285, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~253, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~446, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~190, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~414, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~542, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~158, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~286, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~382, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~510, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~126, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~254, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~415, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~383, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~447, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~543, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~511, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~159, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~127, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~191, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~287, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~255, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~448, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~192, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~416, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~544, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~160, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~288, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~384, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~512, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~128, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~256, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~417, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~385, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~449, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~545, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~513, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~161, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~129, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~193, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~289, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~257, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~450, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~194, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~418, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~546, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~162, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~290, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~386, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~514, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~130, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~258, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~419, ;
+;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~387, ;
 ;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~451, ;
 ;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~547, ;
 ;                                                                               ;                                ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador~515, ;
@@ -922,7 +1214,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 736   ;
+; Total registers                              ; 737   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -941,21 +1233,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------+--------------------------------------------------+------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|registradorGenerico:PC_entity|DOUT[0]                            ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|registradorGenerico:PC_entity|DOUT[28]                           ;
-; 4:1                ; 25 bits   ; 50 LEs        ; 50 LEs               ; 0 LEs                  ; Yes        ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|registradorGenerico:PC_entity|DOUT[16]                           ;
-; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula19|muxGenerico2x1_1bit:mux_inverteB|saida_MUX ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|muxGenerico3x1:mux_ULA_mem|saida_MUX[10]                         ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|muxGenerico3x1:mux_rt_rd|saida_MUX[3]                            ;
-; 5:1                ; 31 bits   ; 93 LEs        ; 93 LEs               ; 0 LEs                  ; No         ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula1|muxGenerico4x1:mux_ula|saida_MUX            ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |ProcessadorMIPS|UnidadeControle:UC|palavraControle[10]                                                   ;
-; 8:1                ; 2 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|UC_ULA:UC_ULA|ula_ctrl[1]                                        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|registradorGenerico:PC_entity|DOUT[1]                  ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|registradorGenerico:PC_entity|DOUT[28]                 ;
+; 4:1                ; 25 bits   ; 50 LEs        ; 50 LEs               ; 0 LEs                  ; Yes        ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|registradorGenerico:PC_entity|DOUT[11]                 ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|muxGenerico3x1:mux_ULA_mem|saida_MUX[18]               ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|muxGenerico3x1:mux_rt_rd|saida_MUX[1]                  ;
+; 4:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |ProcessadorMIPS|to_display[17]                                                                 ;
+; 5:1                ; 31 bits   ; 93 LEs        ; 93 LEs               ; 0 LEs                  ; No         ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula16|muxGenerico4x1:mux_ula|saida_MUX ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |ProcessadorMIPS|UnidadeControle:UC|palavraControle[10]                                         ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|UC_ULA:UC_ULA|ula_ctrl[3]                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------+
@@ -2193,6 +2485,72 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+-------------------------------------------------------------+
 
 
++-------------------------------------------------------+
+; Port Connectivity Checks: "conversorHex7Seg:display5" ;
++----------+-------+----------+-------------------------+
+; Port     ; Type  ; Severity ; Details                 ;
++----------+-------+----------+-------------------------+
+; apaga    ; Input ; Info     ; Stuck at GND            ;
+; negativo ; Input ; Info     ; Stuck at GND            ;
+; overflow ; Input ; Info     ; Stuck at GND            ;
++----------+-------+----------+-------------------------+
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "conversorHex7Seg:display4" ;
++----------+-------+----------+-------------------------+
+; Port     ; Type  ; Severity ; Details                 ;
++----------+-------+----------+-------------------------+
+; apaga    ; Input ; Info     ; Stuck at GND            ;
+; negativo ; Input ; Info     ; Stuck at GND            ;
+; overflow ; Input ; Info     ; Stuck at GND            ;
++----------+-------+----------+-------------------------+
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "conversorHex7Seg:display3" ;
++----------+-------+----------+-------------------------+
+; Port     ; Type  ; Severity ; Details                 ;
++----------+-------+----------+-------------------------+
+; apaga    ; Input ; Info     ; Stuck at GND            ;
+; negativo ; Input ; Info     ; Stuck at GND            ;
+; overflow ; Input ; Info     ; Stuck at GND            ;
++----------+-------+----------+-------------------------+
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "conversorHex7Seg:display2" ;
++----------+-------+----------+-------------------------+
+; Port     ; Type  ; Severity ; Details                 ;
++----------+-------+----------+-------------------------+
+; apaga    ; Input ; Info     ; Stuck at GND            ;
+; negativo ; Input ; Info     ; Stuck at GND            ;
+; overflow ; Input ; Info     ; Stuck at GND            ;
++----------+-------+----------+-------------------------+
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "conversorHex7Seg:display1" ;
++----------+-------+----------+-------------------------+
+; Port     ; Type  ; Severity ; Details                 ;
++----------+-------+----------+-------------------------+
+; apaga    ; Input ; Info     ; Stuck at GND            ;
+; negativo ; Input ; Info     ; Stuck at GND            ;
+; overflow ; Input ; Info     ; Stuck at GND            ;
++----------+-------+----------+-------------------------+
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "conversorHex7Seg:display0" ;
++----------+-------+----------+-------------------------+
+; Port     ; Type  ; Severity ; Details                 ;
++----------+-------+----------+-------------------------+
+; apaga    ; Input ; Info     ; Stuck at GND            ;
+; negativo ; Input ; Info     ; Stuck at GND            ;
+; overflow ; Input ; Info     ; Stuck at GND            ;
++----------+-------+----------+-------------------------+
+
+
 +------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|somador:PC_Soma_imediato" ;
 +----------------+-------+----------+------------------------------------------+
@@ -2577,28 +2935,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 736                         ;
+; arriav_ff             ; 737                         ;
 ;     ENA               ; 706                         ;
-;     plain             ; 30                          ;
-; arriav_lcell_comb     ; 901                         ;
+;     plain             ; 31                          ;
+; arriav_lcell_comb     ; 1050                        ;
 ;     arith             ; 60                          ;
 ;         1 data inputs ; 30                          ;
 ;         3 data inputs ; 1                           ;
 ;         4 data inputs ; 29                          ;
-;     extend            ; 136                         ;
-;         7 data inputs ; 136                         ;
-;     normal            ; 705                         ;
-;         1 data inputs ; 6                           ;
-;         2 data inputs ; 83                          ;
-;         3 data inputs ; 57                          ;
-;         4 data inputs ; 188                         ;
-;         5 data inputs ; 153                         ;
-;         6 data inputs ; 218                         ;
-; boundary_port         ; 68                          ;
+;     extend            ; 134                         ;
+;         7 data inputs ; 134                         ;
+;     normal            ; 856                         ;
+;         1 data inputs ; 7                           ;
+;         2 data inputs ; 115                         ;
+;         3 data inputs ; 105                         ;
+;         4 data inputs ; 218                         ;
+;         5 data inputs ; 157                         ;
+;         6 data inputs ; 254                         ;
+; boundary_port         ; 146                         ;
 ; stratixv_ram_block    ; 32                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 19.00                       ;
-; Average LUT depth     ; 12.57                       ;
+; Max LUT depth         ; 20.00                       ;
+; Average LUT depth     ; 13.07                       ;
 +-----------------------+-----------------------------+
 
 
@@ -2607,7 +2965,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:12     ;
+; Top            ; 00:00:35     ;
 +----------------+--------------+
 
 
@@ -2617,100 +2975,109 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sun Dec 06 19:28:29 2020
+    Info: Processing started: Mon Dec 07 15:40:09 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ProcessadorMIPS -c ProcessadorMIPS
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file unidadecontrole.vhd
-    Info (12022): Found design unit 1: UnidadeControle-arch_name File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/UnidadeControle.vhd Line: 17
-    Info (12023): Found entity 1: UnidadeControle File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/UnidadeControle.vhd Line: 5
+    Info (12022): Found design unit 1: UnidadeControle-arch_name File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/UnidadeControle.vhd Line: 17
+    Info (12023): Found entity 1: UnidadeControle File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/UnidadeControle.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
-    Info (12022): Found design unit 1: ULA-arch_name File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/ULA.vhd Line: 18
-    Info (12023): Found entity 1: ULA File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/ULA.vhd Line: 5
+    Info (12022): Found design unit 1: ULA-arch_name File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ULA.vhd Line: 18
+    Info (12023): Found entity 1: ULA File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ULA.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file somaconstante.vhd
-    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/somaConstante.vhd Line: 18
-    Info (12023): Found entity 1: somaConstante File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/somaConstante.vhd Line: 5
+    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/somaConstante.vhd Line: 18
+    Info (12023): Found entity 1: somaConstante File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/somaConstante.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file rommips.vhd
-    Info (12022): Found design unit 1: ROMMIPS-assincrona File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/ROMMIPS.vhd Line: 16
-    Info (12023): Found entity 1: ROMMIPS File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/ROMMIPS.vhd Line: 6
+    Info (12022): Found design unit 1: ROMMIPS-assincrona File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ROMMIPS.vhd Line: 16
+    Info (12023): Found entity 1: ROMMIPS File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ROMMIPS.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file registradorgenerico.vhd
-    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/registradorGenerico.vhd Line: 15
-    Info (12023): Found entity 1: registradorGenerico File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/registradorGenerico.vhd Line: 4
+    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/registradorGenerico.vhd Line: 15
+    Info (12023): Found entity 1: registradorGenerico File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/registradorGenerico.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file processadormips.vhd
-    Info (12022): Found design unit 1: ProcessadorMIPS-arch_name File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/ProcessadorMIPS.vhd Line: 24
-    Info (12023): Found entity 1: ProcessadorMIPS File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/ProcessadorMIPS.vhd Line: 5
+    Info (12022): Found design unit 1: ProcessadorMIPS-arch_name File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ProcessadorMIPS.vhd Line: 27
+    Info (12023): Found entity 1: ProcessadorMIPS File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ProcessadorMIPS.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file bancoregistradoresarqregreg.vhd
-    Info (12022): Found design unit 1: bancoRegistradoresArqRegReg-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/bancoRegistradoresArqRegReg.vhd Line: 30
-    Info (12023): Found entity 1: bancoRegistradoresArqRegReg File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/bancoRegistradoresArqRegReg.vhd Line: 7
+    Info (12022): Found design unit 1: bancoRegistradoresArqRegReg-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/bancoRegistradoresArqRegReg.vhd Line: 30
+    Info (12023): Found entity 1: bancoRegistradoresArqRegReg File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/bancoRegistradoresArqRegReg.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file ula1bit.vhd
-    Info (12022): Found design unit 1: ULA1bit-arch_name File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/ULA1bit.vhd Line: 22
-    Info (12023): Found entity 1: ULA1bit File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/ULA1bit.vhd Line: 5
+    Info (12022): Found design unit 1: ULA1bit-arch_name File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ULA1bit.vhd Line: 22
+    Info (12023): Found entity 1: ULA1bit File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ULA1bit.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file somadorcompleto.vhd
-    Info (12022): Found design unit 1: somadorCompleto-arch_name File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/somadorCompleto.vhd Line: 19
-    Info (12023): Found entity 1: somadorCompleto File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/somadorCompleto.vhd Line: 5
+    Info (12022): Found design unit 1: somadorCompleto-arch_name File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/somadorCompleto.vhd Line: 19
+    Info (12023): Found entity 1: somadorCompleto File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/somadorCompleto.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico4x1.vhd
-    Info (12022): Found design unit 1: muxGenerico4x1-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/muxGenerico4x1.vhd Line: 13
-    Info (12023): Found entity 1: muxGenerico4x1 File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/muxGenerico4x1.vhd Line: 4
+    Info (12022): Found design unit 1: muxGenerico4x1-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/muxGenerico4x1.vhd Line: 13
+    Info (12023): Found entity 1: muxGenerico4x1 File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/muxGenerico4x1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1_1bit.vhd
-    Info (12022): Found design unit 1: muxGenerico2x1_1bit-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/muxGenerico2x1_1bit.vhd Line: 13
-    Info (12023): Found entity 1: muxGenerico2x1_1bit File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/muxGenerico2x1_1bit.vhd Line: 4
+    Info (12022): Found design unit 1: muxGenerico2x1_1bit-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/muxGenerico2x1_1bit.vhd Line: 13
+    Info (12023): Found entity 1: muxGenerico2x1_1bit File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/muxGenerico2x1_1bit.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file flipflopgenerico.vhd
-    Info (12022): Found design unit 1: flipFlopGenerico-main File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/flipFlopGenerico.vhd Line: 17
-    Info (12023): Found entity 1: flipFlopGenerico File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/flipFlopGenerico.vhd Line: 4
+    Info (12022): Found design unit 1: flipFlopGenerico-main File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/flipFlopGenerico.vhd Line: 17
+    Info (12023): Found entity 1: flipFlopGenerico File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/flipFlopGenerico.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1.vhd
-    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/muxGenerico2x1.vhd Line: 14
-    Info (12023): Found entity 1: muxGenerico2x1 File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/muxGenerico2x1.vhd Line: 4
+    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/muxGenerico2x1.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico2x1 File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/muxGenerico2x1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file somador.vhd
-    Info (12022): Found design unit 1: somador-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/somador.vhd Line: 18
-    Info (12023): Found entity 1: somador File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/somador.vhd Line: 5
+    Info (12022): Found design unit 1: somador-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/somador.vhd Line: 18
+    Info (12023): Found entity 1: somador File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/somador.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file rammips.vhd
-    Info (12022): Found design unit 1: RAMMIPS-assincrona File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/RAMMIPS.vhd Line: 19
-    Info (12023): Found entity 1: RAMMIPS File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/RAMMIPS.vhd Line: 5
+    Info (12022): Found design unit 1: RAMMIPS-assincrona File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/RAMMIPS.vhd Line: 19
+    Info (12023): Found entity 1: RAMMIPS File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/RAMMIPS.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file uc_ula.vhd
-    Info (12022): Found design unit 1: UC_ULA-arch_name File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/UC_ULA.vhd Line: 18
-    Info (12023): Found entity 1: UC_ULA File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/UC_ULA.vhd Line: 5
+    Info (12022): Found design unit 1: UC_ULA-arch_name File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/UC_ULA.vhd Line: 18
+    Info (12023): Found entity 1: UC_ULA File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/UC_ULA.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file estendesinalgenerico.vhd
-    Info (12022): Found design unit 1: estendeSinalGenerico-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/estendeSinalGenerico.vhd Line: 19
-    Info (12023): Found entity 1: estendeSinalGenerico File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/estendeSinalGenerico.vhd Line: 4
+    Info (12022): Found design unit 1: estendeSinalGenerico-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/estendeSinalGenerico.vhd Line: 19
+    Info (12023): Found entity 1: estendeSinalGenerico File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/estendeSinalGenerico.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file concatena.vhd
-    Info (12022): Found design unit 1: concatena-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/concatena.vhd Line: 15
-    Info (12023): Found entity 1: concatena File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/concatena.vhd Line: 4
+    Info (12022): Found design unit 1: concatena-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/concatena.vhd Line: 15
+    Info (12023): Found entity 1: concatena File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/concatena.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file overflow.vhd
-    Info (12022): Found design unit 1: overflow-arch_name File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/overflow.vhd Line: 16
-    Info (12023): Found entity 1: overflow File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/overflow.vhd Line: 5
+    Info (12022): Found design unit 1: overflow-arch_name File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/overflow.vhd Line: 16
+    Info (12023): Found entity 1: overflow File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/overflow.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico3x1.vhd
-    Info (12022): Found design unit 1: muxGenerico3x1-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/muxGenerico3x1.vhd Line: 14
-    Info (12023): Found entity 1: muxGenerico3x1 File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/muxGenerico3x1.vhd Line: 4
+    Info (12022): Found design unit 1: muxGenerico3x1-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/muxGenerico3x1.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico3x1 File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/muxGenerico3x1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file fluxo_dados.vhd
-    Info (12022): Found design unit 1: Fluxo_Dados-arch_name File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/Fluxo_Dados.vhd Line: 27
-    Info (12023): Found entity 1: Fluxo_Dados File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/Fluxo_Dados.vhd Line: 5
+    Info (12022): Found design unit 1: Fluxo_Dados-arch_name File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 27
+    Info (12023): Found entity 1: Fluxo_Dados File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file conversorhex7seg.vhd
+    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/conversorHex7Seg.vhd Line: 16
+    Info (12023): Found entity 1: conversorHex7Seg File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/conversorHex7Seg.vhd Line: 4
+Info (12021): Found 3 design units, including 1 entities, in source file edgedetector.vhd
+    Info (12022): Found design unit 1: edgeDetector-bordaSubida File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/edgeDetector.vhd Line: 10
+    Info (12022): Found design unit 2: edgeDetector-bordaDescida File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/edgeDetector.vhd Line: 23
+    Info (12023): Found entity 1: edgeDetector File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/edgeDetector.vhd Line: 4
 Info (12127): Elaborating entity "ProcessadorMIPS" for the top level hierarchy
-Info (12128): Elaborating entity "Fluxo_Dados" for hierarchy "Fluxo_Dados:fluxo_dados" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/ProcessadorMIPS.vhd Line: 33
-Info (12128): Elaborating entity "somaConstante" for hierarchy "Fluxo_Dados:fluxo_dados|somaConstante:PC_Soma_Constante" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/Fluxo_Dados.vhd Line: 74
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "Fluxo_Dados:fluxo_dados|registradorGenerico:PC_entity" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/Fluxo_Dados.vhd Line: 77
-Info (12128): Elaborating entity "ROMMIPS" for hierarchy "Fluxo_Dados:fluxo_dados|ROMMIPS:ROM" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/Fluxo_Dados.vhd Line: 81
-Warning (10541): VHDL Signal Declaration warning at ROMMIPS.vhd(19): used implicit default value for signal "memROM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/ROMMIPS.vhd Line: 19
-Info (12128): Elaborating entity "bancoRegistradoresArqRegReg" for hierarchy "Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/Fluxo_Dados.vhd Line: 84
-Info (12128): Elaborating entity "ULA" for hierarchy "Fluxo_Dados:fluxo_dados|ULA:ULA" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/Fluxo_Dados.vhd Line: 94
-Info (12128): Elaborating entity "ULA1bit" for hierarchy "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula0" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/ULA.vhd Line: 31
-Info (12128): Elaborating entity "muxGenerico2x1_1bit" for hierarchy "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula0|muxGenerico2x1_1bit:mux_inverteA" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/ULA1bit.vhd Line: 29
-Info (12128): Elaborating entity "somadorCompleto" for hierarchy "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula0|somadorCompleto:soma_sub" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/ULA1bit.vhd Line: 47
-Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula0|muxGenerico4x1:mux_ula" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/ULA1bit.vhd Line: 54
-Info (12128): Elaborating entity "overflow" for hierarchy "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula0|overflow:Overflow_exists" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/ULA1bit.vhd Line: 63
-Info (12128): Elaborating entity "UC_ULA" for hierarchy "Fluxo_Dados:fluxo_dados|UC_ULA:UC_ULA" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/Fluxo_Dados.vhd Line: 103
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "Fluxo_Dados:fluxo_dados|muxGenerico2x1:mux_rt_imediato" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/Fluxo_Dados.vhd Line: 112
-Info (12128): Elaborating entity "muxGenerico3x1" for hierarchy "Fluxo_Dados:fluxo_dados|muxGenerico3x1:mux_PC" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/Fluxo_Dados.vhd Line: 118
-Info (12128): Elaborating entity "muxGenerico3x1" for hierarchy "Fluxo_Dados:fluxo_dados|muxGenerico3x1:mux_rt_rd" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/Fluxo_Dados.vhd Line: 133
-Info (12128): Elaborating entity "somador" for hierarchy "Fluxo_Dados:fluxo_dados|somador:PC_Soma_imediato" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/Fluxo_Dados.vhd Line: 149
-Info (12128): Elaborating entity "RAMMIPS" for hierarchy "Fluxo_Dados:fluxo_dados|RAMMIPS:RAM" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/Fluxo_Dados.vhd Line: 152
-Info (12128): Elaborating entity "estendeSinalGenerico" for hierarchy "Fluxo_Dados:fluxo_dados|estendeSinalGenerico:estende_sinal" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/Fluxo_Dados.vhd Line: 161
-Info (12128): Elaborating entity "concatena" for hierarchy "Fluxo_Dados:fluxo_dados|concatena:concatena" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/Fluxo_Dados.vhd Line: 167
-Info (12128): Elaborating entity "UnidadeControle" for hierarchy "UnidadeControle:UC" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/ProcessadorMIPS.vhd Line: 43
+Info (12128): Elaborating entity "Fluxo_Dados" for hierarchy "Fluxo_Dados:fluxo_dados" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ProcessadorMIPS.vhd Line: 41
+Info (12128): Elaborating entity "somaConstante" for hierarchy "Fluxo_Dados:fluxo_dados|somaConstante:PC_Soma_Constante" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 74
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "Fluxo_Dados:fluxo_dados|registradorGenerico:PC_entity" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 77
+Info (12128): Elaborating entity "ROMMIPS" for hierarchy "Fluxo_Dados:fluxo_dados|ROMMIPS:ROM" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 81
+Warning (10541): VHDL Signal Declaration warning at ROMMIPS.vhd(19): used implicit default value for signal "memROM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ROMMIPS.vhd Line: 19
+Info (12128): Elaborating entity "bancoRegistradoresArqRegReg" for hierarchy "Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 84
+Info (12128): Elaborating entity "ULA" for hierarchy "Fluxo_Dados:fluxo_dados|ULA:ULA" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 94
+Info (12128): Elaborating entity "ULA1bit" for hierarchy "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula0" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ULA.vhd Line: 31
+Info (12128): Elaborating entity "muxGenerico2x1_1bit" for hierarchy "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula0|muxGenerico2x1_1bit:mux_inverteA" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ULA1bit.vhd Line: 29
+Info (12128): Elaborating entity "somadorCompleto" for hierarchy "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula0|somadorCompleto:soma_sub" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ULA1bit.vhd Line: 47
+Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula0|muxGenerico4x1:mux_ula" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ULA1bit.vhd Line: 54
+Info (12128): Elaborating entity "overflow" for hierarchy "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula0|overflow:Overflow_exists" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ULA1bit.vhd Line: 63
+Info (12128): Elaborating entity "UC_ULA" for hierarchy "Fluxo_Dados:fluxo_dados|UC_ULA:UC_ULA" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 103
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "Fluxo_Dados:fluxo_dados|muxGenerico2x1:mux_rt_imediato" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 112
+Info (12128): Elaborating entity "muxGenerico3x1" for hierarchy "Fluxo_Dados:fluxo_dados|muxGenerico3x1:mux_PC" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 118
+Info (12128): Elaborating entity "muxGenerico3x1" for hierarchy "Fluxo_Dados:fluxo_dados|muxGenerico3x1:mux_rt_rd" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 133
+Info (12128): Elaborating entity "somador" for hierarchy "Fluxo_Dados:fluxo_dados|somador:PC_Soma_imediato" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 149
+Info (12128): Elaborating entity "RAMMIPS" for hierarchy "Fluxo_Dados:fluxo_dados|RAMMIPS:RAM" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 152
+Info (12128): Elaborating entity "estendeSinalGenerico" for hierarchy "Fluxo_Dados:fluxo_dados|estendeSinalGenerico:estende_sinal" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 161
+Info (12128): Elaborating entity "concatena" for hierarchy "Fluxo_Dados:fluxo_dados|concatena:concatena" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 167
+Info (12128): Elaborating entity "UnidadeControle" for hierarchy "UnidadeControle:UC" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ProcessadorMIPS.vhd Line: 52
+Info (12129): Elaborating entity "edgeDetector" using architecture "A:bordasubida" for hierarchy "edgeDetector:detectorSub0" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ProcessadorMIPS.vhd Line: 54
+Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:display0" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ProcessadorMIPS.vhd Line: 67
 Info (276014): Found 2 instances of uninferred RAM logic
-    Info (276007): RAM logic "Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador" is uninferred due to asynchronous read logic File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/bancoRegistradoresArqRegReg.vhd Line: 50
-    Info (276004): RAM logic "Fluxo_Dados:fluxo_dados|ROMMIPS:ROM|memROM" is uninferred due to inappropriate RAM size File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/ROMMIPS.vhd Line: 19
-Warning (113028): 14 out of 64 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 2 warnings found, and 2 warnings are reported. File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/ROMcontent.mif Line: 1
-    Warning (113026): Memory Initialization File Address 16 is not initialized File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/ROMcontent.mif Line: 1
-    Warning (113027): Addresses ranging from 18 to 30 are not initialized File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/ROMcontent.mif Line: 1
+    Info (276007): RAM logic "Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador" is uninferred due to asynchronous read logic File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/bancoRegistradoresArqRegReg.vhd Line: 50
+    Info (276004): RAM logic "Fluxo_Dados:fluxo_dados|ROMMIPS:ROM|memROM" is uninferred due to inappropriate RAM size File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ROMMIPS.vhd Line: 19
+Warning (113028): 14 out of 64 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 2 warnings found, and 2 warnings are reported. File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ROMcontent.mif Line: 1
+    Warning (113026): Memory Initialization File Address 16 is not initialized File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ROMcontent.mif Line: 1
+    Warning (113027): Addresses ranging from 18 to 30 are not initialized File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ROMcontent.mif Line: 1
 Info (19000): Inferred 1 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "Fluxo_Dados:fluxo_dados|RAMMIPS:RAM|memRAM_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
@@ -2748,19 +3115,21 @@ Info (12133): Instantiated megafunction "Fluxo_Dados:fluxo_dados|RAMMIPS:RAM|alt
     Info (12134): Parameter "READ_DURING_WRITE_MODE_MIXED_PORTS" = "OLD_DATA"
     Info (12134): Parameter "RDCONTROL_REG_B" = "CLOCK0"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_60q1.tdf
-    Info (12023): Found entity 1: altsyncram_60q1 File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/db/altsyncram_60q1.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_60q1 File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/db/altsyncram_60q1.tdf Line: 28
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1699 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 67 output pins
-    Info (21061): Implemented 1599 logic cells
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ProcessadorMIPS.vhd Line: 21
+Info (21057): Implemented 1926 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 141 output pins
+    Info (21061): Implemented 1748 logic cells
     Info (21064): Implemented 32 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4872 megabytes
-    Info: Processing ended: Sun Dec 06 19:29:14 2020
-    Info: Elapsed time: 00:00:45
-    Info: Total CPU time (on all processors): 00:01:31
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4876 megabytes
+    Info: Processing ended: Mon Dec 07 15:41:39 2020
+    Info: Elapsed time: 00:01:30
+    Info: Total CPU time (on all processors): 00:01:57
 
 
