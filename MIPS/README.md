@@ -61,32 +61,32 @@ Este projeto será a implementação de um processador RISC de 32 bits, compatí
 Quanto aos dois grupos de instruções, o subgrupo "A" é formado pelas instruções abaixo:
 
 As instruções de referência à memória:
-*Carrega palavra (load word: lw);
-*Armazena palavra (store word: sw).
+* Carrega palavra (load word: lw);
+* Armazena palavra (store word: sw).
 As instruções lógico-aritméticas:
-*Soma (add);
-*Subtração (sub);
-*E lógico (AND);
-*OU lógico (OR);
-*Comparação menor que (set if less than: slt).
+* Soma (add);
+* Subtração (sub);
+* E lógico (AND);
+* OU lógico (OR);
+* Comparação menor que (set if less than: slt).
 As instruções de desvio:
-*Desvio se igual (branch equal: beq);
-*Salto incondicional (jump: j).
+* Desvio se igual (branch equal: beq);
+* Salto incondicional (jump: j).
 
 **Grupo B**
 O subgrupo "B" possui as instruções do subgrupo "A" e adiciona as listadas abaixo:
 
 A instrução de carga:
-*Carrega imediato para 16 bits MSB (load upper immediate: lui).
+* Carrega imediato para 16 bits MSB (load upper immediate: lui).
 As instruções lógico-aritméticas:
-*Soma com imediato (addi);
-*E lógico com imediato (ANDI);
-*OU lógico com imediato (ORI);
-*Comparação menor que imediato (set if less than: slti).
+* Soma com imediato (addi);
+* E lógico com imediato (ANDI);
+* OU lógico com imediato (ORI);
+* Comparação menor que imediato (set if less than: slti).
 As instruções de desvio:
-*Desvio se não igual (branch not equal: bne);
-*Salto e conecta (jump and link: jal);
-*Salto por registrador (jump register: jr).
+* Desvio se não igual (branch not equal: bne);
+* Salto e conecta (jump and link: jal);
+* Salto por registrador (jump register: jr).
 
 ### Fluxo de Dados
 O Fluxo de Dados do projeto é responsável por todas as operações aritméticas e execução das instruções. Abaixo está representado o fluxo para as intruções do tipo A e B utilizadas no projeto, tanto o esquema como no RTL Viewer. 
