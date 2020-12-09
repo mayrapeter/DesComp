@@ -1,5 +1,5 @@
 EDA Netlist Writer report for ProcessadorMIPS
-Sun Dec 06 19:33:04 2020
+Wed Dec 09 00:14:16 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sun Dec 06 19:33:04 2020 ;
+; EDA Netlist Writer Status ; Successful - Wed Dec 09 00:14:16 2020 ;
 ; Revision Name             ; ProcessadorMIPS                       ;
 ; Top-level Entity Name     ; ProcessadorMIPS                       ;
 ; Family                    ; Cyclone V                             ;
@@ -66,13 +66,13 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------------------------+------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                                          ;
-+---------------------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                                     ;
-+---------------------------------------------------------------------------------------------------------------------+
-; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/simulation/qsim//ProcessadorMIPS.vho ;
-+---------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                        ;
++-------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                   ;
++-------------------------------------------------------------------------------------------------------------------+
+; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/simulation/qsim//ProcessadorMIPS.vho ;
++-------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -95,16 +95,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Sun Dec 06 19:33:00 2020
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/simulation/qsim/ ProcessadorMIPS -c ProcessadorMIPS
+    Info: Processing started: Wed Dec 09 00:14:14 2020
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/simulation/qsim/ ProcessadorMIPS -c ProcessadorMIPS
 Info (119006): Selected device 5CEBA4F23C7 for design "ProcessadorMIPS"
-Warning (18550): Found RAM instances implemented as ROM because the write logic is disabled. One instance is listed below as an example.
-    Info (119043): Atom "Fluxo_Dados:fluxo_dados|RAMMIPS:RAM|altsyncram:memRAM_rtl_0|altsyncram_60q1:auto_generated|ram_block1a0" is instantiated as RAM, but it is actually implemented as ROM function because the write logic is always disabled
-Info (204019): Generated file ProcessadorMIPS.vho in folder "C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/Aula15/simulation/qsim//" for EDA simulation tool
-Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4723 megabytes
-    Info: Processing ended: Sun Dec 06 19:33:04 2020
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+Info (204019): Generated file ProcessadorMIPS.vho in folder "C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4722 megabytes
+    Info: Processing ended: Wed Dec 09 00:14:16 2020
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

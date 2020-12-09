@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "10/30/2020 15:03:36"
+-- Generated on "12/09/2020 00:14:13"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          ProcessadorMIPS
 -- 
@@ -34,11 +34,27 @@ END ProcessadorMIPS_vhd_vec_tst;
 ARCHITECTURE ProcessadorMIPS_arch OF ProcessadorMIPS_vhd_vec_tst IS
 -- constants                                                 
 -- signals                                                   
-SIGNAL clk : STD_LOGIC;
+SIGNAL CLOCK_50 : STD_LOGIC;
+SIGNAL imediato : STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL imediatoIDEX : STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL jr_out : STD_LOGIC;
+SIGNAL monitora_flag_z : STD_LOGIC;
+SIGNAL mux_imed_saida : STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL overflow : STD_LOGIC;
+SIGNAL PC_saida : STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL saidaA_ULA : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL ULA_saida : STD_LOGIC_VECTOR(31 DOWNTO 0);
 COMPONENT ProcessadorMIPS
 	PORT (
-	clk : IN STD_LOGIC;
+	CLOCK_50 : IN STD_LOGIC;
+	imediato : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+	imediatoIDEX : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+	jr_out : OUT STD_LOGIC;
+	monitora_flag_z : OUT STD_LOGIC;
+	mux_imed_saida : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+	overflow : OUT STD_LOGIC;
+	PC_saida : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+	saidaA_ULA : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 	ULA_saida : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
 	);
 END COMPONENT;
@@ -46,19 +62,31 @@ BEGIN
 	i1 : ProcessadorMIPS
 	PORT MAP (
 -- list connections between master ports and signals
-	clk => clk,
+	CLOCK_50 => CLOCK_50,
+	imediato => imediato,
+	imediatoIDEX => imediatoIDEX,
+	jr_out => jr_out,
+	monitora_flag_z => monitora_flag_z,
+	mux_imed_saida => mux_imed_saida,
+	overflow => overflow,
+	PC_saida => PC_saida,
+	saidaA_ULA => saidaA_ULA,
 	ULA_saida => ULA_saida
 	);
 
--- clk
-t_prcs_clk: PROCESS
+-- CLOCK_50
+t_prcs_CLOCK_50: PROCESS
 BEGIN
-LOOP
-	clk <= '0';
+	CLOCK_50 <= '1';
 	WAIT FOR 10000 ps;
-	clk <= '1';
-	WAIT FOR 10000 ps;
-	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
-END LOOP;
-END PROCESS t_prcs_clk;
+	FOR i IN 1 TO 74
+	LOOP
+		CLOCK_50 <= '0';
+		WAIT FOR 10000 ps;
+		CLOCK_50 <= '1';
+		WAIT FOR 10000 ps;
+	END LOOP;
+	CLOCK_50 <= '0';
+WAIT;
+END PROCESS t_prcs_CLOCK_50;
 END ProcessadorMIPS_arch;

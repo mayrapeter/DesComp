@@ -19,7 +19,7 @@ end entity;
 architecture assincrona OF RAMMIPS IS
   type blocoMemoria IS ARRAY(0 TO 2**memoryAddrWidth - 1) OF std_logic_vector(dataWidth-1 DOWNTO 0);
 
-  signal memRAM: blocoMemoria;
+  signal memRAM : blocoMemoria := (OTHERS => (OTHERS => '0'));
 --  Caso queira inicializar a RAM (para testes):
 --  attribute ram_init_file : string;
 --  attribute ram_init_file of memRAM:
