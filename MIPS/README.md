@@ -130,6 +130,6 @@ O Top-Level é responsável por juntar tanto o fluxo de dados quanto a unidade d
 Para verificar as saídas do PC, da ULA e do Mux RT Imediato na FPGA é necessário utilizar as chaves e o botão, como a seguir:
 * **KEY 0**: Muda o CLOCK
 * **SW**: 
- * Quando nenhuma estiver ativada será representado o PC no display. 
- * Quando SW0 estiver ativada será representada a sáida do MUX RT Imediato. 
- * Quando SW1 estiver ativada será representada a saída da ULA
+  * Quando nenhuma estiver ativada será representado o PC no display. 
+  * Quando SW0 estiver ativada será representada a sáida do MUX RT Imediato. 
+  * Quando SW1 estiver ativada será representada a saída da ULA
