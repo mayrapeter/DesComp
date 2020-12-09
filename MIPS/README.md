@@ -40,11 +40,11 @@ Esses campos podem ser agrupados dependendo do tipo de instrução. O significad
 
 A execução das instruções é dividida em 5 ciclos:
 
-*Instruction Fetch (IF): busca da próxima instrução, na memória de programa, a ser executada;
-*Instruction Decode (ID): decodifica a instrução (UC) e faz a leitura dos registradores utilizados pela instrução;
-*Execute (EX): executa a operação definida pela instrução. É sempre feita na ULA;
-*Memory Acess (MEM): lê a memória ou escreve o resultado da execução na memória RAM;
-*Write Back (WB): escreve o resultado da execução no banco de registradores.
+* Instruction Fetch (IF): busca da próxima instrução, na memória de programa, a ser executada;
+* Instruction Decode (ID): decodifica a instrução (UC) e faz a leitura dos registradores utilizados pela instrução;
+* Execute (EX): executa a operação definida pela instrução. É sempre feita na ULA;
+* Memory Acess (MEM): lê a memória ou escreve o resultado da execução na memória RAM;
+* Write Back (WB): escreve o resultado da execução no banco de registradores.
 
 
 ### Single Cycle vs Pipeline
