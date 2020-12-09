@@ -126,3 +126,10 @@ A unidade de controle receberá o Opcode da instrução e retornará a palavra d
 O Top-Level é responsável por juntar tanto o fluxo de dados quanto a unidade de controle, com o adicional de controlar os botões da placa e os displays de 7 segmentos. Além disso, é nele que são estabelecidos os sinais para a simulação no Waveform. É necessário criar novas entradas no fluxo de dados e passá-las para o Top-Level a fim de verificar as saídas na simulação.
 
 ![Top-level](https://github.com/mayrapeter/DesComp/blob/main/MIPS/top_level.png)
+
+Para verificar as saídas do PC, da ULA e do Mux RT Imediato na FPGA é necessário utilizar as chaves e o botão, como a seguir:
+* **KEY 0**: Muda o CLOCK
+* **SW**: 
+ * Quando nenhuma estiver ativada será representado o PC no display. 
+ * Quando SW0 estiver ativada será representada a sáida do MUX RT Imediato. 
+ * Quando SW1 estiver ativada será representada a saída da ULA
