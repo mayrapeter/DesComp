@@ -29,7 +29,6 @@ O MIPS tem 3 formatos básicos de instruções e é utilizada uma plavra de 32 b
 * Tipo **J** 
 
 ![estrutura](https://github.com/mayrapeter/DesComp/blob/main/MIPS/estrutura.png)
-Figura 1 - Divisão da instrução do MIPS
 
 Esses campos podem ser agrupados dependendo do tipo de instrução. O significado dos nomes dos campos são:
 * **Opcode**: Contém o código da instrução a ser executada;
@@ -114,4 +113,4 @@ A unidade de controle receberá o Opcode da instrução e retornará a palavra d
 ### Top-Level
 O Top-Level é responsável por juntar tanto o fluxo de dados quanto a unidade de controle, com o adicional de controlar os botões da placa e os displays de 7 segmentos. Além disso, é nele que são estabelecidos os sinais para a simulação no Waveform. É necessário criar novas entradas no fluxo de dados e passá-las para o Top-Level a fim de verificar as saídas na simulação.
 
-![Top-level](top_level)
+![Top-level](https://github.com/mayrapeter/DesComp/blob/main/MIPS/top_level.png)
