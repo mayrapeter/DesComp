@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ProcessadorMIPS
-Tue Dec 08 23:29:23 2020
+Wed Dec 09 00:42:19 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -21,7 +21,7 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  13. Registers Packed Into Inferred Megafunctions
  14. Registers Added for RAM Pass-Through Logic
  15. Multiplexer Restructuring Statistics (Restructuring Performed)
- 16. Source assignments for Fluxo_Dados:fluxo_dados|RAMMIPS:RAM|altsyncram:memRAM_rtl_0|altsyncram_60q1:auto_generated
+ 16. Source assignments for Fluxo_Dados:fluxo_dados|RAMMIPS:RAM|altsyncram:memRAM_rtl_0|altsyncram_4hv1:auto_generated
  17. Source assignments for Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|altsyncram:registrador_rtl_0|altsyncram_h8q1:auto_generated
  18. Source assignments for Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|altsyncram:registrador_rtl_1|altsyncram_h8q1:auto_generated
  19. Parameter Settings for User Entity Instance: Top-level Entity: |ProcessadorMIPS
@@ -141,47 +141,54 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 133. Parameter Settings for Inferred Entity Instance: Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|altsyncram:registrador_rtl_0
 134. Parameter Settings for Inferred Entity Instance: Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|altsyncram:registrador_rtl_1
 135. altsyncram Parameter Settings by Entity Instance
-136. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|registradorGenerico:regMEMWB1"
-137. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|muxGenerico3x1:mux_rt_rd"
-138. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|registradorGenerico:regEXMEM1"
-139. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|registradorGenerico:regIDEX1"
-140. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula31"
-141. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula30"
-142. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula29"
-143. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula28"
-144. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula27"
-145. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula26"
-146. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula25"
-147. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula24"
-148. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula23"
-149. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula22"
-150. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula21"
-151. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula20"
-152. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula19"
-153. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula18"
-154. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula17"
-155. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula16"
-156. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula15"
-157. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula14"
-158. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula13"
-159. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula12"
-160. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula11"
-161. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula10"
-162. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula9"
-163. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula8"
-164. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula7"
-165. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula6"
-166. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula5"
-167. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula4"
-168. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula3"
-169. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula2"
-170. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula1"
-171. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula0"
-172. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|registradorGenerico:regIFID1"
-173. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|registradorGenerico:PC_entity"
-174. Post-Synthesis Netlist Statistics for Top Partition
-175. Elapsed Time Per Partition
-176. Analysis & Synthesis Messages
+136. Port Connectivity Checks: "conversorHex7Seg:display5"
+137. Port Connectivity Checks: "conversorHex7Seg:display4"
+138. Port Connectivity Checks: "conversorHex7Seg:display3"
+139. Port Connectivity Checks: "conversorHex7Seg:display2"
+140. Port Connectivity Checks: "conversorHex7Seg:display1"
+141. Port Connectivity Checks: "conversorHex7Seg:display0"
+142. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|registradorGenerico:regMEMWB1"
+143. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|muxGenerico3x1:mux_rt_rd"
+144. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|registradorGenerico:regEXMEM1"
+145. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|registradorGenerico:regIDEX1"
+146. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula31"
+147. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula30"
+148. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula29"
+149. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula28"
+150. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula27"
+151. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula26"
+152. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula25"
+153. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula24"
+154. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula23"
+155. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula22"
+156. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula21"
+157. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula20"
+158. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula19"
+159. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula18"
+160. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula17"
+161. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula16"
+162. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula15"
+163. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula14"
+164. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula13"
+165. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula12"
+166. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula11"
+167. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula10"
+168. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula9"
+169. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula8"
+170. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula7"
+171. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula6"
+172. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula5"
+173. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula4"
+174. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula3"
+175. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula2"
+176. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula1"
+177. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula0"
+178. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|registradorGenerico:regIFID1"
+179. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|registradorGenerico:PC_entity"
+180. Port Connectivity Checks: "Fluxo_Dados:fluxo_dados"
+181. Post-Synthesis Netlist Statistics for Top Partition
+182. Elapsed Time Per Partition
+183. Analysis & Synthesis Messages
 
 
 
@@ -208,14 +215,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Dec 08 23:29:23 2020       ;
+; Analysis & Synthesis Status     ; Successful - Wed Dec 09 00:42:19 2020       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; ProcessadorMIPS                             ;
 ; Top-level Entity Name           ; ProcessadorMIPS                             ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 550                                         ;
-; Total pins                      ; 132                                         ;
+; Total registers                 ; 561                                         ;
+; Total pins                      ; 47                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 4,096                                       ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -360,6 +367,8 @@ https://fpgasoftware.intel.com/eula.
 ; overflow.vhd                                                         ; yes             ; User VHDL File                                        ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/overflow.vhd                                                         ;         ;
 ; muxGenerico3x1.vhd                                                   ; yes             ; User VHDL File                                        ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/muxGenerico3x1.vhd                                                   ;         ;
 ; Fluxo_Dados.vhd                                                      ; yes             ; User VHDL File                                        ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd                                                      ;         ;
+; conversorHex7Seg.vhd                                                 ; yes             ; User VHDL File                                        ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/conversorHex7Seg.vhd                                                 ;         ;
+; edgeDetector.vhd                                                     ; yes             ; User VHDL File                                        ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/edgeDetector.vhd                                                     ;         ;
 ; altsyncram.tdf                                                       ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                                                                             ;         ;
 ; stratix_ram_block.inc                                                ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                                      ;         ;
 ; lpm_mux.inc                                                          ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                                                                ;         ;
@@ -369,39 +378,40 @@ https://fpgasoftware.intel.com/eula.
 ; altrom.inc                                                           ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                                                                                 ;         ;
 ; altram.inc                                                           ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                                                                                 ;         ;
 ; altdpram.inc                                                         ; yes             ; Megafunction                                          ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                                                                               ;         ;
-; db/altsyncram_60q1.tdf                                               ; yes             ; Auto-Generated Megafunction                           ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/db/altsyncram_60q1.tdf                                               ;         ;
+; db/altsyncram_4hv1.tdf                                               ; yes             ; Auto-Generated Megafunction                           ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/db/altsyncram_4hv1.tdf                                               ;         ;
+; db/ProcessadorMIPS.ram0_RAMMIPS_abb6a4b.hdl.mif                      ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/db/ProcessadorMIPS.ram0_RAMMIPS_abb6a4b.hdl.mif                      ;         ;
 ; db/altsyncram_h8q1.tdf                                               ; yes             ; Auto-Generated Megafunction                           ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/db/altsyncram_h8q1.tdf                                               ;         ;
 ; db/processadormips.ram0_bancoregistradoresarqregreg_fdb8a76e.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/db/processadormips.ram0_bancoregistradoresarqregreg_fdb8a76e.hdl.mif ;         ;
 +----------------------------------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                  ;
-+---------------------------------------------+----------------+
-; Resource                                    ; Usage          ;
-+---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 359            ;
-;                                             ;                ;
-; Combinational ALUT usage for logic          ; 482            ;
-;     -- 7 input functions                    ; 2              ;
-;     -- 6 input functions                    ; 125            ;
-;     -- 5 input functions                    ; 152            ;
-;     -- 4 input functions                    ; 40             ;
-;     -- <=3 input functions                  ; 163            ;
-;                                             ;                ;
-; Dedicated logic registers                   ; 550            ;
-;                                             ;                ;
-; I/O pins                                    ; 132            ;
-; Total MLAB memory bits                      ; 0              ;
-; Total block memory bits                     ; 4096           ;
-;                                             ;                ;
-; Total DSP Blocks                            ; 0              ;
-;                                             ;                ;
-; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 646            ;
-; Total fan-out                               ; 4506           ;
-; Average fan-out                             ; 3.24           ;
-+---------------------------------------------+----------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                   ;
++---------------------------------------------+---------------------------------+
+; Resource                                    ; Usage                           ;
++---------------------------------------------+---------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 403                             ;
+;                                             ;                                 ;
+; Combinational ALUT usage for logic          ; 589                             ;
+;     -- 7 input functions                    ; 1                               ;
+;     -- 6 input functions                    ; 155                             ;
+;     -- 5 input functions                    ; 160                             ;
+;     -- 4 input functions                    ; 70                              ;
+;     -- <=3 input functions                  ; 203                             ;
+;                                             ;                                 ;
+; Dedicated logic registers                   ; 561                             ;
+;                                             ;                                 ;
+; I/O pins                                    ; 47                              ;
+; Total MLAB memory bits                      ; 0                               ;
+; Total block memory bits                     ; 4096                            ;
+;                                             ;                                 ;
+; Total DSP Blocks                            ; 0                               ;
+;                                             ;                                 ;
+; Maximum fan-out node                        ; edgeDetector:detectorSub0|saida ;
+; Maximum fan-out                             ; 656                             ;
+; Total fan-out                               ; 4795                            ;
+; Average fan-out                             ; 3.58                            ;
++---------------------------------------------+---------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -409,16 +419,16 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------+--------------+
 ; Compilation Hierarchy Node                     ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                        ; Entity Name                 ; Library Name ;
 +------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------+--------------+
-; |ProcessadorMIPS                               ; 482 (1)             ; 550 (0)                   ; 4096              ; 0          ; 132  ; 0            ; |ProcessadorMIPS                                                                                                                           ; ProcessadorMIPS             ; work         ;
-;    |Fluxo_Dados:fluxo_dados|                   ; 470 (32)            ; 550 (0)                   ; 4096              ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados                                                                                                   ; Fluxo_Dados                 ; work         ;
+; |ProcessadorMIPS                               ; 589 (79)            ; 561 (0)                   ; 4096              ; 0          ; 47   ; 0            ; |ProcessadorMIPS                                                                                                                           ; ProcessadorMIPS             ; work         ;
+;    |Fluxo_Dados:fluxo_dados|                   ; 454 (31)            ; 560 (0)                   ; 4096              ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados                                                                                                   ; Fluxo_Dados                 ; work         ;
 ;       |RAMMIPS:RAM|                            ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|RAMMIPS:RAM                                                                                       ; RAMMIPS                     ; work         ;
 ;          |altsyncram:memRAM_rtl_0|             ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|RAMMIPS:RAM|altsyncram:memRAM_rtl_0                                                               ; altsyncram                  ; work         ;
-;             |altsyncram_60q1:auto_generated|   ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|RAMMIPS:RAM|altsyncram:memRAM_rtl_0|altsyncram_60q1:auto_generated                                ; altsyncram_60q1             ; work         ;
+;             |altsyncram_4hv1:auto_generated|   ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|RAMMIPS:RAM|altsyncram:memRAM_rtl_0|altsyncram_4hv1:auto_generated                                ; altsyncram_4hv1             ; work         ;
 ;       |ROMMIPS:ROM|                            ; 21 (21)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ROMMIPS:ROM                                                                                       ; ROMMIPS                     ; work         ;
-;       |UC_ULA:UC_ULA|                          ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|UC_ULA:UC_ULA                                                                                     ; UC_ULA                      ; work         ;
-;       |ULA:ULA|                                ; 198 (40)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA                                                                                           ; ULA                         ; work         ;
-;          |ULA1bit:ula0|                        ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula0                                                                              ; ULA1bit                     ; work         ;
-;             |muxGenerico4x1:mux_ula|           ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula0|muxGenerico4x1:mux_ula                                                       ; muxGenerico4x1              ; work         ;
+;       |UC_ULA:UC_ULA|                          ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|UC_ULA:UC_ULA                                                                                     ; UC_ULA                      ; work         ;
+;       |ULA:ULA|                                ; 189 (47)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA                                                                                           ; ULA                         ; work         ;
+;          |ULA1bit:ula0|                        ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula0                                                                              ; ULA1bit                     ; work         ;
+;             |muxGenerico4x1:mux_ula|           ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula0|muxGenerico4x1:mux_ula                                                       ; muxGenerico4x1              ; work         ;
 ;             |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula0|somadorCompleto:soma_sub                                                     ; somadorCompleto             ; work         ;
 ;          |ULA1bit:ula10|                       ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula10                                                                             ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula10|muxGenerico2x1_1bit:mux_inverteB                                            ; muxGenerico2x1_1bit         ; work         ;
@@ -428,118 +438,112 @@ https://fpgasoftware.intel.com/eula.
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula11|muxGenerico2x1_1bit:mux_inverteB                                            ; muxGenerico2x1_1bit         ; work         ;
 ;             |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula11|muxGenerico4x1:mux_ula                                                      ; muxGenerico4x1              ; work         ;
 ;             |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula11|somadorCompleto:soma_sub                                                    ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula12|                       ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula12                                                                             ; ULA1bit                     ; work         ;
+;          |ULA1bit:ula12|                       ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula12                                                                             ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula12|muxGenerico2x1_1bit:mux_inverteB                                            ; muxGenerico2x1_1bit         ; work         ;
 ;             |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula12|muxGenerico4x1:mux_ula                                                      ; muxGenerico4x1              ; work         ;
-;             |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula12|somadorCompleto:soma_sub                                                    ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula13|                       ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula13                                                                             ; ULA1bit                     ; work         ;
+;          |ULA1bit:ula13|                       ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula13                                                                             ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula13|muxGenerico2x1_1bit:mux_inverteB                                            ; muxGenerico2x1_1bit         ; work         ;
-;             |muxGenerico4x1:mux_ula|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula13|muxGenerico4x1:mux_ula                                                      ; muxGenerico4x1              ; work         ;
-;             |somadorCompleto:soma_sub|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula13|somadorCompleto:soma_sub                                                    ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula14|                       ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula14                                                                             ; ULA1bit                     ; work         ;
+;             |muxGenerico4x1:mux_ula|           ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula13|muxGenerico4x1:mux_ula                                                      ; muxGenerico4x1              ; work         ;
+;             |somadorCompleto:soma_sub|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula13|somadorCompleto:soma_sub                                                    ; somadorCompleto             ; work         ;
+;          |ULA1bit:ula14|                       ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula14                                                                             ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula14|muxGenerico2x1_1bit:mux_inverteB                                            ; muxGenerico2x1_1bit         ; work         ;
 ;             |muxGenerico4x1:mux_ula|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula14|muxGenerico4x1:mux_ula                                                      ; muxGenerico4x1              ; work         ;
-;             |somadorCompleto:soma_sub|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula14|somadorCompleto:soma_sub                                                    ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula15|                       ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula15                                                                             ; ULA1bit                     ; work         ;
+;             |somadorCompleto:soma_sub|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula14|somadorCompleto:soma_sub                                                    ; somadorCompleto             ; work         ;
+;          |ULA1bit:ula15|                       ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula15                                                                             ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula15|muxGenerico2x1_1bit:mux_inverteB                                            ; muxGenerico2x1_1bit         ; work         ;
-;             |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula15|muxGenerico4x1:mux_ula                                                      ; muxGenerico4x1              ; work         ;
-;             |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula15|somadorCompleto:soma_sub                                                    ; somadorCompleto             ; work         ;
+;             |muxGenerico4x1:mux_ula|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula15|muxGenerico4x1:mux_ula                                                      ; muxGenerico4x1              ; work         ;
+;             |somadorCompleto:soma_sub|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula15|somadorCompleto:soma_sub                                                    ; somadorCompleto             ; work         ;
 ;          |ULA1bit:ula16|                       ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula16                                                                             ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula16|muxGenerico2x1_1bit:mux_inverteB                                            ; muxGenerico2x1_1bit         ; work         ;
 ;             |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula16|muxGenerico4x1:mux_ula                                                      ; muxGenerico4x1              ; work         ;
 ;             |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula16|somadorCompleto:soma_sub                                                    ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula17|                       ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula17                                                                             ; ULA1bit                     ; work         ;
+;          |ULA1bit:ula17|                       ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula17                                                                             ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula17|muxGenerico2x1_1bit:mux_inverteB                                            ; muxGenerico2x1_1bit         ; work         ;
 ;             |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula17|muxGenerico4x1:mux_ula                                                      ; muxGenerico4x1              ; work         ;
-;             |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula17|somadorCompleto:soma_sub                                                    ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula18|                       ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula18                                                                             ; ULA1bit                     ; work         ;
+;          |ULA1bit:ula18|                       ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula18                                                                             ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula18|muxGenerico2x1_1bit:mux_inverteB                                            ; muxGenerico2x1_1bit         ; work         ;
-;             |muxGenerico4x1:mux_ula|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula18|muxGenerico4x1:mux_ula                                                      ; muxGenerico4x1              ; work         ;
-;             |somadorCompleto:soma_sub|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula18|somadorCompleto:soma_sub                                                    ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula19|                       ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula19                                                                             ; ULA1bit                     ; work         ;
+;             |muxGenerico4x1:mux_ula|           ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula18|muxGenerico4x1:mux_ula                                                      ; muxGenerico4x1              ; work         ;
+;          |ULA1bit:ula19|                       ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula19                                                                             ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula19|muxGenerico2x1_1bit:mux_inverteB                                            ; muxGenerico2x1_1bit         ; work         ;
-;             |muxGenerico4x1:mux_ula|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula19|muxGenerico4x1:mux_ula                                                      ; muxGenerico4x1              ; work         ;
-;             |somadorCompleto:soma_sub|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula19|somadorCompleto:soma_sub                                                    ; somadorCompleto             ; work         ;
+;             |muxGenerico4x1:mux_ula|           ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula19|muxGenerico4x1:mux_ula                                                      ; muxGenerico4x1              ; work         ;
+;             |somadorCompleto:soma_sub|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula19|somadorCompleto:soma_sub                                                    ; somadorCompleto             ; work         ;
 ;          |ULA1bit:ula1|                        ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula1                                                                              ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula1|muxGenerico2x1_1bit:mux_inverteB                                             ; muxGenerico2x1_1bit         ; work         ;
 ;             |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula1|muxGenerico4x1:mux_ula                                                       ; muxGenerico4x1              ; work         ;
 ;             |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula1|somadorCompleto:soma_sub                                                     ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula20|                       ; 9 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula20                                                                             ; ULA1bit                     ; work         ;
+;          |ULA1bit:ula20|                       ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula20                                                                             ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula20|muxGenerico2x1_1bit:mux_inverteB                                            ; muxGenerico2x1_1bit         ; work         ;
-;             |muxGenerico4x1:mux_ula|           ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula20|muxGenerico4x1:mux_ula                                                      ; muxGenerico4x1              ; work         ;
-;             |somadorCompleto:soma_sub|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula20|somadorCompleto:soma_sub                                                    ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula21|                       ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula21                                                                             ; ULA1bit                     ; work         ;
+;             |muxGenerico4x1:mux_ula|           ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula20|muxGenerico4x1:mux_ula                                                      ; muxGenerico4x1              ; work         ;
+;             |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula20|somadorCompleto:soma_sub                                                    ; somadorCompleto             ; work         ;
+;          |ULA1bit:ula21|                       ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula21                                                                             ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula21|muxGenerico2x1_1bit:mux_inverteB                                            ; muxGenerico2x1_1bit         ; work         ;
-;             |muxGenerico4x1:mux_ula|           ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula21|muxGenerico4x1:mux_ula                                                      ; muxGenerico4x1              ; work         ;
+;             |muxGenerico4x1:mux_ula|           ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula21|muxGenerico4x1:mux_ula                                                      ; muxGenerico4x1              ; work         ;
 ;             |somadorCompleto:soma_sub|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula21|somadorCompleto:soma_sub                                                    ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula22|                       ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula22                                                                             ; ULA1bit                     ; work         ;
+;          |ULA1bit:ula22|                       ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula22                                                                             ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula22|muxGenerico2x1_1bit:mux_inverteB                                            ; muxGenerico2x1_1bit         ; work         ;
-;             |muxGenerico4x1:mux_ula|           ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula22|muxGenerico4x1:mux_ula                                                      ; muxGenerico4x1              ; work         ;
-;             |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula22|somadorCompleto:soma_sub                                                    ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula23|                       ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula23                                                                             ; ULA1bit                     ; work         ;
+;             |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula22|muxGenerico4x1:mux_ula                                                      ; muxGenerico4x1              ; work         ;
+;          |ULA1bit:ula23|                       ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula23                                                                             ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula23|muxGenerico2x1_1bit:mux_inverteB                                            ; muxGenerico2x1_1bit         ; work         ;
 ;             |muxGenerico4x1:mux_ula|           ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula23|muxGenerico4x1:mux_ula                                                      ; muxGenerico4x1              ; work         ;
-;             |somadorCompleto:soma_sub|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula23|somadorCompleto:soma_sub                                                    ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula24|                       ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula24                                                                             ; ULA1bit                     ; work         ;
+;             |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula23|somadorCompleto:soma_sub                                                    ; somadorCompleto             ; work         ;
+;          |ULA1bit:ula24|                       ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula24                                                                             ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula24|muxGenerico2x1_1bit:mux_inverteB                                            ; muxGenerico2x1_1bit         ; work         ;
-;             |muxGenerico4x1:mux_ula|           ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula24|muxGenerico4x1:mux_ula                                                      ; muxGenerico4x1              ; work         ;
-;             |somadorCompleto:soma_sub|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula24|somadorCompleto:soma_sub                                                    ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula25|                       ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula25                                                                             ; ULA1bit                     ; work         ;
+;             |muxGenerico4x1:mux_ula|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula24|muxGenerico4x1:mux_ula                                                      ; muxGenerico4x1              ; work         ;
+;             |somadorCompleto:soma_sub|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula24|somadorCompleto:soma_sub                                                    ; somadorCompleto             ; work         ;
+;          |ULA1bit:ula25|                       ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula25                                                                             ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula25|muxGenerico2x1_1bit:mux_inverteB                                            ; muxGenerico2x1_1bit         ; work         ;
 ;             |muxGenerico4x1:mux_ula|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula25|muxGenerico4x1:mux_ula                                                      ; muxGenerico4x1              ; work         ;
-;             |somadorCompleto:soma_sub|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula25|somadorCompleto:soma_sub                                                    ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula26|                       ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula26                                                                             ; ULA1bit                     ; work         ;
+;             |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula25|somadorCompleto:soma_sub                                                    ; somadorCompleto             ; work         ;
+;          |ULA1bit:ula26|                       ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula26                                                                             ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula26|muxGenerico2x1_1bit:mux_inverteB                                            ; muxGenerico2x1_1bit         ; work         ;
-;             |muxGenerico4x1:mux_ula|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula26|muxGenerico4x1:mux_ula                                                      ; muxGenerico4x1              ; work         ;
+;             |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula26|muxGenerico4x1:mux_ula                                                      ; muxGenerico4x1              ; work         ;
 ;             |somadorCompleto:soma_sub|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula26|somadorCompleto:soma_sub                                                    ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula27|                       ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula27                                                                             ; ULA1bit                     ; work         ;
+;          |ULA1bit:ula27|                       ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula27                                                                             ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula27|muxGenerico2x1_1bit:mux_inverteB                                            ; muxGenerico2x1_1bit         ; work         ;
-;             |muxGenerico4x1:mux_ula|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula27|muxGenerico4x1:mux_ula                                                      ; muxGenerico4x1              ; work         ;
-;             |somadorCompleto:soma_sub|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula27|somadorCompleto:soma_sub                                                    ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula28|                       ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula28                                                                             ; ULA1bit                     ; work         ;
+;             |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula27|muxGenerico4x1:mux_ula                                                      ; muxGenerico4x1              ; work         ;
+;             |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula27|somadorCompleto:soma_sub                                                    ; somadorCompleto             ; work         ;
+;          |ULA1bit:ula28|                       ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula28                                                                             ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula28|muxGenerico2x1_1bit:mux_inverteB                                            ; muxGenerico2x1_1bit         ; work         ;
-;             |muxGenerico4x1:mux_ula|           ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula28|muxGenerico4x1:mux_ula                                                      ; muxGenerico4x1              ; work         ;
+;             |muxGenerico4x1:mux_ula|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula28|muxGenerico4x1:mux_ula                                                      ; muxGenerico4x1              ; work         ;
 ;             |somadorCompleto:soma_sub|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula28|somadorCompleto:soma_sub                                                    ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula29|                       ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula29                                                                             ; ULA1bit                     ; work         ;
+;          |ULA1bit:ula29|                       ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula29                                                                             ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula29|muxGenerico2x1_1bit:mux_inverteB                                            ; muxGenerico2x1_1bit         ; work         ;
 ;             |muxGenerico4x1:mux_ula|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula29|muxGenerico4x1:mux_ula                                                      ; muxGenerico4x1              ; work         ;
-;             |somadorCompleto:soma_sub|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula29|somadorCompleto:soma_sub                                                    ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula2|                        ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula2                                                                              ; ULA1bit                     ; work         ;
+;             |somadorCompleto:soma_sub|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula29|somadorCompleto:soma_sub                                                    ; somadorCompleto             ; work         ;
+;          |ULA1bit:ula2|                        ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula2                                                                              ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula2|muxGenerico2x1_1bit:mux_inverteB                                             ; muxGenerico2x1_1bit         ; work         ;
-;             |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula2|muxGenerico4x1:mux_ula                                                       ; muxGenerico4x1              ; work         ;
+;             |muxGenerico4x1:mux_ula|           ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula2|muxGenerico4x1:mux_ula                                                       ; muxGenerico4x1              ; work         ;
 ;             |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula2|somadorCompleto:soma_sub                                                     ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula30|                       ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula30                                                                             ; ULA1bit                     ; work         ;
+;          |ULA1bit:ula30|                       ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula30                                                                             ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula30|muxGenerico2x1_1bit:mux_inverteB                                            ; muxGenerico2x1_1bit         ; work         ;
 ;             |muxGenerico4x1:mux_ula|           ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula30|muxGenerico4x1:mux_ula                                                      ; muxGenerico4x1              ; work         ;
-;             |somadorCompleto:soma_sub|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula30|somadorCompleto:soma_sub                                                    ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula31|                       ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula31                                                                             ; ULA1bit                     ; work         ;
-;             |muxGenerico4x1:mux_ula|           ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula31|muxGenerico4x1:mux_ula                                                      ; muxGenerico4x1              ; work         ;
-;             |overflow:Overflow_exists|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula31|overflow:Overflow_exists                                                    ; overflow                    ; work         ;
+;             |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula30|somadorCompleto:soma_sub                                                    ; somadorCompleto             ; work         ;
+;          |ULA1bit:ula31|                       ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula31                                                                             ; ULA1bit                     ; work         ;
+;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula31|muxGenerico2x1_1bit:mux_inverteB                                            ; muxGenerico2x1_1bit         ; work         ;
 ;             |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula31|somadorCompleto:soma_sub                                                    ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula3|                        ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula3                                                                              ; ULA1bit                     ; work         ;
+;          |ULA1bit:ula3|                        ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula3                                                                              ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula3|muxGenerico2x1_1bit:mux_inverteB                                             ; muxGenerico2x1_1bit         ; work         ;
-;             |muxGenerico4x1:mux_ula|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula3|muxGenerico4x1:mux_ula                                                       ; muxGenerico4x1              ; work         ;
-;             |somadorCompleto:soma_sub|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula3|somadorCompleto:soma_sub                                                     ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula4|                        ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula4                                                                              ; ULA1bit                     ; work         ;
+;             |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula3|muxGenerico4x1:mux_ula                                                       ; muxGenerico4x1              ; work         ;
+;             |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula3|somadorCompleto:soma_sub                                                     ; somadorCompleto             ; work         ;
+;          |ULA1bit:ula4|                        ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula4                                                                              ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula4|muxGenerico2x1_1bit:mux_inverteB                                             ; muxGenerico2x1_1bit         ; work         ;
 ;             |muxGenerico4x1:mux_ula|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula4|muxGenerico4x1:mux_ula                                                       ; muxGenerico4x1              ; work         ;
-;             |somadorCompleto:soma_sub|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula4|somadorCompleto:soma_sub                                                     ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula5|                        ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula5                                                                              ; ULA1bit                     ; work         ;
+;             |somadorCompleto:soma_sub|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula4|somadorCompleto:soma_sub                                                     ; somadorCompleto             ; work         ;
+;          |ULA1bit:ula5|                        ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula5                                                                              ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula5|muxGenerico2x1_1bit:mux_inverteB                                             ; muxGenerico2x1_1bit         ; work         ;
-;             |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula5|muxGenerico4x1:mux_ula                                                       ; muxGenerico4x1              ; work         ;
+;             |muxGenerico4x1:mux_ula|           ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula5|muxGenerico4x1:mux_ula                                                       ; muxGenerico4x1              ; work         ;
 ;             |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula5|somadorCompleto:soma_sub                                                     ; somadorCompleto             ; work         ;
 ;          |ULA1bit:ula6|                        ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula6                                                                              ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula6|muxGenerico2x1_1bit:mux_inverteB                                             ; muxGenerico2x1_1bit         ; work         ;
 ;             |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula6|muxGenerico4x1:mux_ula                                                       ; muxGenerico4x1              ; work         ;
 ;             |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula6|somadorCompleto:soma_sub                                                     ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula7|                        ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula7                                                                              ; ULA1bit                     ; work         ;
+;          |ULA1bit:ula7|                        ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula7                                                                              ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula7|muxGenerico2x1_1bit:mux_inverteB                                             ; muxGenerico2x1_1bit         ; work         ;
 ;             |muxGenerico4x1:mux_ula|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula7|muxGenerico4x1:mux_ula                                                       ; muxGenerico4x1              ; work         ;
-;             |somadorCompleto:soma_sub|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula7|somadorCompleto:soma_sub                                                     ; somadorCompleto             ; work         ;
-;          |ULA1bit:ula8|                        ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula8                                                                              ; ULA1bit                     ; work         ;
+;          |ULA1bit:ula8|                        ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula8                                                                              ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula8|muxGenerico2x1_1bit:mux_inverteB                                             ; muxGenerico2x1_1bit         ; work         ;
-;             |muxGenerico4x1:mux_ula|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula8|muxGenerico4x1:mux_ula                                                       ; muxGenerico4x1              ; work         ;
-;             |somadorCompleto:soma_sub|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula8|somadorCompleto:soma_sub                                                     ; somadorCompleto             ; work         ;
+;             |muxGenerico4x1:mux_ula|           ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula8|muxGenerico4x1:mux_ula                                                       ; muxGenerico4x1              ; work         ;
+;             |somadorCompleto:soma_sub|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula8|somadorCompleto:soma_sub                                                     ; somadorCompleto             ; work         ;
 ;          |ULA1bit:ula9|                        ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula9                                                                              ; ULA1bit                     ; work         ;
 ;             |muxGenerico2x1_1bit:mux_inverteB| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula9|muxGenerico2x1_1bit:mux_inverteB                                             ; muxGenerico2x1_1bit         ; work         ;
 ;             |muxGenerico4x1:mux_ula|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula9|muxGenerico4x1:mux_ula                                                       ; muxGenerico4x1              ; work         ;
@@ -549,17 +553,24 @@ https://fpgasoftware.intel.com/eula.
 ;             |altsyncram_h8q1:auto_generated|   ; 0 (0)               ; 0 (0)                     ; 1024              ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|altsyncram:registrador_rtl_0|altsyncram_h8q1:auto_generated ; altsyncram_h8q1             ; work         ;
 ;          |altsyncram:registrador_rtl_1|        ; 0 (0)               ; 0 (0)                     ; 1024              ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|altsyncram:registrador_rtl_1                                ; altsyncram                  ; work         ;
 ;             |altsyncram_h8q1:auto_generated|   ; 0 (0)               ; 0 (0)                     ; 1024              ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|altsyncram:registrador_rtl_1|altsyncram_h8q1:auto_generated ; altsyncram_h8q1             ; work         ;
-;       |muxGenerico2x1:mux_rt_imediato|         ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|muxGenerico2x1:mux_rt_imediato                                                                    ; muxGenerico2x1              ; work         ;
+;       |muxGenerico2x1:mux_rt_imediato|         ; 24 (24)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|muxGenerico2x1:mux_rt_imediato                                                                    ; muxGenerico2x1              ; work         ;
 ;       |muxGenerico3x1:mux_PC|                  ; 35 (35)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|muxGenerico3x1:mux_PC                                                                             ; muxGenerico3x1              ; work         ;
 ;       |muxGenerico3x1:mux_ULA_mem|             ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|muxGenerico3x1:mux_ULA_mem                                                                        ; muxGenerico3x1              ; work         ;
 ;       |muxGenerico3x1:mux_rt_rd|               ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|muxGenerico3x1:mux_rt_rd                                                                          ; muxGenerico3x1              ; work         ;
 ;       |registradorGenerico:PC_entity|          ; 1 (1)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|registradorGenerico:PC_entity                                                                     ; registradorGenerico         ; work         ;
-;       |registradorGenerico:regEXMEM1|          ; 0 (0)               ; 102 (102)                 ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|registradorGenerico:regEXMEM1                                                                     ; registradorGenerico         ; work         ;
-;       |registradorGenerico:regIDEX1|           ; 0 (0)               ; 112 (112)                 ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|registradorGenerico:regIDEX1                                                                      ; registradorGenerico         ; work         ;
+;       |registradorGenerico:regEXMEM1|          ; 0 (0)               ; 104 (104)                 ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|registradorGenerico:regEXMEM1                                                                     ; registradorGenerico         ; work         ;
+;       |registradorGenerico:regIDEX1|           ; 0 (0)               ; 118 (118)                 ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|registradorGenerico:regIDEX1                                                                      ; registradorGenerico         ; work         ;
 ;       |registradorGenerico:regIFID1|           ; 0 (0)               ; 53 (53)                   ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|registradorGenerico:regIFID1                                                                      ; registradorGenerico         ; work         ;
-;       |registradorGenerico:regMEMWB1|          ; 0 (0)               ; 102 (102)                 ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|registradorGenerico:regMEMWB1                                                                     ; registradorGenerico         ; work         ;
+;       |registradorGenerico:regMEMWB1|          ; 0 (0)               ; 104 (104)                 ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|registradorGenerico:regMEMWB1                                                                     ; registradorGenerico         ; work         ;
 ;       |somaConstante:PC_Soma_Constante|        ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|somaConstante:PC_Soma_Constante                                                                   ; somaConstante               ; work         ;
-;    |UnidadeControle:UC|                        ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|UnidadeControle:UC                                                                                                        ; UnidadeControle             ; work         ;
+;    |UnidadeControle:UC|                        ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|UnidadeControle:UC                                                                                                        ; UnidadeControle             ; work         ;
+;    |conversorHex7Seg:display0|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|conversorHex7Seg:display0                                                                                                 ; conversorHex7Seg            ; work         ;
+;    |conversorHex7Seg:display1|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|conversorHex7Seg:display1                                                                                                 ; conversorHex7Seg            ; work         ;
+;    |conversorHex7Seg:display2|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|conversorHex7Seg:display2                                                                                                 ; conversorHex7Seg            ; work         ;
+;    |conversorHex7Seg:display3|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|conversorHex7Seg:display3                                                                                                 ; conversorHex7Seg            ; work         ;
+;    |conversorHex7Seg:display4|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|conversorHex7Seg:display4                                                                                                 ; conversorHex7Seg            ; work         ;
+;    |conversorHex7Seg:display5|                 ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|conversorHex7Seg:display5                                                                                                 ; conversorHex7Seg            ; work         ;
+;    |edgeDetector:detectorSub0|                 ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |ProcessadorMIPS|edgeDetector:detectorSub0                                                                                                 ; edgeDetector                ; work         ;
 +------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -569,7 +580,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+----------------------------------------------------------------------+
 ; Name                                                                                                                                 ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                                                                  ;
 +--------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+----------------------------------------------------------------------+
-; Fluxo_Dados:fluxo_dados|RAMMIPS:RAM|altsyncram:memRAM_rtl_0|altsyncram_60q1:auto_generated|ALTSYNCRAM                                ; AUTO ; Simple Dual Port ; 64           ; 32           ; 64           ; 32           ; 2048 ; None                                                                 ;
+; Fluxo_Dados:fluxo_dados|RAMMIPS:RAM|altsyncram:memRAM_rtl_0|altsyncram_4hv1:auto_generated|ALTSYNCRAM                                ; AUTO ; Simple Dual Port ; 64           ; 32           ; 64           ; 32           ; 2048 ; db/ProcessadorMIPS.ram0_RAMMIPS_abb6a4b.hdl.mif                      ;
 ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|altsyncram:registrador_rtl_0|altsyncram_h8q1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 32           ; 32           ; 32           ; 32           ; 1024 ; db/ProcessadorMIPS.ram0_bancoRegistradoresArqRegReg_fdb8a76e.hdl.mif ;
 ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|altsyncram:registrador_rtl_1|altsyncram_h8q1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 32           ; 32           ; 32           ; 32           ; 1024 ; db/ProcessadorMIPS.ram0_bancoRegistradoresArqRegReg_fdb8a76e.hdl.mif ;
 +--------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+----------------------------------------------------------------------+
@@ -598,7 +609,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Fluxo_Dados:fluxo_dados|registradorGenerico:regIFID1|DOUT[30]                              ; Stuck at GND due to stuck port data_in                                     ;
 ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador_rtl_0_bypass[10] ; Stuck at GND due to stuck port data_in                                     ;
 ; Fluxo_Dados:fluxo_dados|registradorGenerico:regIDEX1|DOUT[9]                               ; Stuck at GND due to stuck port data_in                                     ;
-; Total Number of Removed Registers = 48                                                     ;                                                                            ;
+; Fluxo_Dados:fluxo_dados|registradorGenerico:regIDEX1|DOUT[139]                             ; Merged with Fluxo_Dados:fluxo_dados|registradorGenerico:regIDEX1|DOUT[147] ;
+; Total Number of Removed Registers = 49                                                     ;                                                                            ;
 +--------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
 
 
@@ -617,7 +629,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 550   ;
+; Total registers                              ; 561   ;
 ; Number of registers using Synchronous Clear  ; 3     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -632,8 +644,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------------------------+---------+
 ; Inverted Register                                                                          ; Fan out ;
 +--------------------------------------------------------------------------------------------+---------+
-; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador_rtl_1_bypass[14] ; 1       ;
 ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador_rtl_0_bypass[14] ; 1       ;
+; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador_rtl_1_bypass[14] ; 1       ;
 ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador_rtl_1_bypass[12] ; 1       ;
 ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador_rtl_0_bypass[12] ; 1       ;
 ; Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador_rtl_1_bypass[16] ; 1       ;
@@ -867,24 +879,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|registradorGenerico:regEXMEM1|DOUT[2]                  ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|registradorGenerico:PC_entity|DOUT[30]                 ;
-; 4:1                ; 25 bits   ; 50 LEs        ; 50 LEs               ; 0 LEs                  ; Yes        ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|registradorGenerico:PC_entity|DOUT[11]                 ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|registradorGenerico:PC_entity|DOUT[1]                  ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|registradorGenerico:regIDEX1|DOUT[148]                 ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|muxGenerico3x1:mux_ULA_mem|saida_MUX[30]               ;
-; 5:1                ; 31 bits   ; 93 LEs        ; 93 LEs               ; 0 LEs                  ; No         ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula20|muxGenerico4x1:mux_ula|saida_MUX ;
-; 8:1                ; 2 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|UC_ULA:UC_ULA|ula_ctrl[3]                              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|registradorGenerico:regEXMEM1|DOUT[0]                            ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|registradorGenerico:PC_entity|DOUT[30]                           ;
+; 4:1                ; 25 bits   ; 50 LEs        ; 50 LEs               ; 0 LEs                  ; Yes        ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|registradorGenerico:PC_entity|DOUT[8]                            ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|registradorGenerico:PC_entity|DOUT[1]                            ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|registradorGenerico:regIDEX1|DOUT[148]                           ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula29|muxGenerico2x1_1bit:mux_inverteB|saida_MUX ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|muxGenerico3x1:mux_ULA_mem|saida_MUX[12]                         ;
+; 4:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |ProcessadorMIPS|to_display[13]                                                                           ;
+; 5:1                ; 29 bits   ; 87 LEs        ; 87 LEs               ; 0 LEs                  ; No         ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula2|muxGenerico4x1:mux_ula|saida_MUX            ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |ProcessadorMIPS|Fluxo_Dados:fluxo_dados|UC_ULA:UC_ULA|ula_ctrl[1]                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------+
-; Source assignments for Fluxo_Dados:fluxo_dados|RAMMIPS:RAM|altsyncram:memRAM_rtl_0|altsyncram_60q1:auto_generated ;
+; Source assignments for Fluxo_Dados:fluxo_dados|RAMMIPS:RAM|altsyncram:memRAM_rtl_0|altsyncram_4hv1:auto_generated ;
 +---------------------------------+--------------------+------+-----------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                  ;
 +---------------------------------+--------------------+------+-----------------------------------------------------+
@@ -2087,62 +2101,62 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +--------------------------------------------------------------------------------------------------------------+
 ; Parameter Settings for Inferred Entity Instance: Fluxo_Dados:fluxo_dados|RAMMIPS:RAM|altsyncram:memRAM_rtl_0 ;
-+------------------------------------+----------------------+--------------------------------------------------+
-; Parameter Name                     ; Value                ; Type                                             ;
-+------------------------------------+----------------------+--------------------------------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                          ;
-; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                       ;
-; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                     ;
-; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                     ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                   ;
-; WIDTH_BYTEENA                      ; 1                    ; Untyped                                          ;
-; OPERATION_MODE                     ; DUAL_PORT            ; Untyped                                          ;
-; WIDTH_A                            ; 32                   ; Untyped                                          ;
-; WIDTHAD_A                          ; 6                    ; Untyped                                          ;
-; NUMWORDS_A                         ; 64                   ; Untyped                                          ;
-; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                          ;
-; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                          ;
-; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                          ;
-; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                          ;
-; INDATA_ACLR_A                      ; NONE                 ; Untyped                                          ;
-; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                          ;
-; WIDTH_B                            ; 32                   ; Untyped                                          ;
-; WIDTHAD_B                          ; 6                    ; Untyped                                          ;
-; NUMWORDS_B                         ; 64                   ; Untyped                                          ;
-; INDATA_REG_B                       ; CLOCK1               ; Untyped                                          ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                          ;
-; RDCONTROL_REG_B                    ; CLOCK0               ; Untyped                                          ;
-; ADDRESS_REG_B                      ; CLOCK0               ; Untyped                                          ;
-; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                          ;
-; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                          ;
-; INDATA_ACLR_B                      ; NONE                 ; Untyped                                          ;
-; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                          ;
-; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                          ;
-; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                          ;
-; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                          ;
-; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                          ;
-; WIDTH_BYTEENA_A                    ; 1                    ; Untyped                                          ;
-; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                          ;
-; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                          ;
-; BYTE_SIZE                          ; 8                    ; Untyped                                          ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA             ; Untyped                                          ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                          ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                          ;
-; INIT_FILE                          ; UNUSED               ; Untyped                                          ;
-; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                          ;
-; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                          ;
-; CLOCK_ENABLE_INPUT_A               ; NORMAL               ; Untyped                                          ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                          ;
-; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped                                          ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                          ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                          ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                          ;
-; ENABLE_ECC                         ; FALSE                ; Untyped                                          ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                          ;
-; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                          ;
-; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                                          ;
-; CBXI_PARAMETER                     ; altsyncram_60q1      ; Untyped                                          ;
-+------------------------------------+----------------------+--------------------------------------------------+
++------------------------------------+-------------------------------------------------+-----------------------+
+; Parameter Name                     ; Value                                           ; Type                  ;
++------------------------------------+-------------------------------------------------+-----------------------+
+; BYTE_SIZE_BLOCK                    ; 8                                               ; Untyped               ;
+; AUTO_CARRY_CHAINS                  ; ON                                              ; AUTO_CARRY            ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                             ; IGNORE_CARRY          ;
+; AUTO_CASCADE_CHAINS                ; ON                                              ; AUTO_CASCADE          ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                             ; IGNORE_CASCADE        ;
+; WIDTH_BYTEENA                      ; 1                                               ; Untyped               ;
+; OPERATION_MODE                     ; DUAL_PORT                                       ; Untyped               ;
+; WIDTH_A                            ; 32                                              ; Untyped               ;
+; WIDTHAD_A                          ; 6                                               ; Untyped               ;
+; NUMWORDS_A                         ; 64                                              ; Untyped               ;
+; OUTDATA_REG_A                      ; UNREGISTERED                                    ; Untyped               ;
+; ADDRESS_ACLR_A                     ; NONE                                            ; Untyped               ;
+; OUTDATA_ACLR_A                     ; NONE                                            ; Untyped               ;
+; WRCONTROL_ACLR_A                   ; NONE                                            ; Untyped               ;
+; INDATA_ACLR_A                      ; NONE                                            ; Untyped               ;
+; BYTEENA_ACLR_A                     ; NONE                                            ; Untyped               ;
+; WIDTH_B                            ; 32                                              ; Untyped               ;
+; WIDTHAD_B                          ; 6                                               ; Untyped               ;
+; NUMWORDS_B                         ; 64                                              ; Untyped               ;
+; INDATA_REG_B                       ; CLOCK1                                          ; Untyped               ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                          ; Untyped               ;
+; RDCONTROL_REG_B                    ; CLOCK0                                          ; Untyped               ;
+; ADDRESS_REG_B                      ; CLOCK0                                          ; Untyped               ;
+; OUTDATA_REG_B                      ; UNREGISTERED                                    ; Untyped               ;
+; BYTEENA_REG_B                      ; CLOCK1                                          ; Untyped               ;
+; INDATA_ACLR_B                      ; NONE                                            ; Untyped               ;
+; WRCONTROL_ACLR_B                   ; NONE                                            ; Untyped               ;
+; ADDRESS_ACLR_B                     ; NONE                                            ; Untyped               ;
+; OUTDATA_ACLR_B                     ; NONE                                            ; Untyped               ;
+; RDCONTROL_ACLR_B                   ; NONE                                            ; Untyped               ;
+; BYTEENA_ACLR_B                     ; NONE                                            ; Untyped               ;
+; WIDTH_BYTEENA_A                    ; 1                                               ; Untyped               ;
+; WIDTH_BYTEENA_B                    ; 1                                               ; Untyped               ;
+; RAM_BLOCK_TYPE                     ; AUTO                                            ; Untyped               ;
+; BYTE_SIZE                          ; 8                                               ; Untyped               ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA                                        ; Untyped               ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                            ; Untyped               ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                            ; Untyped               ;
+; INIT_FILE                          ; db/ProcessadorMIPS.ram0_RAMMIPS_abb6a4b.hdl.mif ; Untyped               ;
+; INIT_FILE_LAYOUT                   ; PORT_A                                          ; Untyped               ;
+; MAXIMUM_DEPTH                      ; 0                                               ; Untyped               ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL                                          ; Untyped               ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                                          ; Untyped               ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                                          ; Untyped               ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                          ; Untyped               ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                                 ; Untyped               ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                                 ; Untyped               ;
+; ENABLE_ECC                         ; FALSE                                           ; Untyped               ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                           ; Untyped               ;
+; WIDTH_ECCSTATUS                    ; 3                                               ; Untyped               ;
+; DEVICE_FAMILY                      ; Cyclone V                                       ; Untyped               ;
+; CBXI_PARAMETER                     ; altsyncram_4hv1                                 ; Untyped               ;
++------------------------------------+-------------------------------------------------+-----------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -2310,15 +2324,80 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+--------------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|registradorGenerico:regMEMWB1"                                        ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port           ; Type   ; Severity ; Details                                                                             ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-; dout[103..102] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; enable         ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; rst            ; Input  ; Info     ; Stuck at GND                                                                        ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
++-------------------------------------------------------+
+; Port Connectivity Checks: "conversorHex7Seg:display5" ;
++----------+-------+----------+-------------------------+
+; Port     ; Type  ; Severity ; Details                 ;
++----------+-------+----------+-------------------------+
+; apaga    ; Input ; Info     ; Stuck at GND            ;
+; negativo ; Input ; Info     ; Stuck at GND            ;
+; overflow ; Input ; Info     ; Stuck at GND            ;
++----------+-------+----------+-------------------------+
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "conversorHex7Seg:display4" ;
++----------+-------+----------+-------------------------+
+; Port     ; Type  ; Severity ; Details                 ;
++----------+-------+----------+-------------------------+
+; apaga    ; Input ; Info     ; Stuck at GND            ;
+; negativo ; Input ; Info     ; Stuck at GND            ;
+; overflow ; Input ; Info     ; Stuck at GND            ;
++----------+-------+----------+-------------------------+
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "conversorHex7Seg:display3" ;
++----------+-------+----------+-------------------------+
+; Port     ; Type  ; Severity ; Details                 ;
++----------+-------+----------+-------------------------+
+; apaga    ; Input ; Info     ; Stuck at GND            ;
+; negativo ; Input ; Info     ; Stuck at GND            ;
+; overflow ; Input ; Info     ; Stuck at GND            ;
++----------+-------+----------+-------------------------+
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "conversorHex7Seg:display2" ;
++----------+-------+----------+-------------------------+
+; Port     ; Type  ; Severity ; Details                 ;
++----------+-------+----------+-------------------------+
+; apaga    ; Input ; Info     ; Stuck at GND            ;
+; negativo ; Input ; Info     ; Stuck at GND            ;
+; overflow ; Input ; Info     ; Stuck at GND            ;
++----------+-------+----------+-------------------------+
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "conversorHex7Seg:display1" ;
++----------+-------+----------+-------------------------+
+; Port     ; Type  ; Severity ; Details                 ;
++----------+-------+----------+-------------------------+
+; apaga    ; Input ; Info     ; Stuck at GND            ;
+; negativo ; Input ; Info     ; Stuck at GND            ;
+; overflow ; Input ; Info     ; Stuck at GND            ;
++----------+-------+----------+-------------------------+
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "conversorHex7Seg:display0" ;
++----------+-------+----------+-------------------------+
+; Port     ; Type  ; Severity ; Details                 ;
++----------+-------+----------+-------------------------+
+; apaga    ; Input ; Info     ; Stuck at GND            ;
+; negativo ; Input ; Info     ; Stuck at GND            ;
+; overflow ; Input ; Info     ; Stuck at GND            ;
++----------+-------+----------+-------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|registradorGenerico:regMEMWB1" ;
++--------+-------+----------+-------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                               ;
++--------+-------+----------+-------------------------------------------------------+
+; enable ; Input ; Info     ; Stuck at VCC                                          ;
+; rst    ; Input ; Info     ; Stuck at GND                                          ;
++--------+-------+----------+-------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------+
@@ -2341,15 +2420,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|registradorGenerico:regIDEX1"                                         ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port           ; Type   ; Severity ; Details                                                                             ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-; dout[142..138] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; enable         ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; rst            ; Input  ; Info     ; Stuck at GND                                                                        ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Fluxo_Dados:fluxo_dados|registradorGenerico:regIDEX1" ;
++--------+-------+----------+------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                              ;
++--------+-------+----------+------------------------------------------------------+
+; enable ; Input ; Info     ; Stuck at VCC                                         ;
+; rst    ; Input ; Info     ; Stuck at GND                                         ;
++--------+-------+----------+------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------+
@@ -2359,6 +2437,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------+--------+----------+-------------------------------------------------------------------------------------+
 ; entrada_slt ; Input  ; Info     ; Stuck at GND                                                                        ;
 ; carry_out   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; flag_z      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +-------------+--------+----------+-------------------------------------------------------------------------------------+
 
@@ -2723,34 +2802,45 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+-------+----------+-------------------------------------------------------+
 
 
++----------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Fluxo_Dados:fluxo_dados"                                                                              ;
++------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                   ; Type   ; Severity ; Details                                                                             ;
++------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; ula_saida[31..24]      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; mux_imed_saida[31..24] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pc_saida[31..24]       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 550                         ;
+; arriav_ff             ; 561                         ;
 ;     ENA               ; 2                           ;
 ;     SCLR              ; 3                           ;
-;     plain             ; 545                         ;
-; arriav_lcell_comb     ; 483                         ;
+;     plain             ; 556                         ;
+; arriav_lcell_comb     ; 589                         ;
 ;     arith             ; 60                          ;
 ;         1 data inputs ; 30                          ;
 ;         2 data inputs ; 30                          ;
-;     extend            ; 2                           ;
-;         7 data inputs ; 2                           ;
-;     normal            ; 421                         ;
+;     extend            ; 1                           ;
+;         7 data inputs ; 1                           ;
+;     normal            ; 528                         ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 56                          ;
-;         3 data inputs ; 46                          ;
-;         4 data inputs ; 40                          ;
-;         5 data inputs ; 152                         ;
-;         6 data inputs ; 125                         ;
-; boundary_port         ; 132                         ;
+;         2 data inputs ; 66                          ;
+;         3 data inputs ; 75                          ;
+;         4 data inputs ; 70                          ;
+;         5 data inputs ; 160                         ;
+;         6 data inputs ; 155                         ;
+; boundary_port         ; 47                          ;
 ; stratixv_ram_block    ; 96                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 18.00                       ;
-; Average LUT depth     ; 5.06                        ;
+; Average LUT depth     ; 5.45                        ;
 +-----------------------+-----------------------------+
 
 
@@ -2759,7 +2849,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:05     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -2769,7 +2859,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Tue Dec 08 23:28:56 2020
+    Info: Processing started: Wed Dec 09 00:41:59 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ProcessadorMIPS -c ProcessadorMIPS
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file unidadecontrole.vhd
@@ -2833,7 +2923,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file muxgene
     Info (12022): Found design unit 1: muxGenerico3x1-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/muxGenerico3x1.vhd Line: 14
     Info (12023): Found entity 1: muxGenerico3x1 File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/muxGenerico3x1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file fluxo_dados.vhd
-    Info (12022): Found design unit 1: Fluxo_Dados-arch_name File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 28
+    Info (12022): Found design unit 1: Fluxo_Dados-arch_name File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 27
     Info (12023): Found entity 1: Fluxo_Dados File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file conversorhex7seg.vhd
     Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/conversorHex7Seg.vhd Line: 16
@@ -2843,30 +2933,32 @@ Info (12021): Found 3 design units, including 1 entities, in source file edgedet
     Info (12022): Found design unit 2: edgeDetector-bordaDescida File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/edgeDetector.vhd Line: 23
     Info (12023): Found entity 1: edgeDetector File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/edgeDetector.vhd Line: 4
 Info (12127): Elaborating entity "ProcessadorMIPS" for the top level hierarchy
-Info (12128): Elaborating entity "Fluxo_Dados" for hierarchy "Fluxo_Dados:fluxo_dados" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ProcessadorMIPS.vhd Line: 42
-Warning (10036): Verilog HDL or VHDL warning at Fluxo_Dados.vhd(39): object "imediato_estendido2_shiftado" assigned a value but never read File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 39
-Info (12128): Elaborating entity "somaConstante" for hierarchy "Fluxo_Dados:fluxo_dados|somaConstante:PC_Soma_Constante" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 107
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "Fluxo_Dados:fluxo_dados|registradorGenerico:PC_entity" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 110
-Info (12128): Elaborating entity "ROMMIPS" for hierarchy "Fluxo_Dados:fluxo_dados|ROMMIPS:ROM" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 114
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "Fluxo_Dados:fluxo_dados|registradorGenerico:regIFID1" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 117
-Info (12128): Elaborating entity "bancoRegistradoresArqRegReg" for hierarchy "Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 125
-Info (12128): Elaborating entity "ULA" for hierarchy "Fluxo_Dados:fluxo_dados|ULA:ULA" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 135
+Info (12128): Elaborating entity "Fluxo_Dados" for hierarchy "Fluxo_Dados:fluxo_dados" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ProcessadorMIPS.vhd Line: 40
+Info (12128): Elaborating entity "somaConstante" for hierarchy "Fluxo_Dados:fluxo_dados|somaConstante:PC_Soma_Constante" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 106
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "Fluxo_Dados:fluxo_dados|registradorGenerico:PC_entity" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 109
+Info (12128): Elaborating entity "ROMMIPS" for hierarchy "Fluxo_Dados:fluxo_dados|ROMMIPS:ROM" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 113
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "Fluxo_Dados:fluxo_dados|registradorGenerico:regIFID1" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 116
+Info (12128): Elaborating entity "bancoRegistradoresArqRegReg" for hierarchy "Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 124
+Info (12128): Elaborating entity "ULA" for hierarchy "Fluxo_Dados:fluxo_dados|ULA:ULA" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 134
+Warning (10036): Verilog HDL or VHDL warning at ULA.vhd(21): object "overflow" assigned a value but never read File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ULA.vhd Line: 21
 Info (12128): Elaborating entity "ULA1bit" for hierarchy "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula0" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ULA.vhd Line: 31
 Info (12128): Elaborating entity "muxGenerico2x1_1bit" for hierarchy "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula0|muxGenerico2x1_1bit:mux_inverteA" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ULA1bit.vhd Line: 29
 Info (12128): Elaborating entity "somadorCompleto" for hierarchy "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula0|somadorCompleto:soma_sub" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ULA1bit.vhd Line: 47
 Info (12128): Elaborating entity "muxGenerico4x1" for hierarchy "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula0|muxGenerico4x1:mux_ula" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ULA1bit.vhd Line: 54
 Info (12128): Elaborating entity "overflow" for hierarchy "Fluxo_Dados:fluxo_dados|ULA:ULA|ULA1bit:ula0|overflow:Overflow_exists" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ULA1bit.vhd Line: 63
-Info (12128): Elaborating entity "UC_ULA" for hierarchy "Fluxo_Dados:fluxo_dados|UC_ULA:UC_ULA" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 144
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "Fluxo_Dados:fluxo_dados|registradorGenerico:regIDEX1" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 152
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "Fluxo_Dados:fluxo_dados|muxGenerico2x1:mux_rt_imediato" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 163
-Info (12128): Elaborating entity "muxGenerico3x1" for hierarchy "Fluxo_Dados:fluxo_dados|muxGenerico3x1:mux_PC" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 169
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "Fluxo_Dados:fluxo_dados|registradorGenerico:regEXMEM1" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 188
-Info (12128): Elaborating entity "muxGenerico3x1" for hierarchy "Fluxo_Dados:fluxo_dados|muxGenerico3x1:mux_rt_rd" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 195
-Info (12128): Elaborating entity "RAMMIPS" for hierarchy "Fluxo_Dados:fluxo_dados|RAMMIPS:RAM" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 211
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "Fluxo_Dados:fluxo_dados|registradorGenerico:regMEMWB1" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 220
-Info (12128): Elaborating entity "estendeSinalGenerico" for hierarchy "Fluxo_Dados:fluxo_dados|estendeSinalGenerico:estende_sinal" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 226
-Info (12128): Elaborating entity "concatena" for hierarchy "Fluxo_Dados:fluxo_dados|concatena:concatena" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 232
-Info (12128): Elaborating entity "UnidadeControle" for hierarchy "UnidadeControle:UC" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ProcessadorMIPS.vhd Line: 54
+Info (12128): Elaborating entity "UC_ULA" for hierarchy "Fluxo_Dados:fluxo_dados|UC_ULA:UC_ULA" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 142
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "Fluxo_Dados:fluxo_dados|registradorGenerico:regIDEX1" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 150
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "Fluxo_Dados:fluxo_dados|muxGenerico2x1:mux_rt_imediato" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 161
+Info (12128): Elaborating entity "muxGenerico3x1" for hierarchy "Fluxo_Dados:fluxo_dados|muxGenerico3x1:mux_PC" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 167
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "Fluxo_Dados:fluxo_dados|registradorGenerico:regEXMEM1" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 186
+Info (12128): Elaborating entity "muxGenerico3x1" for hierarchy "Fluxo_Dados:fluxo_dados|muxGenerico3x1:mux_rt_rd" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 193
+Info (12128): Elaborating entity "RAMMIPS" for hierarchy "Fluxo_Dados:fluxo_dados|RAMMIPS:RAM" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 207
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "Fluxo_Dados:fluxo_dados|registradorGenerico:regMEMWB1" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 216
+Info (12128): Elaborating entity "estendeSinalGenerico" for hierarchy "Fluxo_Dados:fluxo_dados|estendeSinalGenerico:estende_sinal" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 222
+Info (12128): Elaborating entity "concatena" for hierarchy "Fluxo_Dados:fluxo_dados|concatena:concatena" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/Fluxo_Dados.vhd Line: 228
+Info (12128): Elaborating entity "UnidadeControle" for hierarchy "UnidadeControle:UC" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ProcessadorMIPS.vhd Line: 49
+Info (12129): Elaborating entity "edgeDetector" using architecture "A:bordasubida" for hierarchy "edgeDetector:detectorSub0" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ProcessadorMIPS.vhd Line: 51
+Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:display0" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ProcessadorMIPS.vhd Line: 60
 Warning (276020): Inferred RAM node "Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador_rtl_0" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
 Warning (276020): Inferred RAM node "Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador_rtl_1" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
 Info (276014): Found 1 instances of uninferred RAM logic
@@ -2887,6 +2979,7 @@ Info (19000): Inferred 3 megafunctions from design logic
         Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
         Info (286033): Parameter INDATA_ACLR_A set to NONE
         Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter INIT_FILE set to db/ProcessadorMIPS.ram0_RAMMIPS_abb6a4b.hdl.mif
         Info (286033): Parameter READ_DURING_WRITE_MODE_MIXED_PORTS set to OLD_DATA
         Info (286033): Parameter RDCONTROL_REG_B set to CLOCK0
     Info (276029): Inferred altsyncram megafunction from the following design logic: "Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|registrador_rtl_0" 
@@ -2937,10 +3030,11 @@ Info (12133): Instantiated megafunction "Fluxo_Dados:fluxo_dados|RAMMIPS:RAM|alt
     Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK0"
     Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+    Info (12134): Parameter "INIT_FILE" = "db/ProcessadorMIPS.ram0_RAMMIPS_abb6a4b.hdl.mif"
     Info (12134): Parameter "READ_DURING_WRITE_MODE_MIXED_PORTS" = "OLD_DATA"
     Info (12134): Parameter "RDCONTROL_REG_B" = "CLOCK0"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_60q1.tdf
-    Info (12023): Found entity 1: altsyncram_60q1 File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/db/altsyncram_60q1.tdf Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_4hv1.tdf
+    Info (12023): Found entity 1: altsyncram_4hv1 File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/db/altsyncram_4hv1.tdf Line: 28
 Info (12130): Elaborated megafunction instantiation "Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|altsyncram:registrador_rtl_0"
 Info (12133): Instantiated megafunction "Fluxo_Dados:fluxo_dados|bancoRegistradoresArqRegReg:bancoRegs|altsyncram:registrador_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
@@ -2980,15 +3074,17 @@ Info (12133): Instantiated megafunction "Fluxo_Dados:fluxo_dados|bancoRegistrado
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1142 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 131 output pins
-    Info (21061): Implemented 914 logic cells
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/ProcessadorMIPS.vhd Line: 21
+Info (21057): Implemented 1146 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 42 output pins
+    Info (21061): Implemented 1003 logic cells
     Info (21064): Implemented 96 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4873 megabytes
-    Info: Processing ended: Tue Dec 08 23:29:23 2020
-    Info: Elapsed time: 00:00:27
-    Info: Total CPU time (on all processors): 00:00:57
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4865 megabytes
+    Info: Processing ended: Wed Dec 09 00:42:19 2020
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:45
 
 

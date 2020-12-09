@@ -16,10 +16,9 @@ entity Fluxo_Dados is
 	 palavraControle : in std_logic_vector(14 downto 0);
 	 ULA_saida, mux_imed_saida: out std_logic_vector(DATA_WIDTH-1 downto 0);
 	 PC_saida: out std_logic_vector(ADDR_WIDTH-1 downto 0);
-	 overflow, monitora_flag_z  :  out std_logic;
-	 jr_out : out std_logic;
 	 Opcode_out: out std_logic_vector(5 downto 0);
-	 entradaA_ULA: out std_logic_vector(DATA_WIDTH-1 downto 0)
+	 jr_out: out std_logic
+
 
   );
 end entity;
@@ -36,7 +35,7 @@ architecture arch_name of Fluxo_Dados is
 	signal saida_mux_rt_rd: std_logic_vector(4 downto 0);
 	
 	signal estendido_shift: std_logic_vector(25 downto 0);
-	signal sinal_concatenado, dado_lido, imediato_estendido2_shiftado: std_logic_vector(31 downto 0);
+	signal sinal_concatenado, dado_lido: std_logic_vector(31 downto 0);
 	signal imediato_estendido2, shiftado, mux_rt_saida, somador2, saida_mux_ULA_mem, saida_mux_beq, estendido_soma_constante, mux_pc_saida : std_logic_vector(31 downto 0);
 	signal flag_z, sel_beq_jmp: std_logic;
 	signal ULA_ctrl: std_logic_vector(4 downto 0);
@@ -76,7 +75,7 @@ architecture arch_name of Fluxo_Dados is
 	alias ULA_opIDEX : std_logic_vector(2 downto 0) is regIDEX(150 downto 148);
 	alias saidaWBIDEX : std_logic_vector(4 downto 0) is regIDEX(147 downto 143);
 	alias bneIDEX : std_logic is regIDEX(142);
-	alias neqIDEX : std_logic is regIDEX(141);
+	alias beqIDEX : std_logic is regIDEX(141);
 	alias selMux_rt_imediatoIDEX : std_logic is regIDEX(140);
 	alias sel_rt_rdIDEX : std_logic_vector(1 downto 0) is regIDEX(139 downto 138);
 	alias PC_soma_constIDEX : std_logic_vector(31 downto 0) is regIDEX(137 downto 106);
@@ -136,7 +135,6 @@ begin
           port map (
 			 entradaA => SaidaRegAIDEX, 
 			 entradaB =>  mux_rt_saida, 
-			 overflow_final => overflow,
 			 operacao => ULA_ctrl, 
 			 resultado_final => saidaULA, 
 			 flag_zero => flag_z);
@@ -163,7 +161,7 @@ begin
 	mux_rt_imediato: entity work.muxGenerico2x1  generic map (larguraDados => DATA_WIDTH)
         port map( entradaA_MUX => SaidaRegBIDEX,
                  entradaB_MUX =>  imediato_estendido2IDEX,
-                 seletor_MUX => selMux_rt_imediato,
+                 seletor_MUX => selMux_rt_imediatoIDEX,
                  saida_MUX => mux_rt_saida);
 					  
 	mux_PC: entity work.muxGenerico3x1  generic map (larguraDados => DATA_WIDTH)
@@ -173,7 +171,7 @@ begin
                  seletor_MUX => selMux_pc,
                  saida_MUX => mux_pc_saida);	
 					  
-	selmuxBeq <= '1' when (beq and flag_z) = '1' or (bne and not(flag_z)) = '1' else '0'; 				  
+	selmuxBeq <= '1' when (beqIDEX and flag_z) = '1' or (bneIDEX and not(flag_z)) = '1' else '0'; 				  
 	
 	shiftado <= imediato_estendido2IDEX(29 DOWNTO 0) & b"00";
 
@@ -196,18 +194,16 @@ begin
         port map( entradaA_MUX => endRtIDEX,
                  entradaB_MUX =>  endRdIDEX,
 					  entradaC_MUX => b"11111", --Reg 31
-                 seletor_MUX => sel_rt_rd,
+                 seletor_MUX => sel_rt_rdIDEX,
                  saida_MUX => saida_mux_rt_rd);	
 					  
 	mux_ULA_mem: entity work.muxGenerico3x1  generic map (larguraDados => DATA_WIDTH)
         port map( entradaA_MUX => saidaULAMEMWB,
                  entradaB_MUX =>  dado_lidoMEMWB,
 				 entradaC_MUX => PC_soma_const_MEMWB,
-                 seletor_MUX => sel_ULA_mem,
+                 seletor_MUX => sel_ULA_memMEMWB,
                  saida_MUX => saida_mux_ULA_mem);		
-		
-	imediato_estendido2_shiftado <= imediato_estendido2(29 downto 0) & "00";			  
-	
+			
 	RAM: entity work.RAMMIPS
         port map( clk => clk,
                  Endereco =>  saidaULAEXMEM,
@@ -235,14 +231,15 @@ begin
 			 Imediato => imediato26,
 			 sinal_concatenado => sinal_concatenado
 			 );
-			 
-	monitora_flag_z <= beq and flag_z;
-					  
+			 					  
 	ULA_saida <= saidaULA;
 	PC_saida <= PC;
 	jr_out <= jr; 
 	Opcode_out <= Opcode;
 	mux_imed_saida <= mux_rt_saida;
-	entradaA_ULA <= SaidaRegAIDEX;
+--	entradaA_ULA <= SaidaRegAIDEX;
+--	imediato <= imediato_estendido2;
+--	imediatoIDEX <= imediato_estendido2IDEX;
+	
 	
 end architecture;

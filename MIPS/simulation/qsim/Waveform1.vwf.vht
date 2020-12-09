@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "12/08/2020 23:30:18"
+-- Generated on "12/09/2020 00:14:13"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          ProcessadorMIPS
 -- 
@@ -35,6 +35,8 @@ ARCHITECTURE ProcessadorMIPS_arch OF ProcessadorMIPS_vhd_vec_tst IS
 -- constants                                                 
 -- signals                                                   
 SIGNAL CLOCK_50 : STD_LOGIC;
+SIGNAL imediato : STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL imediatoIDEX : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL jr_out : STD_LOGIC;
 SIGNAL monitora_flag_z : STD_LOGIC;
 SIGNAL mux_imed_saida : STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -45,6 +47,8 @@ SIGNAL ULA_saida : STD_LOGIC_VECTOR(31 DOWNTO 0);
 COMPONENT ProcessadorMIPS
 	PORT (
 	CLOCK_50 : IN STD_LOGIC;
+	imediato : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+	imediatoIDEX : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 	jr_out : OUT STD_LOGIC;
 	monitora_flag_z : OUT STD_LOGIC;
 	mux_imed_saida : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -59,6 +63,8 @@ BEGIN
 	PORT MAP (
 -- list connections between master ports and signals
 	CLOCK_50 => CLOCK_50,
+	imediato => imediato,
+	imediatoIDEX => imediatoIDEX,
 	jr_out => jr_out,
 	monitora_flag_z => monitora_flag_z,
 	mux_imed_saida => mux_imed_saida,
@@ -71,12 +77,16 @@ BEGIN
 -- CLOCK_50
 t_prcs_CLOCK_50: PROCESS
 BEGIN
-LOOP
-	CLOCK_50 <= '0';
-	WAIT FOR 10000 ps;
 	CLOCK_50 <= '1';
 	WAIT FOR 10000 ps;
-	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
-END LOOP;
+	FOR i IN 1 TO 74
+	LOOP
+		CLOCK_50 <= '0';
+		WAIT FOR 10000 ps;
+		CLOCK_50 <= '1';
+		WAIT FOR 10000 ps;
+	END LOOP;
+	CLOCK_50 <= '0';
+WAIT;
 END PROCESS t_prcs_CLOCK_50;
 END ProcessadorMIPS_arch;

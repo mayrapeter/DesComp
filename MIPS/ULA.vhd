@@ -9,7 +9,7 @@ entity ULA is
 	entradaA, entradaB     : in std_logic_vector(31 downto 0);
 	operacao	    : in std_logic_vector(4 downto 0);
 	-- Output ports
-	overflow_final, flag_zero : out std_logic;
+	flag_zero : out std_logic;
 	resultado_final	 : out std_logic_vector(31 downto 0)
 	 
     );
@@ -595,7 +595,6 @@ begin
 					flag_Z(8) and flag_Z(9) and flag_Z(10) and flag_Z(11) and flag_Z(12) and flag_Z(13) and flag_Z(14) and flag_Z(15) and
 					flag_Z(16) and flag_Z(17) and flag_Z(18) and flag_Z(19) and flag_Z(20) and flag_Z(21) and flag_Z(22) and flag_Z(23) and
 					flag_Z(24) and flag_Z(25) and flag_Z(26) and flag_Z(27) and flag_Z(28) and flag_Z(29) and flag_Z(30) and flag_Z(21);
-					
-	overflow_final <= overflow(31);				
+								
 			  
 end architecture;

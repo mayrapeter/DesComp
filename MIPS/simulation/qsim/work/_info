@@ -10,7 +10,7 @@ z2
 cModel Technology
 dC:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/simulation/qsim
 Eprocessadormips
-Z0 w1607481020
+Z0 w1607483656
 Z1 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 ^K2eeK[IVbX]]MLcdOEI91
 Z2 DPx8 cyclonev 19 cyclonev_components 0 22 GFL[QAd@dAZF:`jjOGn9>2
 Z3 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 3dzZ?YU_4FC5UU0cTXRET1
@@ -20,24 +20,24 @@ Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
 Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z8 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 Z9 DPx6 altera 28 altera_primitives_components 0 22 VSD=32;3391kSOd?PDZYj3
-!i122 52
+!i122 60
 Z10 dC:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/DesComp/MIPS/simulation/qsim
 Z11 8ProcessadorMIPS.vho
 Z12 FProcessadorMIPS.vho
 l0
 L39 1
-VF=zS2PD<X^9oYnNT^kPab2
-!s100 42_dHOkfdZeTja^;=Q<Ui0
+VfTHK[TN]28zNKd1?^N[jU3
+!s100 ahD__B0VnSY:Lf;icKAdD0
 Z13 OV;C;2020.1;71
 32
-Z14 !s110 1607481022
+!s110 1607483659
 !i10b 1
-Z15 !s108 1607481022.000000
-Z16 !s90 -work|work|ProcessadorMIPS.vho|
-Z17 !s107 ProcessadorMIPS.vho|
+Z14 !s108 1607483659.000000
+Z15 !s90 -work|work|ProcessadorMIPS.vho|
+Z16 !s107 ProcessadorMIPS.vho|
 !i113 1
-Z18 o-work work
-Z19 tExplicit 1 CvgOpt 0
+Z17 o-work work
+Z18 tExplicit 1 CvgOpt 0
 Astructure
 R1
 R2
@@ -48,60 +48,60 @@ R6
 R7
 R8
 R9
-DEx4 work 15 processadormips 0 22 F=zS2PD<X^9oYnNT^kPab2
-!i122 52
-l1445
-L52 25828
-VH<MY1NO;RnT7e7B@oOWc=2
-!s100 CEAh1_J@XjT0EgANn>M0o1
+DEx4 work 15 processadormips 0 22 fTHK[TN]28zNKd1?^N[jU3
+!i122 60
+l1437
+L54 26578
+V@S^>7BRnhj^kPjVkYhJ2S1
+!s100 6D=Whm0k9fPTK3jAb[jiz0
 R13
 32
-R14
+!s110 1607483660
 !i10b 1
+R14
 R15
 R16
-R17
 !i113 1
+R17
 R18
-R19
 Eprocessadormips_vhd_vec_tst
-Z20 w1607481018
+Z19 w1607483653
 R7
 R8
-!i122 53
+!i122 61
 R10
-Z21 8Waveform1.vwf.vht
-Z22 FWaveform1.vwf.vht
+Z20 8Waveform1.vwf.vht
+Z21 FWaveform1.vwf.vht
 l0
 L32 1
 VY7_2KV]Gde9Th2MG`]NWg3
 !s100 5oMmUjOolQ4:7L6JfMK0n2
 R13
 32
-Z23 !s110 1607481023
+Z22 !s110 1607483661
 !i10b 1
-Z24 !s108 1607481023.000000
-Z25 !s90 -work|work|Waveform1.vwf.vht|
-Z26 !s107 Waveform1.vwf.vht|
+Z23 !s108 1607483661.000000
+Z24 !s90 -work|work|Waveform1.vwf.vht|
+Z25 !s107 Waveform1.vwf.vht|
 !i113 1
+R17
 R18
-R19
 Aprocessadormips_arch
 R7
 R8
-Z27 DEx4 work 27 processadormips_vhd_vec_tst 0 22 Y7_2KV]Gde9Th2MG`]NWg3
-!i122 53
-l57
-L34 49
-VKXPog:gc[EfIJW?l0JhkV2
-!s100 kRbmc7Q01GR6z[oD:91A20
+Z26 DEx4 work 27 processadormips_vhd_vec_tst 0 22 Y7_2KV]Gde9Th2MG`]NWg3
+!i122 61
+l61
+L34 59
+VD89Yi2KOjidQ?4_8ooQOi0
+!s100 ;@PcNjlzJIKBVZNhFWggY2
 R13
 32
-R23
+R22
 !i10b 1
+R23
 R24
 R25
-R26
 !i113 1
+R17
 R18
-R19

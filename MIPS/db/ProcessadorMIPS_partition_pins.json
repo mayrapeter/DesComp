@@ -4,527 +4,183 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "ULA_saida[0]",
+					"name" : "HEX0[0]",
 					"strict" : false
 				},
 				{
-					"name" : "ULA_saida[1]",
+					"name" : "HEX0[1]",
 					"strict" : false
 				},
 				{
-					"name" : "ULA_saida[2]",
+					"name" : "HEX0[2]",
 					"strict" : false
 				},
 				{
-					"name" : "ULA_saida[3]",
+					"name" : "HEX0[3]",
 					"strict" : false
 				},
 				{
-					"name" : "ULA_saida[4]",
+					"name" : "HEX0[4]",
 					"strict" : false
 				},
 				{
-					"name" : "ULA_saida[5]",
+					"name" : "HEX0[5]",
 					"strict" : false
 				},
 				{
-					"name" : "ULA_saida[6]",
+					"name" : "HEX0[6]",
 					"strict" : false
 				},
 				{
-					"name" : "ULA_saida[7]",
+					"name" : "HEX1[0]",
 					"strict" : false
 				},
 				{
-					"name" : "ULA_saida[8]",
+					"name" : "HEX1[1]",
 					"strict" : false
 				},
 				{
-					"name" : "ULA_saida[9]",
+					"name" : "HEX1[2]",
 					"strict" : false
 				},
 				{
-					"name" : "ULA_saida[10]",
+					"name" : "HEX1[3]",
 					"strict" : false
 				},
 				{
-					"name" : "ULA_saida[11]",
+					"name" : "HEX1[4]",
 					"strict" : false
 				},
 				{
-					"name" : "ULA_saida[12]",
+					"name" : "HEX1[5]",
 					"strict" : false
 				},
 				{
-					"name" : "ULA_saida[13]",
+					"name" : "HEX1[6]",
 					"strict" : false
 				},
 				{
-					"name" : "ULA_saida[14]",
+					"name" : "HEX2[0]",
 					"strict" : false
 				},
 				{
-					"name" : "ULA_saida[15]",
+					"name" : "HEX2[1]",
 					"strict" : false
 				},
 				{
-					"name" : "ULA_saida[16]",
+					"name" : "HEX2[2]",
 					"strict" : false
 				},
 				{
-					"name" : "ULA_saida[17]",
+					"name" : "HEX2[3]",
 					"strict" : false
 				},
 				{
-					"name" : "ULA_saida[18]",
+					"name" : "HEX2[4]",
 					"strict" : false
 				},
 				{
-					"name" : "ULA_saida[19]",
+					"name" : "HEX2[5]",
 					"strict" : false
 				},
 				{
-					"name" : "ULA_saida[20]",
+					"name" : "HEX2[6]",
 					"strict" : false
 				},
 				{
-					"name" : "ULA_saida[21]",
+					"name" : "HEX3[0]",
 					"strict" : false
 				},
 				{
-					"name" : "ULA_saida[22]",
+					"name" : "HEX3[1]",
 					"strict" : false
 				},
 				{
-					"name" : "ULA_saida[23]",
+					"name" : "HEX3[2]",
 					"strict" : false
 				},
 				{
-					"name" : "ULA_saida[24]",
+					"name" : "HEX3[3]",
 					"strict" : false
 				},
 				{
-					"name" : "ULA_saida[25]",
+					"name" : "HEX3[4]",
 					"strict" : false
 				},
 				{
-					"name" : "ULA_saida[26]",
+					"name" : "HEX3[5]",
 					"strict" : false
 				},
 				{
-					"name" : "ULA_saida[27]",
+					"name" : "HEX3[6]",
 					"strict" : false
 				},
 				{
-					"name" : "ULA_saida[28]",
+					"name" : "HEX4[0]",
 					"strict" : false
 				},
 				{
-					"name" : "ULA_saida[29]",
+					"name" : "HEX4[1]",
 					"strict" : false
 				},
 				{
-					"name" : "ULA_saida[30]",
+					"name" : "HEX4[2]",
 					"strict" : false
 				},
 				{
-					"name" : "ULA_saida[31]",
+					"name" : "HEX4[3]",
 					"strict" : false
 				},
 				{
-					"name" : "mux_imed_saida[0]",
+					"name" : "HEX4[4]",
 					"strict" : false
 				},
 				{
-					"name" : "mux_imed_saida[1]",
+					"name" : "HEX4[5]",
 					"strict" : false
 				},
 				{
-					"name" : "mux_imed_saida[2]",
+					"name" : "HEX4[6]",
 					"strict" : false
 				},
 				{
-					"name" : "mux_imed_saida[3]",
+					"name" : "HEX5[0]",
 					"strict" : false
 				},
 				{
-					"name" : "mux_imed_saida[4]",
+					"name" : "HEX5[1]",
 					"strict" : false
 				},
 				{
-					"name" : "mux_imed_saida[5]",
+					"name" : "HEX5[2]",
 					"strict" : false
 				},
 				{
-					"name" : "mux_imed_saida[6]",
+					"name" : "HEX5[3]",
 					"strict" : false
 				},
 				{
-					"name" : "mux_imed_saida[7]",
+					"name" : "HEX5[4]",
 					"strict" : false
 				},
 				{
-					"name" : "mux_imed_saida[8]",
+					"name" : "HEX5[5]",
 					"strict" : false
 				},
 				{
-					"name" : "mux_imed_saida[9]",
+					"name" : "HEX5[6]",
 					"strict" : false
 				},
 				{
-					"name" : "mux_imed_saida[10]",
+					"name" : "SW[0]",
 					"strict" : false
 				},
 				{
-					"name" : "mux_imed_saida[11]",
+					"name" : "SW[1]",
 					"strict" : false
 				},
 				{
-					"name" : "mux_imed_saida[12]",
-					"strict" : false
-				},
-				{
-					"name" : "mux_imed_saida[13]",
-					"strict" : false
-				},
-				{
-					"name" : "mux_imed_saida[14]",
-					"strict" : false
-				},
-				{
-					"name" : "mux_imed_saida[15]",
-					"strict" : false
-				},
-				{
-					"name" : "mux_imed_saida[16]",
-					"strict" : false
-				},
-				{
-					"name" : "mux_imed_saida[17]",
-					"strict" : false
-				},
-				{
-					"name" : "mux_imed_saida[18]",
-					"strict" : false
-				},
-				{
-					"name" : "mux_imed_saida[19]",
-					"strict" : false
-				},
-				{
-					"name" : "mux_imed_saida[20]",
-					"strict" : false
-				},
-				{
-					"name" : "mux_imed_saida[21]",
-					"strict" : false
-				},
-				{
-					"name" : "mux_imed_saida[22]",
-					"strict" : false
-				},
-				{
-					"name" : "mux_imed_saida[23]",
-					"strict" : false
-				},
-				{
-					"name" : "mux_imed_saida[24]",
-					"strict" : false
-				},
-				{
-					"name" : "mux_imed_saida[25]",
-					"strict" : false
-				},
-				{
-					"name" : "mux_imed_saida[26]",
-					"strict" : false
-				},
-				{
-					"name" : "mux_imed_saida[27]",
-					"strict" : false
-				},
-				{
-					"name" : "mux_imed_saida[28]",
-					"strict" : false
-				},
-				{
-					"name" : "mux_imed_saida[29]",
-					"strict" : false
-				},
-				{
-					"name" : "mux_imed_saida[30]",
-					"strict" : false
-				},
-				{
-					"name" : "mux_imed_saida[31]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaA_ULA[0]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaA_ULA[1]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaA_ULA[2]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaA_ULA[3]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaA_ULA[4]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaA_ULA[5]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaA_ULA[6]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaA_ULA[7]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaA_ULA[8]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaA_ULA[9]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaA_ULA[10]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaA_ULA[11]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaA_ULA[12]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaA_ULA[13]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaA_ULA[14]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaA_ULA[15]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaA_ULA[16]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaA_ULA[17]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaA_ULA[18]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaA_ULA[19]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaA_ULA[20]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaA_ULA[21]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaA_ULA[22]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaA_ULA[23]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaA_ULA[24]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaA_ULA[25]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaA_ULA[26]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaA_ULA[27]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaA_ULA[28]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaA_ULA[29]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaA_ULA[30]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaA_ULA[31]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_saida[0]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_saida[1]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_saida[2]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_saida[3]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_saida[4]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_saida[5]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_saida[6]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_saida[7]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_saida[8]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_saida[9]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_saida[10]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_saida[11]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_saida[12]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_saida[13]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_saida[14]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_saida[15]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_saida[16]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_saida[17]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_saida[18]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_saida[19]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_saida[20]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_saida[21]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_saida[22]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_saida[23]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_saida[24]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_saida[25]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_saida[26]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_saida[27]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_saida[28]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_saida[29]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_saida[30]",
-					"strict" : false
-				},
-				{
-					"name" : "PC_saida[31]",
-					"strict" : false
-				},
-				{
-					"name" : "overflow",
-					"strict" : false
-				},
-				{
-					"name" : "monitora_flag_z",
-					"strict" : false
-				},
-				{
-					"name" : "jr_out",
+					"name" : "KEY[0]",
 					"strict" : false
 				},
 				{
