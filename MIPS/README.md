@@ -21,14 +21,14 @@ Design de Computadores
 ### O MIPS
 
 "O MIPS é uma arquitetura baseada em registrador, ou seja, a CPU usa apenas registradores para realizar as suas operações aritméticas e lógicas. O MIPS tem 32 registradores de 32-bits para propósitos gerais.O hardware MIPS não impõe um uso específico para os registradores de uso geral (exceto r0). Ou seja, onde um registrador é necessário, qualquer registrador funcionará. No entanto, a seguinte convenção, para o uso dos registradores, evoluiu como padrão para a programação MIPS. Ela é usada pela maioria das ferramentas, compiladores e sistemas operacionais: 
-![Regs](https://regs.png)
+![Regs](https://github.com/mayrapeter/DesComp/blob/main/MIPS/regs.png)
 
 O MIPS tem 3 formatos básicos de instruções e é utilizada uma plavra de 32 bits para a codificação delas:
 * Tipo **R** 
 *  Tipo **I** 
 * Tipo **J** 
 
-![estrutura](estrutura)
+![estrutura](https://github.com/mayrapeter/DesComp/blob/main/MIPS/estrutura.png)
 Figura 1 - Divisão da instrução do MIPS
 
 Esses campos podem ser agrupados dependendo do tipo de instrução. O significado dos nomes dos campos são:
@@ -92,9 +92,9 @@ As instruções de desvio:
 ### Fluxo de Dados
 O Fluxo de Dados do projeto é responsável por todas as operações aritméticas e execução das instruções. Abaixo está representado o fluxo para as intruções do tipo A e B utilizadas no projeto, tanto o esquema como no RTL Viewer. 
 
-![Fluxo de Dados](fluxo_dados.png)
+![Fluxo de Dados](https://github.com/mayrapeter/DesComp/blob/main/MIPS/fluxo_dados.png)
 
-![Fluxo de Dados](rtl_viewer.png)
+![Fluxo de Dados](https://github.com/mayrapeter/DesComp/blob/main/MIPS/rtl_viewer.png)
 
 ### Unidade de Controle
 A unidade de controle receberá o Opcode da instrução e retornará a palavra de controle do MIPS. A saída da UC é a palavra controle, que contém:
@@ -109,7 +109,7 @@ A unidade de controle receberá o Opcode da instrução e retornará a palavra d
 * Habilita Escrita Memória
 * BEQ
 
-![Unidade de Controle](unidade_controle)
+![Unidade de Controle](https://github.com/mayrapeter/DesComp/blob/main/MIPS/unidade_controle.png)
 
 ### Top-Level
 O Top-Level é responsável por juntar tanto o fluxo de dados quanto a unidade de controle, com o adicional de controlar os botões da placa e os displays de 7 segmentos. Além disso, é nele que são estabelecidos os sinais para a simulação no Waveform. É necessário criar novas entradas no fluxo de dados e passá-las para o Top-Level a fim de verificar as saídas na simulação.
