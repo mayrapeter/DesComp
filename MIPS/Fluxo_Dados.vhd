@@ -18,7 +18,8 @@ entity Fluxo_Dados is
 	 PC_saida: out std_logic_vector(ADDR_WIDTH-1 downto 0);
 	 overflow, monitora_flag_z  :  out std_logic;
 	 jr_out : out std_logic;
-	 Opcode_out: out std_logic_vector(5 downto 0)
+	 Opcode_out: out std_logic_vector(5 downto 0);
+	 entradaA_ULA: out std_logic_vector(DATA_WIDTH-1 downto 0)
 
   );
 end entity;
@@ -36,26 +37,11 @@ architecture arch_name of Fluxo_Dados is
 	
 	signal estendido_shift: std_logic_vector(25 downto 0);
 	signal sinal_concatenado, dado_lido, imediato_estendido2_shiftado: std_logic_vector(31 downto 0);
-	signal imediato_estendido, imediato_estendido2, mux_rt_saida, somador2, saida_mux_ULA_mem, saida_mux_beq, estendido_soma_constante, mux_pc_saida : std_logic_vector(31 downto 0);
+	signal imediato_estendido2, shiftado, mux_rt_saida, somador2, saida_mux_ULA_mem, saida_mux_beq, estendido_soma_constante, mux_pc_saida : std_logic_vector(31 downto 0);
 	signal flag_z, sel_beq_jmp: std_logic;
 	signal ULA_ctrl: std_logic_vector(4 downto 0);
 	signal selULA : std_logic_vector(3 downto 0);
 	signal selmuxBeq: std_logic;
-	
-	
-	
-	
-
-	alias imediato16: std_logic_vector(15 DOWNTO 0) is Instrucao(15 downto 0);
-	alias imediato26: std_logic_vector(25 DOWNTO 0) is Instrucao(25 downto 0);
-
-	
-   alias Opcode: std_logic_vector(5 DOWNTO 0) is Instrucao(31 downto 26);
-	alias EndRs: std_logic_vector(4 DOWNTO 0) is Instrucao(25 downto 21);
-	alias EndRt: std_logic_vector(4 DOWNTO 0) is Instrucao(20 downto 16);
-	alias EndRd: std_logic_vector(4 DOWNTO 0) is Instrucao(15 downto 11);
-	alias Shamt: std_logic_vector(4 DOWNTO 0) is Instrucao(10 downto 6);
-	alias Funct: std_logic_vector(5 DOWNTO 0) is Instrucao(5 downto 0);
 	
 	
 	alias HabilitaEscrita : std_logic is palavraControle(0);
@@ -69,6 +55,53 @@ architecture arch_name of Fluxo_Dados is
 	alias ULA_op : std_logic_vector(2 downto 0) is palavraControle(10 downto 8);
 	alias bne : std_logic is palavraControle(11);
 
+	-- registradores da pipeline
+
+	signal regIFID : std_logic_vector(63 downto 0);
+	alias PC_soma_constIFID : std_logic_vector(31 downto 0) is regIFID(63 downto 32);
+	alias instrucaoIFID : std_logic_vector(31 downto 0) is regIFID(31 downto 0);
+	
+	alias imediato16: std_logic_vector(15 DOWNTO 0) is instrucaoIFID(15 downto 0);
+	alias imediato26: std_logic_vector(25 DOWNTO 0) is instrucaoIFID(25 downto 0);
+	
+   alias Opcode: std_logic_vector(5 DOWNTO 0) is instrucaoIFID(31 downto 26);
+	alias EndRs: std_logic_vector(4 DOWNTO 0) is instrucaoIFID(25 downto 21);
+	alias EndRt: std_logic_vector(4 DOWNTO 0) is instrucaoIFID(20 downto 16);
+	alias EndRd: std_logic_vector(4 DOWNTO 0) is instrucaoIFID(15 downto 11);
+	alias Shamt: std_logic_vector(4 DOWNTO 0) is instrucaoIFID(10 downto 6);
+	alias FunctFD: std_logic_vector(5 DOWNTO 0) is instrucaoIFID(5 downto 0);
+
+	signal regIDEX : std_logic_vector(156 downto 0);
+	alias FunctEX: std_logic_vector(5 DOWNTO 0) is regIDEX(156 downto 151);
+	alias ULA_opIDEX : std_logic_vector(2 downto 0) is regIDEX(150 downto 148);
+	alias saidaWBIDEX : std_logic_vector(4 downto 0) is regIDEX(147 downto 143);
+	alias bneIDEX : std_logic is regIDEX(142);
+	alias neqIDEX : std_logic is regIDEX(141);
+	alias selMux_rt_imediatoIDEX : std_logic is regIDEX(140);
+	alias sel_rt_rdIDEX : std_logic_vector(1 downto 0) is regIDEX(139 downto 138);
+	alias PC_soma_constIDEX : std_logic_vector(31 downto 0) is regIDEX(137 downto 106);
+	alias SaidaRegAIDEX : std_logic_vector(31 downto 0) is regIDEX(105 downto 74);
+	alias SaidaRegBIDEX : std_logic_vector(31 downto 0) is regIDEX(73 downto 42);
+	alias imediato_estendido2IDEX : std_logic_vector(31 downto 0) is regIDEX(41 downto 10);
+	alias endRtIDEX : std_logic_vector(4 downto 0) is regIDEX(9 downto 5);
+	alias endRdIDEX : std_logic_vector(4 downto 0) is regIDEX(4 downto 0);
+
+	signal regEXMEM : std_logic_vector(105 downto 0);
+	alias saidaWBEXMEM : std_logic_vector(2 downto 0) is regEXMEM(105 downto 103);
+	alias weEXMEM : std_logic is regEXMEM(102);
+	alias reEXMEM : std_logic is regEXMEM(101);
+	alias PC_soma_constEXMEM : std_logic_vector(31 downto 0) is regEXMEM(100 downto 69);
+	alias saidaULAEXMEM : std_logic_vector(31 downto 0) is regEXMEM(68 downto 37);
+	alias SaidaRegBEXMEM : std_logic_vector(31 downto 0) is regEXMEM(36 downto 5);
+	alias end_reg3EXMEM : std_logic_vector(4 downto 0) is regEXMEM(4 downto 0);
+
+	signal regMEMWB : std_logic_vector(103 downto 0);
+	alias sel_ULA_memMEMWB : std_logic_vector(1 downto 0) is regMEMWB(103 downto 102);
+	alias HabilitaEscritaMEMWB : std_logic is regMEMWB(101);
+	alias PC_soma_const_MEMWB : std_logic_vector(31 downto 0) is regMEMWB(100 downto 69);
+	alias dado_lidoMEMWB : std_logic_vector(31 downto 0) is regMEMWB(68 downto 37);
+	alias saidaULAMEMWB : std_logic_vector(31 downto 0) is regMEMWB(36 downto 5);
+	alias end_reg3MEMWB : std_logic_vector(4 downto 0) is regMEMWB(4 downto 0);
 
 begin
 	PC_Soma_Constante:  entity work.somaConstante  generic map (larguraDados => ADDR_WIDTH, constante => INC_PC)
@@ -77,23 +110,31 @@ begin
 	PC_entity: entity work.registradorGenerico   generic map (larguraDados => ADDR_WIDTH)
           port map (DIN => mux_pc_saida, DOUT => PC, ENABLE => '1', CLK => clk, RST => '0');
 
-  -- Para instanciar, a atribuição de sinais (e generics) segue a ordem: (nomeSinalArquivoDefinicaoComponente => nomeSinalNesteArquivo)
-   ROM:  entity work.ROMMIPS generic map (dataWidth => DATA_WIDTH, addrWidth => ADDR_WIDTH, memoryAddrWidth => MEMORY_ADDR_WIDTH)
-          port map (clk => clk, Endereco =>  PC, Dado =>  Instrucao);
-			 
+	-- Para instanciar, a atribuição de sinais (e generics) segue a ordem: (nomeSinalArquivoDefinicaoComponente => nomeSinalNesteArquivo)
+	ROM:  entity work.ROMMIPS generic map (dataWidth => DATA_WIDTH, addrWidth => ADDR_WIDTH, memoryAddrWidth => MEMORY_ADDR_WIDTH)
+			port map (Endereco =>  PC, Dado =>  Instrucao);
+	
+	regIFID1 : entity work.registradorGenerico   generic map (larguraDados => 64)
+			--                  63-32           31-0
+			port map (DIN => PC_Incr_Const & Instrucao, 
+						DOUT => regIFID, 
+						ENABLE => '1', 
+						CLK => clk, 
+						RST => '0');
+
 	bancoRegs : entity work.bancoRegistradoresArqRegReg   generic map (larguraDados => DATA_WIDTH, larguraEndBancoRegs => 5)
           port map ( clk => clk,
               enderecoA => EndRs,
               enderecoB => EndRt,
-              enderecoC => saida_mux_rt_rd,
+              enderecoC => end_reg3MEMWB,
               dadoEscritaC => saida_mux_ULA_mem,
-              escreveC => HabilitaEscrita,
+              escreveC => HabilitaEscritaMEMWB,
               saidaA => SaidaRegA,
               saidaB  => SaidaRegB);
 
 	ULA : entity work.ULA
           port map (
-			 entradaA => SaidaRegA, 
+			 entradaA => SaidaRegAIDEX, 
 			 entradaB =>  mux_rt_saida, 
 			 overflow_final => overflow,
 			 operacao => ULA_ctrl, 
@@ -102,62 +143,86 @@ begin
 			 
 	UC_ULA : entity work.UC_ULA
 			port map(
-				ula_op => ULA_op,
-				funct => Funct,
+				ula_op => ULA_opIDEX,
+				funct => FunctEX,
 				ula_ctrl => ULA_ctrl, 
 				jr => jr
 			);	
-						
+
+	regIDEX1 : entity work.registradorGenerico   generic map (larguraDados => 157) 
+
+			port map (DIN => FunctFD & ULA_op & sel_ULA_mem & HabilitaEscrita & we & re & bne 
+						& beq & selMux_rt_imediato & sel_rt_rd & PC_soma_constIFID 
+						& SaidaRegA & SaidaRegB & imediato_estendido2 & 
+						EndRt & EndRd, 
+						DOUT => regIDEX, 
+						ENABLE => '1', 
+						CLK => clk, 
+						RST => '0');				
 			 	
 	mux_rt_imediato: entity work.muxGenerico2x1  generic map (larguraDados => DATA_WIDTH)
-        port map( entradaA_MUX => SaidaRegB,
-                 entradaB_MUX =>  imediato_estendido2,
+        port map( entradaA_MUX => SaidaRegBIDEX,
+                 entradaB_MUX =>  imediato_estendido2IDEX,
                  seletor_MUX => selMux_rt_imediato,
                  saida_MUX => mux_rt_saida);
 					  
 	mux_PC: entity work.muxGenerico3x1  generic map (larguraDados => DATA_WIDTH)
         port map( entradaA_MUX => saida_mux_beq,
                  entradaB_MUX =>  sinal_concatenado,
-					  entradaC_MUX => SaidaRegA,
+				 entradaC_MUX => SaidaRegAIDEX,
                  seletor_MUX => selMux_pc,
                  saida_MUX => mux_pc_saida);	
 					  
 	selmuxBeq <= '1' when (beq and flag_z) = '1' or (bne and not(flag_z)) = '1' else '0'; 				  
-					  
+	
+	shiftado <= imediato_estendido2IDEX(29 DOWNTO 0) & b"00";
+
+	somador2 <= std_logic_vector(unsigned(shiftado) + unsigned(PC_soma_constIDEX));	  
+	
 	mux_beq: entity work.muxGenerico2x1  generic map (larguraDados => DATA_WIDTH)
         port map( entradaA_MUX => PC_Incr_Const,
                  entradaB_MUX =>  somador2,
                  seletor_MUX => selmuxBeq,
-                 saida_MUX => saida_mux_beq);
+				 saida_MUX => saida_mux_beq);
+				 
+	regEXMEM1 : entity work.registradorGenerico   generic map (larguraDados => 106)     
+		port map (DIN => saidaWBIDEX & PC_soma_constIDEX & saidaULA & SaidaRegBIDEX & saida_mux_rt_rd, 
+				DOUT => regEXMEM, 
+				ENABLE => '1', 
+				CLK => clk, 
+				RST => '0');
 					  
 	mux_rt_rd: entity work.muxGenerico3x1  generic map (larguraDados => 5)
-        port map( entradaA_MUX => EndRt,
-                 entradaB_MUX =>  EndRd,
+        port map( entradaA_MUX => endRtIDEX,
+                 entradaB_MUX =>  endRdIDEX,
 					  entradaC_MUX => b"11111", --Reg 31
                  seletor_MUX => sel_rt_rd,
                  saida_MUX => saida_mux_rt_rd);	
 					  
 	mux_ULA_mem: entity work.muxGenerico3x1  generic map (larguraDados => DATA_WIDTH)
-        port map( entradaA_MUX => saidaULA,
-                 entradaB_MUX =>  dado_lido,
-					  entradaC_MUX => PC_Incr_Const,
+        port map( entradaA_MUX => saidaULAMEMWB,
+                 entradaB_MUX =>  dado_lidoMEMWB,
+				 entradaC_MUX => PC_soma_const_MEMWB,
                  seletor_MUX => sel_ULA_mem,
                  saida_MUX => saida_mux_ULA_mem);		
 		
-	imediato_estendido2_shiftado <= imediato_estendido2(29 downto 0) & "00";
-					  
-	PC_Soma_imediato:  entity work.somador 
-        port map( entradaA => PC_Incr_Const, entradaB => imediato_estendido2_shiftado, saida => somador2);				  
+	imediato_estendido2_shiftado <= imediato_estendido2(29 downto 0) & "00";			  
 	
 	RAM: entity work.RAMMIPS
         port map( clk => clk,
-                 Endereco =>  saidaULA,
-                 Dado_in => SaidaRegB,
+                 Endereco =>  saidaULAEXMEM,
+                 Dado_in => SaidaRegBEXMEM,
                  Dado_out => dado_lido,
 					  we => we,
 					  re => re
 					  );
-					  
+
+	regMEMWB1 : entity work.registradorGenerico   generic map (larguraDados => 104)
+		port map (DIN => saidaWBEXMEM & PC_soma_constEXMEM & dado_lido & saidaULAEXMEM & end_reg3EXMEM, 
+				DOUT => regMEMWB, 
+				ENABLE => '1', 
+				CLK => clk, 
+				RST => '0');
 	estende_sinal : entity work.estendeSinalGenerico   
           port map (
 			 estendeSinal_IN => imediato16, 
@@ -178,5 +243,6 @@ begin
 	jr_out <= jr; 
 	Opcode_out <= Opcode;
 	mux_imed_saida <= mux_rt_saida;
+	entradaA_ULA <= SaidaRegAIDEX;
 	
 end architecture;
